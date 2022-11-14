@@ -14,6 +14,8 @@
                 <img src="" alt="">
                 <h3>Lê Tú</h3>
                 <p>Chào mừng bạn trở lại</p>
+                <a href="#">Quên mật khẩu</a>
+                <a href="#">Cập nhật tài khoản</a>
             </div>
             <nav>
                 <ul>
