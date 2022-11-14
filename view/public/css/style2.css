@@ -1,0 +1,78 @@
+
+        
+
+.chicken {
+height: 400px;
+width: 100%;
+background-image:url(../img/avatar-tu-dien-768x433.jpg) ;
+background-size: cover
+}
+.text-chicken {
+color: #fff;
+position: absolute;
+
+}
+
+.mid-content{
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+        * {
+            box-sizing: border-box
+        }
+
+        /* Slideshow container */
+        .slideshow-container {
+
+            position: relative;
+            margin: auto;
+        }
+
+        /* Hide the images by default */
+        .mySlides {
+            display: none;
+        }
+
+
+        /* Position the "next button" to the right */
+    
+
+
+        /* Caption text */
+        .text {
+            color: #f2f2f2;
+            font-size: 50px;
+            top: 50%;
+            transform: translateY(-50%);
+            position: absolute;
+            
+            width: 100%;
+            text-align: center;
+        }
+
+
+
+    
+
+        .active,
+        .dot:hover {
+            background-color: #717171;
+        }
+
+        /* Fading animation */
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+        .text{
+            font-family: 'Heebo', sans-serif;
+        }
