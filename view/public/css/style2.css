@@ -2,6 +2,10 @@
     font-family: ha;
     src: url(../font/iCiel\ Rukola.otf);
 }
+@font-face {
+    font-family: ha2;
+    src: url(/view/public/font/static/RobotoSlab-Regular.ttf);
+}
 .text2{
     font-family: ha;
 }
@@ -72,6 +76,12 @@ font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
             width: 100%;
             text-align: center;
             letter-spacing: 4.2px;
+        }
+        .menu a:hover{
+            color:rgba(39, 113, 75, 1) ;
+        }
+        .menu {
+            font-family: ha2;
         }
 
 
