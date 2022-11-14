@@ -30,7 +30,7 @@
             <nav>
                 <ul>
                     <li><a href="#"><i class="fa-solid fa-bars"></i>   Quản lý thực đơn</a></li>
-                    <li><a href="#"><i class="fa-light fa-pan-food"></i> Quản lý món ăn</a></li>
+                    <li><a href="#"></i> Quản lý món ăn</a></li>
                     <li><a href="#">Quản lý đặt món</a></li>
                     <li><a href="#">Quản lý đặt bàn</a></li>
                     <li><a href="#">Quản lý bình luận</a></li>
