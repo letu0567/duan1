@@ -411,3 +411,62 @@ header{
 }
 /* end lien he */
 
+/* star qtri admin */
+.container_admin{
+    width: 100%;
+    height: 722px;
+}
+.content_admin{
+    display: flex;
+    height: 100%;
+}
+.content_left{
+    flex-basis: 17%;
+    background-color: #f89523;
+}
+.thongtin_user{
+    display: flex;
+    flex-direction: column;
+    line-height: 25px;
+}
+.thongtin_user img{
+    margin: 30px 32% 10px 32%;
+}
+.thongtin_user_con{
+    text-align: center;
+}
+.thongtin_user a{
+    text-decoration: none;
+    color: #ffffff;
+    margin-left: 60px;
+}
+.gach_duoi{
+    border-bottom: 1px solid white ;
+}
+.fa-solid{
+    position: relative;
+    right: 10px;
+}
+nav ul li{
+    display: block;
+    /* padding: 10px 20px; */
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+nav ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    line-height: 30px;
+    padding: 10px 40px;
+    border-radius: 5px;
+}
+nav ul li a:hover{
+    background-color: #BF1B1B;
+}
+/* nav ul li:hover{
+    background-color: #BF1B1B;
+} */
+/* end qtri admin */
+
