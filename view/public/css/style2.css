@@ -1,5 +1,10 @@
-
-        
+@font-face {
+    font-family: ha;
+    src: url(../font/iCiel\ Rukola.otf);
+}
+.text2{
+    font-family: ha;
+}
 
 .chicken {
 height: 400px;
@@ -11,6 +16,24 @@ background-size: cover
 color: #fff;
 position: absolute;
 
+}
+.anh_footer{
+    position: relative;
+}
+.anh_footer2{
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: #0b0b0b;
+    opacity: 0.28;
+}
+.mau_header{
+    background-color: rgba(39, 113, 75, 1);
+}
+.mau_footer{
+    background-color: rgb(10,56,28);
 }
 
 .mid-content{
@@ -38,15 +61,17 @@ font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
 
 
         /* Caption text */
-        .text {
+        .text1{
             color: #f2f2f2;
-            font-size: 50px;
+            font-size: 90px;
+            font-weight: 800;
             top: 50%;
             transform: translateY(-50%);
             position: absolute;
-            
+            font-family:ha;
             width: 100%;
             text-align: center;
+            letter-spacing: 4.2px;
         }
 
 
