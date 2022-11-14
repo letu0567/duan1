@@ -415,6 +415,7 @@ header{
 .container_admin{
     width: 100%;
     height: 722px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .content_admin{
     display: flex;
@@ -468,5 +469,91 @@ nav ul li a:hover{
 /* nav ul li:hover{
     background-color: #BF1B1B;
 } */
+.content_right{
+    flex-basis: 83%;
+    background-color: #eaeaea;
+}
+.box_tren{
+    background-color: #ffffff;
+    padding: 15px 20px;
+    margin: 20px 20px;
+    border-radius: 10px;
+}
+.box_duoi{
+    height: 600px;
+    background-color: #ffffff;
+    margin: 20px 20px;
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+.gach_duoiadmin{
+    border-bottom: solid 2px rgb(236, 193, 6);
+}
+.box_duoi h5{
+    font-size: 20px;
+    margin: 10px 5px;
+  
+}
+.box_duoi form{
+    margin-top: 30px;
+}
+/* .input_class{
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid blue;
+} */
+.box_duoi form label{
+    font-weight: 600;
+}
+input[type=text]{
+    width: 100%;  
+    padding: 12px 20px;  
+    margin: 8px 0;  
+    box-sizing: border-box;  
+    border: 2px solid #e0ad06;  
+    border-radius: 4px;
+}
+.chucnang input{
+    padding: 5px 10px;
+    border: none;
+    background-color: #e0ad06;
+    color: #ffffff;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+.chucnang input:hover{
+    padding: 5px 10px;
+    border: none;
+    background-color: #484848;
+    color: #ffffff;
+    border-radius: 5px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.form_con_box{
+    display: flex;
+    width: 100%;
+}
+.form_con {
+    flex-basis: 32.3333%;
+    margin: 0 10px;
+}
+.box_select{
+    width: 100%;  
+    padding: 12px 20px;  
+    margin: 8px 0;  
+    box-sizing: border-box;  
+    border: 2px solid #e0ad06;  
+    border-radius: 4px;
+}
+input[type=file]{
+    padding: 10px 20px;
+    color: #BF1B1B;
+}
+
 /* end qtri admin */
 
