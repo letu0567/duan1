@@ -554,6 +554,15 @@ input[type=file]{
     padding: 10px 20px;
     color: #BF1B1B;
 }
+.box_textarea{
+    width: 100%;  
+    padding: 5px ;  
+    margin: 8px 0;  
+    box-sizing: border-box;  
+    border: 2px solid #e0ad06;  
+    border-radius: 4px;
+}
+
 
 /* end qtri admin */
 

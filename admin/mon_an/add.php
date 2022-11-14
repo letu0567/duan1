@@ -38,7 +38,7 @@
                         
                         <div class="form_con">
                         <label class="form_text2" for="">Mô tả</label><br>
-                        <textarea name="description" cols="30" rows="10"></textarea>
+                        <textarea class="box_textarea" name="description" cols="30" rows="10"></textarea>
                         </div>
                         <div class="chucnang">
                             <input type="submit" value="Create">
