@@ -30,6 +30,7 @@
             </div>
             <nav>
                 <ul>
+                    <li><a href="../index.php">Trang chủ</a></li>
                     <li><a href="index.php?act=qltd">Quản lý thực đơn</a></li>
                     <li><a href="index.php?act=qlma">Quản lý món ăn</a></li>
                     <li><a href="index.php?act=qldm">Quản lý đặt món</a></li>
