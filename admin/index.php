@@ -11,6 +11,26 @@
             case 'qlma':
                 include "mon_an/add.php";
                 break;
+            case 'qldm':
+                include "dat_mon/list.php";
+                break;
+            case 'qldb':
+                include "dat_ban/list.php";
+                break;
+            case 'qlbl':
+                include "binh_luan/list.php";
+                break;
+            case 'qlkh':
+                include "tai_khoan/list.php";
+                break;
+            
+            case 'qldh':
+                include "don_hang/list.php";
+                break;
+            case 'qltk':
+                include "thong_ke/list.php";
+                break;
+                                
             
             default:
                 include "index.php";
