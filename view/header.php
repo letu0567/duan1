@@ -30,8 +30,8 @@
                 </div>
 
             <div class="mx-auto flex justify-between ">
-                <div class="logo  ">
-                    <img src="view/public/image/logo-01.svg" alt="" height="100px" width="200px" class="m-2">
+                <div class="logo">
+                    <a href="index.php"><img src="view/public/image/logo-01.svg" alt="" height="100px" width="200px" class="m-2"></a>
                 </div>
 
                 <div class="item mt-3 p-3 mr-4 p-5">
