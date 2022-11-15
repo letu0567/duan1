@@ -19,9 +19,16 @@
             <div class=" mau_header text-white ">
                 <div class="justify-between flex p-2 px-4 text-xs">
                     <p>Hotline:0334623400</p>
+                    
+                    <div class="dki_dnhap">
                     <p>Giờ hoạt động:Thứ Hai -Chủ Nhật | 10h30 - 22h30</p>
-                </div>
+                    <a class="dang_ki" href="index.php?act=dang_ky">Đăng kí</a>
+                    <a class="dang_nhap" href="index.php?act=dang_nhap">Đăng nhập</a>
             </div>
+                </div>
+                
+            </div>
+
 
             <div class="link">
                 <a href="https://www.facebook.com/letu0567/" target="_blank"><span><i class="fa-brands fa-facebook icon_mau"></i></span></a>
@@ -30,8 +37,8 @@
                 </div>
 
             <div class="mx-auto flex justify-between ">
-                <div class="logo  ">
-                    <img src="view/public/image/logo-01.svg" alt="" height="100px" width="200px" class="m-2">
+                <div class="logo">
+                    <a href="index.php"><img src="view/public/image/logo-01.svg" alt="" height="100px" width="200px" class="m-2"></a>
                 </div>
 
                 <div class="item mt-3 p-3 mr-4 p-5">

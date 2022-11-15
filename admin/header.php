@@ -41,7 +41,6 @@
                     <li><a href="index.php?act=qldb">Quản lý đặt bàn</a></li>
                     <li><a href="index.php?act=qlbl">Quản lý bình luận</a></li>
                     <li><a href="index.php?act=qlkh">Quản lý khách hàng</a></li>
-                    <li><a href="index.php?act=qldh">Quản lý đơn hàng</a></li>
                     <li><a href="index.php?act=qltk">Quản lý thông kê</a></li>
                 </ul>
             </nav>

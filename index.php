@@ -22,6 +22,12 @@
             case 'datban':
                 include "view/datban.php";
                 break;
+            case 'dang_nhap':
+                include "view/dangnhap.php";
+                break;
+            case 'dang_ky':
+                include "view/dangky.php";
+                break;
             
             default:
             include "./view/content.php";

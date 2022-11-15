@@ -126,7 +126,7 @@
                 </div>
             </div>
             <div class="text-center pt-10">
-                <button class="border-2 p-3 bg-green-800 text-white">KHÁM PHÁ</button>
+                <a href="index.php?act=td"><button class="border-2 p-3 bg-green-800 text-white">KHÁM PHÁ</button></a>
             </div>
         </div>
 
@@ -155,7 +155,7 @@
                 </div>
             </div>
             <div class="text-center pt-10 pb-10">
-                <button class="border-2 p-3 bg-green-800 text-white">XEM TẤT CẢ</button>
+                <a href="index.php?act=tt"><button class="border-2 p-3 bg-green-800 text-white">XEM TẤT CẢ</button></a>
             </div>
         </div>
         

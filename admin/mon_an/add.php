@@ -43,7 +43,7 @@
                         <div class="chucnang">
                             <input type="submit" value="Create">
                             <input type="reset" value="Reset">
-                            <a href="#"><input type="submit" value="Danh sách"></a>
+                            <a href="index.php?act=danh-sach_ma"><input type="button" value="Danh sách"></a>
                         </div>
                     </form>
                 </div>
