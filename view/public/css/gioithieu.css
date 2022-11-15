@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: huy;
+    src: url(../font/iCiel\ Rukola.otf);
+  }
+.container{
+    margin: 0 auto;
+}
+.header{
+    margin-bottom: 50px;
+}
+.banner{
+    background-image:url(../image/anh_gioi_thieu.jpg) ;
+    background-position: center center;
+    background-size: cover;
+    min-height: 519px;
+    position: relative;
+    
+    
+}
+.tieude_1 h1{
+    color: #FCB44E;
+    font-size: 64px;
+    letter-spacing: 4.2px;
+    font-family: huy;
+    
+}
+ .mau{
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: #012700;
+    opacity: 0.28;
+ }
+.tieude_1{
+   position: absolute;
+ top: 45%;
+ left: 29%;
+ 
+
+}
+.noidung{
+    max-width: 650px;
+    margin: 0 auto;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    font-size: 19px;
+    line-height: 1.4  ;
+    color: rgb(43, 41, 41);
+}
