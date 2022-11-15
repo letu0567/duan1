@@ -436,17 +436,37 @@ header{
 .thongtin_user_con{
     text-align: center;
 }
+/* .thong_tin_user_con2{
+    line-height: 35px;
+} */
 .thongtin_user a{
     text-decoration: none;
     color: #ffffff;
-    margin-left: 60px;
+    /* margin-left: 20px; */
 }
 .gach_duoi{
-    border-bottom: 1px solid white ;
+    padding-top: 15px;
+    border-bottom: 2px solid #E09709;
+}
+.thong_tin_user_con2{
+    width: 100%;
+    margin-left: 35px;
+    margin-top: 10px;
+}
+.thong_tin_user_con2 a{
+    padding: 5px 10px;
+    background-color: #BF1B1B;
+    font-size: 10px;
+}
+.dangxuat{
+    margin-left: 60px;
 }
 .fa-solid{
     position: relative;
     right: 10px;
+}
+nav{
+    margin-top: 10px;
 }
 nav ul li{
     display: block;

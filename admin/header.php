@@ -20,9 +20,13 @@
                 <h3>Lê Tú</h3>
                 <p>Chào mừng bạn trở lại</p>
                 </div>
+                <div class="thong_tin_user_con2">
+                <div class="quen_capnhat">
                 <a href="#">Quên mật khẩu</a>
                 <a href="#">Cập nhật tài khoản</a>
-                <a href="#">Đăng xuất</a>
+                </div>
+                <a href="#" class="dangxuat">Đăng xuất</a>
+                </div>
 
                 <div class="gach_duoi">
 
