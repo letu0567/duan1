@@ -77,10 +77,10 @@ font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
             text-align: center;
             letter-spacing: 4.2px;
         }
-        .menu a:hover{
+        #menu a:hover{
             color:rgba(39, 113, 75, 1) ;
         }
-        .menu {
+        #menu {
             font-family: ha2;
         }
 
