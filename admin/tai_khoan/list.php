@@ -16,6 +16,7 @@
                                     <th>Email</th>
                                     <th>Địa chỉ</th>
                                     <th>Số điện thoại</th>
+                                    <th>Vai trò</th>
                                     <th></th>
                                 </tr>
                             </thead>
@@ -28,6 +29,49 @@
                                     <td>letu0567@gmail.com</td>
                                     <td>Hà nội</td>
                                     <td>0366170434</td>
+                                    <td>Admin</td>
+                                    <td>
+                                        <a href="#">Sửa</a>
+                                        <a href="#">Xóa</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>02</td>
+                                    <td>Ảnh</td>
+                                    <td>Hoàng Huy</td>
+                                    <td>1234</td>
+                                    <td>huy0567@gmail.com</td>
+                                    <td>Hà nội</td>
+                                    <td>0366170434</td>
+                                    <td>Admin</td>
+                                    <td>
+                                        <a href="#">Sửa</a>
+                                        <a href="#">Xóa</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>03</td>
+                                    <td>Ảnh</td>
+                                    <td>Việt Hà</td>
+                                    <td>12345</td>
+                                    <td>letu0567@gmail.com</td>
+                                    <td>Hà nội</td>
+                                    <td>0366170434</td>
+                                    <td>Admin</td>
+                                    <td>
+                                        <a href="#">Sửa</a>
+                                        <a href="#">Xóa</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>04</td>
+                                    <td>Ảnh</td>
+                                    <td>Trọng Dũng</td>
+                                    <td>123456</td>
+                                    <td>dung0567@gmail.com</td>
+                                    <td>Hà nội</td>
+                                    <td>0366170434</td>
+                                    <td>Khách hàng</td>
                                     <td>
                                         <a href="#">Sửa</a>
                                         <a href="#">Xóa</a>

@@ -4,9 +4,15 @@
     if(isset($_GET["act"])){
         $act = $_GET["act"];
         switch ($act) {
+            // case 'index.php?act=qltd':
             case 'qltd':
-            case 'qltd':
+                include "thucdon/add.php";
+                break;
+            case 'danh-sach_td':
                 include "thucdon/list.php";
+                break;
+            case 'danh-sach_ma':
+                include "mon_an/list.php";
                 break;
             case 'qlma':
                 include "mon_an/add.php";
@@ -28,7 +34,7 @@
                 include "don_hang/list.php";
                 break;
             case 'qltk':
-                include "thong_ke/list.php";
+                include "thongke/list.php";
                 break;
                                 
             
