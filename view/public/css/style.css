@@ -395,7 +395,7 @@ body{
     display: flex;
     flex-direction: column;
     position: fixed;
-    right: 30px;
+    right: 20px;
     top: 350px;
 }
 .link a:hover{
@@ -410,7 +410,8 @@ body{
     position: relative;
     font-size: 20px;
     color: #FF5D00;
-    right: 9px;
+    left: 1px;
+    top: 5px;
 }
 /* end lien he */
 

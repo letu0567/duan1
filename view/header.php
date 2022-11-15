@@ -8,6 +8,7 @@
     <title>Nhà hàng hoa hồng đỏ</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="view/public/css/style2.css">
+    <link rel="stylesheet" href="view/public/css/style.css">
    
 
 </head>
@@ -21,6 +22,12 @@
                     <p>Giờ hoạt động:Thứ Hai -Chủ Nhật | 10h30 - 22h30</p>
                 </div>
             </div>
+
+            <div class="link">
+                <a href="https://www.facebook.com/letu0567/" target="_blank"><span><i class="fa-brands fa-facebook icon_mau"></i></span></a>
+                <a href="https://www.instagram.com/letu0567/" target="_blank"><span><i class="fa-brands fa-instagram icon_mau"></i></span></a>
+                <a href="tel:+84366170434" target="_blank"><span><i class="fa-solid fa-phone icon_mau2"></i></span></a>
+                </div>
 
             <div class="mx-auto flex justify-between ">
                 <div class="logo  ">
@@ -55,5 +62,8 @@
                         </div>
                     </div>
                 </div>
+
+                
+
             </div>
         </header>
