@@ -19,9 +19,16 @@
             <div class=" mau_header text-white ">
                 <div class="justify-between flex p-2 px-4 text-xs">
                     <p>Hotline:0334623400</p>
+                    
+                    <div class="dki_dnhap">
                     <p>Giờ hoạt động:Thứ Hai -Chủ Nhật | 10h30 - 22h30</p>
-                </div>
+                    <a class="dang_ki" href="index.php?act=dang_ky">Đăng kí</a>
+                    <a class="dang_nhap" href="index.php?act=dang_nhap">Đăng nhập</a>
             </div>
+                </div>
+                
+            </div>
+
 
             <div class="link">
                 <a href="https://www.facebook.com/letu0567/" target="_blank"><span><i class="fa-brands fa-facebook icon_mau"></i></span></a>

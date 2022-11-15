@@ -111,3 +111,17 @@ font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
         /* .text{
             font-family: 'Heebo', sans-serif;
         } */
+        .dang_ki{
+            border-right:1px solid grey ;
+            padding-right: 10px;
+        }
+        .dang_nhap{
+            margin-right: 0;
+            padding: 10px 10px;
+        }
+        .dki_dnhap{
+            line-height: 20px;
+        }
+        .dki_dnhap a:hover{
+            color: #40E384;
+        }
