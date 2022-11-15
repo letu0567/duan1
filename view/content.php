@@ -1,81 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nhà hàng hoa hồng đỏ</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="./public/css/style2.css">
-   
-
-</head>
-
-<body>
-    <div class="mx-auto">
-        <header class="mx-auto bg-white ">
-            <div class=" mau_header text-white ">
-                <div class="justify-between flex p-2 px-4 text-xs">
-                    <p>Hotline:0334623400</p>
-                    <p>Giờ hoạt động:Thứ Hai -Chủ Nhật | 10h30 - 22h30</p>
-                </div>
-            </div>
-
-            <div class="mx-auto flex justify-between ">
-                <div class="logo  ">
-                    <img src="./public/image/logo-01.svg" alt="" height="100px" width="200px" class="m-2">
-                </div>
-
-                <div class="item mt-3 p-3 mr-4 p-5">
-                    <div class="flex space-x-10">
-                        <ul class="flex space-x-5 font-bold " id="menu">
-                            <li><a href="">Trang chủ</a></li>
-                            <li><a href="">Giới thiệu</a></li>
-                            <li><a href="">Thực đơn</a></li>
-                            <li><a href="">Tin tức</a></li>
-                            <li><a href="">Liên hệ</a></li>
-
-                        </ul>
-                        <ul class="flex space-x-2">
-                            <li><a href=""
-                                    class="border border-1-white p-3 m-2 border-red-500 bg-red-800 text-white">Đặt
-                                    món</a></li>
-                            <li><a href=""
-                                    class="border border-1-white p-3 m-2 border-green-500 bg-green-800 text-white">Đặt
-                                    bàn</a></li>
-                        </ul>
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" class="w-6 h-6">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
-                            </svg>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-
-        <div class="slideshow-container max-width ">
+<div class="slideshow-container max-width ">
 
         
             <div class="mySlides fade">
 
-                <img src="./public/image/banner1-1.jpg" style="width:100%;height:700px;">
+                <img src="view/public/image/banner1-1.jpg" style="width:100%;height:700px;">
                 <div class="text1">Tinh Hoa Gà Việt</div>
             </div>
 
             <div class="mySlides fade">
 
-                <img src="./public/image/banner2.jpg" style="width:100%;height:700px;">
+                <img src="view/public/image/banner2.jpg" style="width:100%;height:700px;">
                 <div class="text1">Tinh Hoa Gà Việt</div>
             </div>
 
             <div class="mySlides fade">
 
-                <img src="./public/image/banner3.jpg" style="width:100%;height:700px;">
+                <img src="view/public/image/banner3.jpg" style="width:100%;height:700px;">
                 <div class="text1">Tinh Hoa Gà Việt</div>
             </div>
 
@@ -85,7 +25,7 @@
         <div class="pt-10 mx-auto max-w-7xl">
             <div class="grid flex grid-cols-2 space-x-20    ">
                 <div class=" space-y-5 mid-content">
-                    <img src="./public/image/about-1.svg" alt="" width="300px">
+                    <img src="view/public/image/about-1.svg" alt="" width="300px">
                     <p>
                         Là một người con đất Việt, cả tuổi thơ của tôi gắn liền với những tiếng gà ban sớm và lời dạy từ
                         tấm bé của mẹ: <b> “Phải có niềm tin, có dũng khí, nghị lực, phải Văn, Võ, Dũng, Nhân, Tín như
@@ -108,7 +48,7 @@
                     </p>
                 </div>
                 <div class="image ">
-                    <img src="./public/image/about2.jpg" alt="" width="500px">
+                    <img src="view/public/image/about2.jpg" alt="" width="500px">
                 </div>
             </div>
         </div>
@@ -120,28 +60,28 @@
             <div class="menu">
                 <div class="grid flex grid-cols-4 gap-8 pt-10">
                     <div class="">
-                        <img src="./public/image/2.jpg" alt="">
+                        <img src="view/public/image/2.jpg" alt="">
                         <div class="pt-5">
                             <h1 class="text-xl font-bold text-center">Gà nướng củi nguyên con</h1>
                             <p class="text-xl font-bold text-center">120.000</p>
                         </div>
                     </div>
                     <div class="">
-                        <img src="./public/image/2.jpg" alt="">
+                        <img src="view/public/image/2.jpg" alt="">
                         <div class="pt-5">
                             <h1 class="text-xl font-bold text-center">Gà nướng củi nguyên con</h1>
                             <p class="text-xl font-bold text-center">120.000</p>
                         </div>
                     </div>
                     <div class="">
-                        <img src="./public/image/2.jpg" alt="">
+                        <img src="view/public/image/2.jpg" alt="">
                         <div class="pt-5">
                             <h1 class="text-xl font-bold text-center">Gà nướng củi nguyên con</h1>
                             <p class="text-xl font-bold text-center">120.000</p>
                         </div>
                     </div>
                     <div class="">
-                        <img src="./public/image/2.jpg" alt="">
+                        <img src="view/public/image/2.jpg" alt="">
                         <div class="pt-5">
                             <h1 class="text-xl font-bold text-center">Gà nướng củi nguyên con</h1>
                             <p class="text-xl font-bold text-center">120.000</p>
@@ -153,28 +93,28 @@
                 </div>
                 <div class="grid flex grid-cols-4 gap-8 pt-10">
                     <div class="">
-                        <img src="./public/image/2.jpg" alt="">
+                        <img src="view/public/image/2.jpg" alt="">
                         <div class="pt-5">
                             <h1 class="text-xl font-bold text-center">Gà nướng củi nguyên con</h1>
                             <p class="text-xl font-bold text-center">120.000</p>
                         </div>
                     </div>
                     <div class="">
-                        <img src="./public/image/2.jpg" alt="">
+                        <img src="view/public/image/2.jpg" alt="">
                         <div class="pt-5">
                             <h1 class="text-xl font-bold text-center">Gà nướng củi nguyên con</h1>
                             <p class="text-xl font-bold text-center">120.000</p>
                         </div>
                     </div>
                     <div class="">
-                        <img src="./public/image/2.jpg" alt="">
+                        <img src="view/public/image/2.jpg" alt="">
                         <div class="pt-5">
                             <h1 class="text-xl font-bold text-center">Gà nướng củi nguyên con</h1>
                             <p class="text-xl font-bold text-center">120.000</p>
                         </div>
                     </div>
                     <div class="">
-                        <img src="./public/image/2.jpg" alt="">
+                        <img src="view/public/image/2.jpg" alt="">
                         <div class="pt-5">
                             <h1 class="text-xl font-bold text-center">Gà nướng củi nguyên con</h1>
                             <p class="text-xl font-bold text-center">120.000</p>
@@ -196,19 +136,19 @@
             </div>
             <div class="grid flex grid-cols-3 gap-8 pt-10 max-w-7xl text-center mx-auto">
                 <div class="space-y-5">
-                    <img src="./public/image/avatar-768x433.jpg" alt="">
+                    <img src="view/public/image/avatar-768x433.jpg" alt="">
                     <h2 class="font-bold text-xl">Trọn bộ từ điển chọn món ngon nhà ZeeZee ChickenHouse</h2>
                     <p>Món ngon tại Zee Zee Chicken House là sự kết hợp thú vị và mới lạ của nguyên liệu truyền thống
                         Việt Nam cùng phương pháp</p>
                 </div>
                 <div class="space-y-5">
-                    <img src="./public/image/avatar-768x433.jpg" alt="">
+                    <img src="view/public/image/avatar-768x433.jpg" alt="">
                     <h2 class="font-bold text-xl">Trọn bộ từ điển chọn món ngon nhà ZeeZee ChickenHouse</h2>
                     <p>Món ngon tại Zee Zee Chicken House là sự kết hợp thú vị và mới lạ của nguyên liệu truyền thống
                         Việt Nam cùng phương pháp</p>
                 </div>
                 <div class="space-y-5">
-                    <img src="./public/image/avatar-768x433.jpg" alt="">
+                    <img src="view/public/image/avatar-768x433.jpg" alt="">
                     <h2 class="font-bold text-xl">Trọn bộ từ điển chọn món ngon nhà ZeeZee ChickenHouse</h2>
                     <p>Món ngon tại Zee Zee Chicken House là sự kết hợp thú vị và mới lạ của nguyên liệu truyền thống
                         Việt Nam cùng phương pháp</p>
@@ -221,48 +161,5 @@
         
         <div class="anh_footer">
             <div class="anh_footer2"></div>
-            <img src="./public/image/footer.jpg" alt=""  width="100%">
+            <img src="view/public/image/footer.jpg" alt=""  width="100%">
         </div>
-        
-        <!-- footer -->
-        <div class="footer pt-20 mau_footer">
-            <div class="text-center">
-                <p class="text-4xl text-white text2">ZeeZee Chicken House - Tinh hoa Gà Việt</p>
-            </div>
-            <div class="justify-between flex pt-10 text-white text-center pb-20">
-                <p class="pl-10">54 Lý Thường Kiệt, P. Trần Hưng Đạo<br> <span>
-                        Q. Hoàn Kiếm, Hà Nội</span></p>
-                <p>Hotline <br>
-                    <span>033 561 5454</span>
-                </p>
-                <p class="pr-10">Giờ hoạt động
-                    Thứ Hai – Chủ nhật: 10:30 – 22:00</p>
-                   
-            </div>
-            <hr>
-            <div class="text-center text-white p-2"><p>zeezeechickenhouse @ 2022 CREATED BY carrot solution.</p></div>
-        </div>
-    </div>
-
-
-
-
-    <script>
-        let slideIndex = 0;
-        showSlides();
-
-        function showSlides() {
-            let i;
-            let slides = document.getElementsByClassName("mySlides");
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) { slideIndex = 1 }
-            slides[slideIndex - 1].style.display = "block";
-            setTimeout(showSlides, 5000); // Change image every 2 seconds
-        }
-    </script>
-</body>
-
-</html>

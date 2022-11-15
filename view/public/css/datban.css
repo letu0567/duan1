@@ -27,7 +27,7 @@
       
 }
 
-.text1{
+.text12{
     margin-top: 25px;
     line-height: 1.5;
     font-size: 17px;
@@ -37,12 +37,17 @@
     margin-right: 50px;
    
 }
+.td1{
+    font-size: 25px;
+    font-weight: 600;
+}
 .td{
     color: rgb(189, 49, 49);
 }
 .td2{
-   
-    margin-right: 120px;
+    font-weight: 600;
+   font-size: 25px;
+    margin-right: 100px;
 }
 .sukien{
     margin-top: 25px;
