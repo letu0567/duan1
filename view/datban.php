@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="view/public/css/datban.css">
 </head>
 <body>
-    <div class="container">
+    <!-- <div class="container"> -->
 
         <div class="boxs">
             <div class="box">
@@ -81,6 +81,6 @@
         <!-- div container -->
         
         <footer></footer>
-    </div>
+        <!-- </div> -->
 </body>
 </html>
