@@ -53,7 +53,7 @@
                         </ul>
                         <ul class="flex space-x-2">
                             <li><a href="index.php?act=datmon"
-                                    class="border border-1-white p-3 m-2 border-red-500 bg-red-800 text-white" target="link">Đặt
+                                    class="border border-1-white p-3 m-2 border-red-500 bg-red-800 text-white" >Đặt
                                     món</a></li>
                             <li><a href="index.php?act=datban"
                                     class="border border-1-white p-3 m-2 border-green-500 bg-green-800 text-white">Đặt
