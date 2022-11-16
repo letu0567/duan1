@@ -417,8 +417,10 @@ body{
 
 /* star qtri admin */
 .container_admin{
-    width: 100%;
-    height: 722px;
+   width: 100%;
+ height: 722px;
+   
+
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .content_admin{

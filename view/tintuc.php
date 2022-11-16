@@ -9,11 +9,11 @@
     <link rel="stylesheet" href="view/public/css/style2.css">
 </head>
 <body>
-<div class="khuyenmai max-w-8xl mx-auto pt-20 mt-20 mb-30">
+<div class="khuyenmai max-w-8xl mx-auto  mt-10 mb-30 mb-10">
             <div class="text-center text-4xl">
                 <h1>Tin Tức Khuyến Mãi</h1>
             </div>
-            <div class="grid flex grid-cols-3 gap-8 pt-10 max-w-7xl text-center mx-auto">
+            <div class="grid flex grid-cols-3 gap-10 pt-10 max-w-7xl text-center mx-auto">
                 <div class="space-y-5">
                     <img src="view/public/image/avatar-768x433.jpg" alt="">
                     <h2 class="font-bold text-xl">Trọn bộ từ điển chọn món ngon nhà ZeeZee ChickenHouse</h2>

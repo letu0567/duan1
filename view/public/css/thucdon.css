@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 @font-face {
   font-family: huy;
   src: url(../font/iCiel\ Rukola.otf);
@@ -317,4 +318,20 @@
   }
   .nuocngot .b{
     padding-bottom: 3px;
+  }
+  .img1{
+    width: 248px;
+    height: 166px;
+  }
+  .img2{
+    width:397px ;
+    height:550px;
+  }
+  .img3{
+    width: 285.313px;
+    height: 210.795px;
+  }
+  .img4{
+    width: 129px;
+    height: 129px;
   }

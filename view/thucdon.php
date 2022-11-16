@@ -7,13 +7,14 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="view/public/css/thucdon.css">
+    
 </head>
 <body>
-    <div class="container">
+    <div class="container  mx-auto">
 
         <div class="slide-show">
          
-            <div class="slideshow-container">
+            <div class="slideshow-container pt-10">
 
                 <!-- Full-width images with number and caption text -->
                 <div class="mySlides fade">
@@ -91,7 +92,7 @@
              <div class="mons">
               <div class="mon1">
                 <div class="anh1">
-                  <img src="view/public/image/monkhaivi_1.jpg" alt="" width="129px" height="129px">
+                  <img src="view/public/image/monkhaivi_1.jpg" alt="" class="img4">
                 </div>
                 <div class="mota1">
                   <h4 class="a "><a href="">Salat Đà Lạt sốt chanh leo</a></h4>
@@ -102,7 +103,7 @@
               </div>
               <div class="mon1">
                 <div class="anh1">
-                  <img src="view/public/image/monkhaivi_2.jpg" alt="" width="129px" height="129px">
+                  <img src="view/public/image/monkhaivi_2.jpg" alt="" class="img4">
                 </div>
                 <div class="mota1">
                   <h4 class="a"><a href="">Salat cá ngừ đại dương</a></h4>
@@ -115,7 +116,7 @@
              <div class="mons">
               <div class="mon1">
                 <div class="anh1">
-                  <img src="view/public/image/monkhaivi_3.jpg" alt="" width="129px" height="129px">
+                  <img src="view/public/image/monkhaivi_3.jpg" alt="" class="img4">
                 </div>
                 <div class="mota1">
                   <h4 class="a "><a href="">Gỏi cá lăng trộn kiểu Thái</a></h4>
@@ -126,7 +127,7 @@
               </div>
               <div class="mon1">
                 <div class="anh1">
-                  <img src="view/public/image/monkhaivi_4.jpg" alt="" width="129px" height="129px">
+                  <img src="view/public/image/monkhaivi_4.jpg" alt="" class="img4">
                 </div>
                 <div class="mota1">
                   <h4 class="a"><a href="">Gỏi cá lăng xoài cát </a></h4>
@@ -139,7 +140,7 @@
              <div class="mons">
               <div class="mon1">
                 <div class="anh1">
-                  <img src="view/public/image/monkhaivi_5.jpg" alt="" width="129px" height="129px">
+                  <img src="view/public/image/monkhaivi_5.jpg" alt="" class="img4">
                 </div>
                 <div class="mota1">
                   <h4 class="a "><a href="">Bánh cá Đảo Chiều</a></h4>
@@ -150,7 +151,7 @@
               </div>
               <div class="mon1">
                 <div class="anh1">
-                  <img src="view/public/image/monkhaivi_1.jpg" alt="" width="129px" height="129px">
+                  <img src="view/public/image/monkhaivi_1.jpg" alt="" class="img4">
                 </div>
                 <div class="mota1">
                   <h4 class="a"><a href="">Khoai tây chiên</a></h4>
@@ -167,25 +168,25 @@
            </div>
            <div class="mon2">
             <div class="monga_2">
-              <img src="view/public/image/monga_1.jpg" alt="" width="285.313" height="210.795">
+              <img src="view/public/image/monga_1.jpg" alt="" class="img3">
               <h4 class="td2 b"><a href="">Gà nướng củi nguyên con</a></h4>
               <p class=" gia b ">580.000đ</p>
               <button class="btn" >ĐẶT MÓN</button>
             </div>
             <div class="monga_2">
-              <img src="view/public/image/monga_2.jpg" alt="" width="285.313" height="210.795">
+              <img src="view/public/image/monga_2.jpg" alt="" class="img3">
               <h4 class="td2 b"><a href="">Canh gà ác hầm</a></h4>
               <p class=" gia b ">195.000đ</p>
               <button class="btn" >ĐẶT MÓN</button>
             </div>
             <div class="monga_2">
-              <img src="view/public/image/monga_3.jpg" alt="" width="285.313" height="210.795">
+              <img src="view/public/image/monga_3.jpg" alt="" class="img3">
               <h4 class="td2 b"><a href="">Mix tim gà, má gà nướng củi</a></h4>
               <p class=" gia b ">50.000đ</p>
               <button class="btn" >ĐẶT MÓN</button>
             </div>
             <div class="monga_2">
-              <img src="view/public/image/monga_4.jpg" alt="" width="285.313" height="210.795">
+              <img src="view/public/image/monga_4.jpg" alt="" class="img3">
               <h4 class="td2 b"><a href="">Cháo gà hạt kê nấm</a></h4>
               <p class=" gia b ">79.000đ</p>
               <button class="btn" >ĐẶT MÓN</button>
@@ -193,25 +194,25 @@
            </div>
            <div class="mon2">
             <div class="monga_2">
-              <img src="view/public/image/monga_5.jpg" alt="" width="285.313" height="210.795">
+              <img src="view/public/image/monga_5.jpg" alt="" class="img3">
               <h4 class="td2 b"><a href="">Gà cà ry kiểu Thái</a></h4>
               <p class=" gia b ">119.000đ</p>
               <button class="btn" >ĐẶT MÓN</button>
             </div>
             <div class="monga_2">
-              <img src="view/public/image/monga_6.jpg" alt="" width="285.313" height="210.795">
+              <img src="view/public/image/monga_6.jpg" alt="" class="img3">
               <h4 class="td2 b"><a href="">Cánh gà sốt me</a></h4>
               <p class=" gia b ">85.000đ</p>
               <button class="btn" >ĐẶT MÓN</button>
             </div>
             <div class="monga_2">
-              <img src="view/public/image/monga_7.jpg" alt="" width="285.313" height="210.795">
+              <img src="view/public/image/monga_7.jpg" alt="" class="img3">
               <h4 class="td2 b"><a href="">Mỳ Ý gà sốt kem nấm</a></h4>
               <p class=" gia b ">169.000đ</p>
               <button class="btn" >ĐẶT MÓN</button>
             </div>
             <div class="monga_2">
-              <img src="view/public/image/monga_8.jpg" alt="" width="285.313" height="210.795">
+              <img src="view/public/image/monga_8.jpg" alt="" class="img3">
               <h4 class="td2 b"><a href="">Salad Caesar gà nướng</a></h4>
               <p class=" gia b ">129.000đ</p>
               <button class="btn " >ĐẶT MÓN</button>
@@ -224,25 +225,25 @@
            </div>
            <div class="mon3">
             <div class="monga_3">
-              <img src="view/public/image/rau-1.jpg" alt="" width="285.313" height="210.795">
+              <img src="view/public/image/rau-1.jpg" alt="" class="img3">
               <h4 class="td2 b"><a href="">Củ quả luộc</a></h4>
               <p class=" gia b ">59.000đ</p>
               <button class="btn btn1" >ĐẶT MÓN</button>
             </div>
             <div class="monga_3">
-              <img src="view/public/image/rau-2.jpg" alt="" width="285.313" height="210.795">
+              <img src="view/public/image/rau-2.jpg" alt="" class="img3">
               <h4 class="td2 b"><a href="">Rau muống xào tỏi</a></h4>
               <p class=" gia b ">45.000đ</p>
               <button class="btn btn1 " >ĐẶT MÓN</button>
             </div>
             <div class="monga_3">
-              <img src="view/public/image/rau-3.png" alt="" width="285.313" height="210.795">
+              <img src="view/public/image/rau-3.png" alt="" class="img3">
               <h4 class="td2 b"><a href="">Rau muống luộc</a></h4>
               <p class=" gia b ">45.000đ</p>
               <button class="btn btn1" >ĐẶT MÓN</button>
             </div>
             <div class="monga_3">
-              <img src="view/public/image/rau-4.jpg" alt="" width="285.313" height="210.795">
+              <img src="view/public/image/rau-4.jpg" alt="" class="img3">
               <h4 class="td2 b"><a href="">Cải ngọt xào dầu hào</a></h4>
               <p class=" gia b ">45.000đ</p>
               <button class="btn btn1" >ĐẶT MÓN</button>
@@ -250,25 +251,25 @@
            </div>
            <div class="mon2">
             <div class="monga_3">
-              <img src="view/public/image/rau-5.jpg" alt="" width="285.313" height="210.795">
+              <img src="view/public/image/rau-5.jpg" alt="" class="img3">
               <h4 class="td2 b"><a href="">Cải chíp sốt nấm</a></h4>
               <p class=" gia b ">45.000đ</p>
               <button class="btn btn1 " >ĐẶT MÓN</button>
             </div>
             <div class="monga_3">
-              <img src="view/public/image/rau-6.jpg" alt="" width="285.313" height="210.795">
+              <img src="view/public/image/rau-6.jpg" alt="" class="img3">
               <h4 class="td2 b"><a href="">Canh chua cá lăng</a></h4>
               <p class=" gia b ">45.000đ</p>
               <button class="btn btn1" >ĐẶT MÓN</button>
             </div>
             <div class="monga_3">
-              <img src="view/public/image/rau-7.jpg" alt="" width="285.313" height="210.795">
+              <img src="view/public/image/rau-7.jpg" alt="" class="img3">
               <h4 class="td2 b"><a href="">Cá lăng kho tộ</a></h4>
               <p class=" gia b ">160.000đ</p>
               <button class="btn btn1" >ĐẶT MÓN</button>
             </div>
             <div class="monga_3">
-              <img src="view/public/image/rau-8.jpg" alt="" width="285.313" height="210.795">
+              <img src="view/public/image/rau-8.jpg" alt="" class="img3">
               <h4 class="td2 b"><a href="">Cơm trắng</a></h4>
               <p class=" gia b ">40.000đ</p>
               <button class="btn btn1" >ĐẶT MÓN</button>
@@ -281,25 +282,25 @@
            </div>
            <div class="douong">
               <div class="bia">
-                <img src="view/public/image/bia.jpg" alt="" width="397px" height="550px">
+                <img src="view/public/image/bia.jpg" alt="" class="img2">
                
               </div>
               <div class="nuocs">
                 <div class="nuoc ">
                   <div class="nuocngot">
-                    <img src="view/public/image/nuoc1.jpg" alt="" width="248px" height="166.688px">
+                    <img src="view/public/image/nuoc1.jpg" alt="" class="img1">
                     <h4 class="td2 b"><a href="">Nước cam lon</a></h4>
                      <p class=" gia b ">25.000đ</p>
                       <button class="btn btn1" >ĐẶT MÓN</button> 
                   </div>
                   <div class="nuocngot">
-                    <img src="view/public/image/nuoc2.jpg" alt="" width="248px" height="166.688px">
+                    <img src="view/public/image/nuoc2.jpg" alt="" class="img1">
                     <h4 class="td2 b"><a href="">Nước suối</a></h4>
                      <p class=" gia b ">15.000đ</p>
                       <button class="btn btn1" >ĐẶT MÓN</button> 
                   </div>
                   <div class="nuocngot">
-                    <img src="view/public/image/nuoc3.jpg" alt="" width="248px" height="166.688px">
+                    <img src="view/public/image/nuoc3.jpg" alt=""  class="img1">
                     <h4 class="td2 b"><a href="">Bia Tiger</a></h4>
                      <p class=" gia b ">25.000đ</p>
                       <button class="btn btn1" >ĐẶT MÓN</button> 
@@ -307,19 +308,19 @@
                 </div>
                 <div class="nuoc">
                   <div class="nuocngot">
-                    <img src="view/public/image/nuoc4.jpg" alt="" width="248px" height="166.688px">
+                    <img src="view/public/image/nuoc4.jpg" alt="" class="img1">
                     <h4 class="td2 b"><a href="">Bia trúc bạch</a></h4>
                      <p class=" gia b ">25.000đ</p>
                       <button class="btn btn1" >ĐẶT MÓN</button> 
                   </div>
                   <div class="nuocngot">
-                    <img src="view/public/image/nuoc5.jpg" alt="" width="248px" height="166.688px">
+                    <img src="view/public/image/nuoc5.jpg" alt="" class="img1">
                     <h4 class="td2 b"><a href="">Bia Heiniken</a></h4>
                      <p class=" gia b ">25.000đ</p>
                       <button class="btn btn1" >ĐẶT MÓN</button> 
                   </div>
                   <div class="nuocngot">
-                    <img src="view/public/image/nuoc10.jpg" alt="" width="248px" height="166.688px">
+                    <img src="view/public/image/nuoc10.jpg" alt="" class="img1">
                     <h4 class="td2 b"><a href="">Pepsi</a></h4>
                      <p class=" gia b ">25.000đ</p>
                       <button class="btn btn1" >ĐẶT MÓN</button> 

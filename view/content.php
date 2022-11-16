@@ -48,7 +48,7 @@
                     </p>
                 </div>
                 <div class="image ">
-                    <img src="view/public/image/about2.jpg" alt="" width="500px">
+                    <img src="view/public/image/about2.jpg" alt="" width="500px" >
                 </div>
             </div>
         </div>
@@ -62,28 +62,28 @@
                     <div class="">
                         <img src="view/public/image/2.jpg" alt="">
                         <div class="pt-5">
-                            <h1 class="text-xl font-bold text-center">Gà nướng củi nguyên con</h1>
+                            <h1 class="text-xl font-bold text-center hover:text-red-900">Gà nướng củi nguyên con</h1>
                             <p class="text-xl font-bold text-center">120.000</p>
                         </div>
                     </div>
                     <div class="">
                         <img src="view/public/image/2.jpg" alt="">
                         <div class="pt-5">
-                            <h1 class="text-xl font-bold text-center">Gà nướng củi nguyên con</h1>
+                            <h1 class="text-xl font-bold text-center hover:text-red-900">Gà nướng củi nguyên con</h1>
                             <p class="text-xl font-bold text-center">120.000</p>
                         </div>
                     </div>
                     <div class="">
                         <img src="view/public/image/2.jpg" alt="">
                         <div class="pt-5">
-                            <h1 class="text-xl font-bold text-center">Gà nướng củi nguyên con</h1>
+                            <h1 class="text-xl font-bold text-center hover:text-red-900">Gà nướng củi nguyên con</h1>
                             <p class="text-xl font-bold text-center">120.000</p>
                         </div>
                     </div>
                     <div class="">
                         <img src="view/public/image/2.jpg" alt="">
                         <div class="pt-5">
-                            <h1 class="text-xl font-bold text-center">Gà nướng củi nguyên con</h1>
+                            <h1 class="text-xl font-bold text-center hover:text-red-900">Gà nướng củi nguyên con</h1>
                             <p class="text-xl font-bold text-center">120.000</p>
                         </div>
                     </div>
@@ -95,28 +95,28 @@
                     <div class="">
                         <img src="view/public/image/2.jpg" alt="">
                         <div class="pt-5">
-                            <h1 class="text-xl font-bold text-center">Gà nướng củi nguyên con</h1>
+                            <h1 class="text-xl font-bold text-center hover:text-red-900">Gà nướng củi nguyên con</h1>
                             <p class="text-xl font-bold text-center">120.000</p>
                         </div>
                     </div>
                     <div class="">
                         <img src="view/public/image/2.jpg" alt="">
                         <div class="pt-5">
-                            <h1 class="text-xl font-bold text-center">Gà nướng củi nguyên con</h1>
+                            <h1 class="text-xl font-bold text-center hover:text-red-900">Gà nướng củi nguyên con</h1>
                             <p class="text-xl font-bold text-center">120.000</p>
                         </div>
                     </div>
                     <div class="">
                         <img src="view/public/image/2.jpg" alt="">
                         <div class="pt-5">
-                            <h1 class="text-xl font-bold text-center">Gà nướng củi nguyên con</h1>
+                            <h1 class="text-xl font-bold text-center hover:text-red-900">Gà nướng củi nguyên con</h1>
                             <p class="text-xl font-bold text-center">120.000</p>
                         </div>
                     </div>
                     <div class="">
                         <img src="view/public/image/2.jpg" alt="">
                         <div class="pt-5">
-                            <h1 class="text-xl font-bold text-center">Gà nướng củi nguyên con</h1>
+                            <h1 class="text-xl font-bold text-center hover:text-red-900">Gà nướng củi nguyên con</h1>
                             <p class="text-xl font-bold text-center">120.000</p>
                         </div>
                     </div>
@@ -137,19 +137,19 @@
             <div class="grid flex grid-cols-3 gap-8 pt-10 max-w-7xl text-center mx-auto">
                 <div class="space-y-5">
                     <img src="view/public/image/avatar-768x433.jpg" alt="">
-                    <h2 class="font-bold text-xl">Trọn bộ từ điển chọn món ngon nhà ZeeZee ChickenHouse</h2>
+                    <h2 class="font-bold text-xl hover:text-red-900">Trọn bộ từ điển chọn món ngon nhà ZeeZee ChickenHouse</h2>
                     <p>Món ngon tại Zee Zee Chicken House là sự kết hợp thú vị và mới lạ của nguyên liệu truyền thống
                         Việt Nam cùng phương pháp</p>
                 </div>
                 <div class="space-y-5">
                     <img src="view/public/image/avatar-768x433.jpg" alt="">
-                    <h2 class="font-bold text-xl">Trọn bộ từ điển chọn món ngon nhà ZeeZee ChickenHouse</h2>
+                    <h2 class="font-bold text-xl hover:text-red-900">Trọn bộ từ điển chọn món ngon nhà ZeeZee ChickenHouse</h2>
                     <p>Món ngon tại Zee Zee Chicken House là sự kết hợp thú vị và mới lạ của nguyên liệu truyền thống
                         Việt Nam cùng phương pháp</p>
                 </div>
                 <div class="space-y-5">
                     <img src="view/public/image/avatar-768x433.jpg" alt="">
-                    <h2 class="font-bold text-xl">Trọn bộ từ điển chọn món ngon nhà ZeeZee ChickenHouse</h2>
+                    <h2 class="font-bold text-xl hover:text-red-900">Trọn bộ từ điển chọn món ngon nhà ZeeZee ChickenHouse</h2>
                     <p>Món ngon tại Zee Zee Chicken House là sự kết hợp thú vị và mới lạ của nguyên liệu truyền thống
                         Việt Nam cùng phương pháp</p>
                 </div>
