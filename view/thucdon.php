@@ -10,7 +10,7 @@
     
 </head>
 <body>
-    <div class="container  mx-auto">
+    <div class="mx-auto">
 
         <div class="slide-show">
          

@@ -187,7 +187,7 @@ body{
 #btn-close{
     position: relative;
     top: -90px;
-    left: 553px;
+    left: 565px;
     font-size: 20px;
     border: none;
     background-color: #ffffff;
@@ -210,14 +210,14 @@ body{
 }
 .box_right_bottom .tru{
     position: absolute;
-    top: 553px;
-    left: 469px;
+    top: 560px;
+    left: 477px;
     cursor: pointer;
 }
 .box_right_bottom .cong{
     position: absolute;
-    top: 553px;
-    left: 562px;
+    top: 560px;
+    left: 570px;
     cursor: pointer;
 }
 .box_right_bottom button{
