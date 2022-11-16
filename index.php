@@ -23,10 +23,13 @@
                 include "view/datban.php";
                 break;
             case 'dang_nhap':
-                include "view/dangnhap.php";
+                include "view/tai_khoan/dangnhap.php";
                 break;
             case 'dang_ky':
-                include "view/dangky.php";
+                include "view/tai_khoan/dangky.php";
+                break;
+            case 'quen_mk':
+                include "view/tai_khoan/quen_mk.php";
                 break;
             
             default:

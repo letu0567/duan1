@@ -10,15 +10,12 @@
 <body>
 <div class="wrapper">
   <form class="login">
-    <p class="title">Log in</p>
-    <input type="text" placeholder="Username" autofocus/>
+    <p class="title">Quên Mật Khẩu</p>
+    <input type="email" placeholder="Nhập email đã đăng ký" autofocus/>
     <i class="fa fa-user"></i>
-    <input type="password" placeholder="Password" />
-    <i class="fa fa-key"></i>
-    <a href="#">Forgot your password?</a>
     <button>
-      <i class="spinner"></i>
-      <span class="state">Log in</span>
+      <!-- <i class="spinner"></i> -->
+      <input type="submit" value="Gửi">
     </button>
   </form>
   <footer><a target="blank" href="https://www.facebook.com/letu0567/">fa.me</a></footer>
