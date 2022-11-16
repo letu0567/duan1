@@ -9,8 +9,6 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="view/public/css/style2.css">
     <link rel="stylesheet" href="view/public/css/style.css">
-   
-
 </head>
 
 <body>
