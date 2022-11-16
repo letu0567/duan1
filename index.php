@@ -16,9 +16,9 @@
             case 'lh':
                 include "view/lienhe.php";
                 break;
-            // case 'datmon':
-            //     include "view/datmon.php";
-            //     break;
+            case 'datmon':
+                include "view/datmon.php";
+                break;
             case 'datban':
                 include "view/datban.php";
                 break;
@@ -41,4 +41,17 @@
     }
     include "./view/footer.php";
 
+    
+//     if(isset($_GET["act2"])){
+//         $act2 = $_GET["act2"];
+//     switch ($act2) {
+//         case 'datmon':
+//                 include "view/datmon.php";
+//                 break;
+        
+//         default:
+            
+//             break;
+//     }
+// }
 ?>

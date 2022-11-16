@@ -1,22 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Đặt món</title>
-    <link rel="stylesheet" href="view/public/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    
-    </head>
-<body>
-    <div class="container">
+
+    <div class="container_datmon">
         
         <div class="content_dau">
-            <img class="image_sp" src="view/public/image/1667290058709_blob.jpeg" alt="" width="526px" height="227px">
-            <img class="image_sp_con" src="https://image.foodbook.vn/upload/20221101/1667290058709_blob.jpeg" width="80px" height="80px" alt="">
+            <img class="image_datmon" src="view/public/image/1667290058709_blob.jpeg" alt="" width="526px" height="227px">
+            <img class="image_datmon_con" src="https://image.foodbook.vn/upload/20221101/1667290058709_blob.jpeg" alt="">
             <div class="thongtin">
                 <p>Danh sách cửa hàng >> <span class="mau">Chi tiết cửa hàng</span></p>
                 <h1>ZEE ZEE CHICKEN HOUSE</h1>
@@ -47,7 +34,7 @@
                 </button>
             </div>
         </div>
-        <div class="content">
+        <div class="content_datmon">
             <!-- star modal -->
             <div id="modal_container" class="">
             <div id="modal_sp">
@@ -182,27 +169,5 @@
             <p class="text_giohang">Không có món ăn trong giỏ hàng</p>
         </div>
     </div>
-    <script>
-        const open_title = document.getElementById('title_sp_ct');
-        const open = document.getElementById('san_pham_con');
-        const btn_close = document.getElementById('btn-close');
-        const modal_container = document.getElementById('modal_container');
-
-        open_title.addEventListener('click',()=>{
-            // add class .show
-            modal_container.classList.add('show');
-            // alert("hihi");
-        });
-        open.addEventListener('click',()=>{
-            // add class .show
-            modal_container.classList.add('show');
-            // alert("hihi");
-        });
-        btn_close.addEventListener('click',()=>{
-            // add class .show
-            modal_container.classList.remove('show');
-            // alert("hihi");
-        });
-    </script>
-</body>
-</html>
+    </div>
+    
