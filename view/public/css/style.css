@@ -466,6 +466,10 @@ body{
     margin-left: 35px;
     margin-top: 10px;
 }
+.quen_capnhat{
+    text-align: center;
+    margin-right: 70px;
+}
 .thong_tin_user_con2 a{
     padding: 5px 10px;
     background-color: #BF1B1B;
