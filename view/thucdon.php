@@ -11,7 +11,10 @@
 </head>
 <body>
     <div class="mx-auto">
-
+    <div class="danhmuc_monan">
+                    <h2>Thực đơn ZeeZee Chicken House</h2>
+                
+          </div>
         <div class="slide-show">
          
             <div class="slideshow-container pt-10">
@@ -81,9 +84,33 @@
         </div>
         
         <div class="body">
-          <div class="danhmuc_monan">
-                    <h2>Thực đơn ZeeZee Chicken House</h2>
-                
+         
+          <div class="danh_muc">
+            <div class="td_danhmuc">
+              <h1>Danh Mục Món Ăn</h1>
+            </div>
+             <div class="all_dm">
+              <div class="danh_muc1">
+              <i class="fa-solid fa-burger fa-solid1"></i>
+                    <p><a href=""> MÓN KHAI VỊ</a></p>
+              </div>
+              <div class="danh_muc1">
+              <i class="fa-solid fa-drumstick-bite fa-solid1"></i>
+                    <p><a href=""> MÓN GÀ</a></p>
+             </div>
+              <div class="danh_muc1">
+                    <i class="fa-solid fa-leaf fa-solid1"></i>
+                    <p><a href=""> MÓN RAU</a></p>
+              </div>
+              <div class="danh_muc1">
+              <i class="fa-solid fa-wine-bottle fa-solid1"></i>
+                    <p><a href=""> ĐỒ UỐNG</a></p>
+              </div>
+              <div class="danh_muc1">
+              <i class="fa-solid fa-bread-slice fa-solid1"></i>
+                    <p><a href=""> MÓN KHÁC</a></p>
+              </div>
+             </div>
           </div>
           <div class="mon_khai_vi">
             <div class="td_mon">
