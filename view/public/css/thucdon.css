@@ -114,7 +114,6 @@
     
     margin-top: 20px;
     
-    
   }
   .danhmuc_monan h2{
     
@@ -124,15 +123,63 @@
     font-size: 40px;
     letter-spacing: 2.1px;
     text-align: center;
+    font-weight: bold;
   }
-  
+  .td_danhmuc h1{
+    text-align: center;
+    font-size: 40px;
+    font-family: huy;
+    color: #6d6c6c;
+  }
+  .danh_muc{
+   margin-top: 20px;
+   margin-left: auto;
+   margin-right: auto;
+   max-width: 1163px;
+    background-color: #f7983fcc;
+    padding: 15px 0px;
+    border-radius: 20px;
+    color: #ffffff;
+  }
+  .all_dm{
+    margin-top: 15px;
+   
+    display: flex;
+    justify-content: center;
+    
+   
+    align-items: center;
+  }
+  .danh_muc1{
+    margin: 0px 35px;
+    /* border-right: 1px solid red; */
+    padding: 5px;
+    transition: all ease 0.25s;
+  }
   .mon_khai_vi{
-    margin-top: 30px;
+    
      padding-top: 50px;
      padding-bottom: 30px; 
     
     background-color:#f4f4f4;
     
+  }
+  .fa-solid1{
+    
+    font-size: 30px;
+    /* text-align: center; */
+    /* align-items: revert; */
+    display: flex;
+    justify-content: center;
+    margin-left: 22px;
+  margin-bottom: 10px;
+   
+  }
+  .danh_muc1:hover{
+     background-color: #bb6e15;
+    transform: scale(0.9);
+    border-radius: 10px;
+   
   }
   .mons{
     display: flex;
