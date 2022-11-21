@@ -1,13 +1,14 @@
 <?php
-    if(!isset($_SESSION)) 
-    { 
-        session_start(); 
-    }
-    else
-    {
-        session_destroy();
-        session_start(); 
-    }
+    // if(!isset($_SESSION)) 
+    // { 
+    //     session_start(); 
+    // }
+    // else
+    // {
+    //     session_destroy();
+    //     session_start(); 
+    // }
+    session_start();
     include "./DAO/pdo.php";
     include "./DAO/tai_khoan.php";
     include "./view/header.php";
@@ -61,14 +62,15 @@
                     $name = $_POST['name'];
                     $pass = $_POST['pass'];
                     $check_user = check_user($name, $pass);
-                    // echo "<pre>";
-                    // print_r($check_user);
+                    echo "<pre>";
+                    print_r($check_user);
                     if (is_array($check_user)) {
                         $_SESSION['user'] = $check_user;
                         setcookie("dangnhap", "Đăng nhập thành công",time()+2);
                         header('location: index.php');
                     }else{
                         setcookie("dangnhap_false", "Đăng nhập thất bại, vui lòng đăng ký hoặc kiểm tra lại!",time()+2);
+                        header('location: index.php?act=dangnhap');
                     }
                 }
                 include "index.php";
@@ -82,6 +84,11 @@
                     $email = $_POST['quenmk'];
                 }
                 include "view/tai_khoan/quen_mk.php";
+                break;
+
+            case 'dang_xuat':
+                session_unset();
+                header('location: index.php');
                 break;
                 // end dang nhap
 

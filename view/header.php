@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -59,8 +60,17 @@
                             <li><a href="index.php?act=lh">Liên hệ</a></li>
                             <li><a href="#">Tài khoản</a>
                                 <ul>
-                                    <li><a href="index.php?act=dang_ky">Đăng ký</a></li>
-                                    <li><a href="index.php?act=dang_nhap">Đăng nhập</a></li>
+                                    <?php 
+                                        if (isset($_SESSION['user'])) {
+                                            extract($_SESSION['user']);  
+                                    ?>  
+                                    <li><a href="#"><?= $name ?></a></li>
+                                    <li><a href="index.php?act=dang_xuat">Đăng xuất</a></li>
+                                    
+                                    <?php }else{ ?>
+                                            <li><a href="index.php?act=dang_ky">Đăng ký</a></li>
+                                            <li><a href="index.php?act=dang_nhap">Đăng nhập</a></li>
+                                    <?php } ?>
                                 </ul>
                             </li>
 

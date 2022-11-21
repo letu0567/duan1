@@ -17,8 +17,7 @@
     <i class="fa fa-key"></i>
     <a href="index.php?act=quen_mk">Forgot your password?</a>
     <!-- <button> -->
-      <i class="spinner"></i>
-      <!-- <span class="state">Log in</span> -->
+      <!-- <i class="spinner"></i> -->
       <input class="state" type="submit" name="dangnhap" value="Đăng nhập">
     <!-- </button> -->
   </form>
