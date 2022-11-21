@@ -82,7 +82,7 @@
         
         <div class="body">
           <div class="danhmuc_monan">
-                    <h2>Thực đơn ZeeZee Chicken House</h2>
+                    <h2 class="font-bold ">Thực đơn ZeeZee Chicken House</h2>
                 
           </div>
           <div class="mon_khai_vi">
