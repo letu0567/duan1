@@ -1,14 +1,7 @@
 <?php
-    // if(!isset($_SESSION)) 
-    // { 
-    //     session_start(); 
-    // }
-    // else
-    // {
-    //     session_destroy();
-    //     session_start(); 
-    // }
-    session_start();
+    ob_start();
+    session_start(); 
+    
     include "./DAO/pdo.php";
     include "./DAO/tai_khoan.php";
     include "./view/header.php";
@@ -67,10 +60,10 @@
                     if (is_array($check_user)) {
                         $_SESSION['user'] = $check_user;
                         setcookie("dangnhap", "Đăng nhập thành công",time()+2);
-                        header('location: index.php');
+                        header('location: index.php');die;
                     }else{
                         setcookie("dangnhap_false", "Đăng nhập thất bại, vui lòng đăng ký hoặc kiểm tra lại!",time()+2);
-                        header('location: index.php?act=dangnhap');
+                        header('location: index.php');
                     }
                 }
                 include "index.php";
@@ -136,4 +129,5 @@
 //             break;
 //     }
 // }
+// ob_clean();
 ?>
