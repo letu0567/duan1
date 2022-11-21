@@ -9,13 +9,13 @@
 </head>
 <body>
 <div class="wrapper">
-  <form class="login">
+  <form class="login" action="index.php?act=quenmk">
     <p class="title">Quên Mật Khẩu</p>
-    <input type="email" placeholder="Nhập email đã đăng ký" autofocus/>
+    <input type="email" placeholder="Nhập email đã đăng ký" name="email" autofocus/>
     <i class="fa fa-user"></i>
     <button>
       <!-- <i class="spinner"></i> -->
-      <input type="submit" value="Gửi">
+      <input type="submit" name="quenmk" value="Gửi">
     </button>
   </form>
   <footer><a target="blank" href="https://www.facebook.com/letu0567/">fa.me</a></footer>

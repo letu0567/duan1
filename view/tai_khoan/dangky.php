@@ -14,31 +14,41 @@
     
   <div class="register--content singup2">
     <h3>Đăng ký</h3>
+  <form action="index.php?act=dangky" method="post">
     <div class="name">
-  <input type="text" class="inputText" required/>
+  <input type="text" class="inputText" name="name" required/>
   <span class="floating-label">Your name</span>
 </div>
     
   <div class="email">
-  <input type="text" class="inputText" required/>
+  <input type="text" class="inputText" name="email" required/>
   <span class="floating-label">Your email</span>
 </div>
 
 <div class="password">
-  <input type="text" class="inputText" required/>
+  <input type="text" class="inputText" name="pass" required/>
   <span class="floating-label">Your password</span>
 </div>
+<div class="name">
+  <input type="text" class="inputText" name="address" required/>
+  <span class="floating-label">Địa chỉ</span>
+</div>
+<div class="name">
+  <input type="text" class="inputText" name="tel" required/>
+  <span class="floating-label">Số điện thoại</span>
+</div>
 
-    <input type="submit" class="register-buttton" value="Đăng ký" name="register">
+    <input type="submit" class="register-buttton" value="Đăng ký" name="dangky">
     <div class="dang_nhap_con">
         <a class="ban_co_tk" href="index.php?act=dang_nhap">Bạn đã có tài khoản</a>
     </div>
+    </form>
     </div>  
     
     
     
     
-  <div class="login--content">
+  <!-- <div class="login--content">
     
     <div class="login--button">
     <span>Create a new  account</span>
@@ -66,14 +76,14 @@
 
     <input type="submit" class="register-buttton" value="Login" name="Login">
       
-    </div>
+    </div> -->
   
   </div>
-  
+<!--   
   <div class="registred">
     <h1>Great Job</h1>
     <button class="reset">Reset</button>
-  </div>
+  </div> -->
   
   
 </div>

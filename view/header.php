@@ -14,6 +14,11 @@
 </head>
 
 <body>
+    <script>
+        <?php if (isset($_COOKIE['dangnhap'])) { ?>
+        alert("<?= $_COOKIE['dangnhap']  ?>");
+        <?php } ?>
+    </script>
     <div class="mx-auto">
         <header class="mx-auto bg-white ">
             <div class=" mau_header text-white ">

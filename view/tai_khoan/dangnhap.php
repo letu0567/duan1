@@ -9,20 +9,28 @@
 </head>
 <body>
 <div class="wrapper">
-  <form class="login">
+  <form class="login" action="index.php?act=dangnhap" method="post">
     <p class="title">Log in</p>
-    <input type="text" placeholder="Username" autofocus/>
+    <input type="text" placeholder="Username" name="name" autofocus/>
     <i class="fa fa-user"></i>
-    <input type="password" placeholder="Password" />
+    <input type="password" placeholder="Password" name="pass" />
     <i class="fa fa-key"></i>
     <a href="index.php?act=quen_mk">Forgot your password?</a>
     <button>
       <i class="spinner"></i>
-      <span class="state">Log in</span>
+      <!-- <span class="state">Log in</span> -->
+      <input class="state" type="submit" name="dangnhap" value="Đăng nhập">
     </button>
   </form>
   <footer><a target="blank" href="https://www.facebook.com/letu0567/">fa.me</a></footer>
-  </p>
+  <!-- </p> -->
+  <p class="thongbao">
+                <?php 
+                    if (isset($thong_bao)&&($thong_bao!="")) {
+                        echo $thong_bao;
+                    }
+                ?>
+                </p>
 </div>
 </body>
 </html>
