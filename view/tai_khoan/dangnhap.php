@@ -16,21 +16,15 @@
     <input type="password" placeholder="Password" name="pass" />
     <i class="fa fa-key"></i>
     <a href="index.php?act=quen_mk">Forgot your password?</a>
-    <button>
+    <!-- <button> -->
       <i class="spinner"></i>
       <!-- <span class="state">Log in</span> -->
       <input class="state" type="submit" name="dangnhap" value="Đăng nhập">
-    </button>
+    <!-- </button> -->
   </form>
   <footer><a target="blank" href="https://www.facebook.com/letu0567/">fa.me</a></footer>
   <!-- </p> -->
-  <p class="thongbao">
-                <?php 
-                    if (isset($thong_bao)&&($thong_bao!="")) {
-                        echo $thong_bao;
-                    }
-                ?>
-                </p>
+
 </div>
 </body>
 </html>

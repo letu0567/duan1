@@ -68,7 +68,7 @@
                         setcookie("dangnhap", "Đăng nhập thành công",time()+2);
                         header('location: index.php');
                     }else{
-                        $thong_bao = "Tài khoản không tồn tại. Vui lòng kiểm tra hoặc đăng ký!";
+                        setcookie("dangnhap_false", "Đăng nhập thất bại, vui lòng đăng ký hoặc kiểm tra lại!",time()+2);
                     }
                 }
                 include "index.php";

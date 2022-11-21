@@ -19,6 +19,11 @@
         alert("<?= $_COOKIE['dangnhap']  ?>");
         <?php } ?>
     </script>
+    <script>
+        <?php if (isset($_COOKIE['dangnhap_false'])) { ?>
+        alert("<?= $_COOKIE['dangnhap_false']  ?>");
+        <?php } ?>
+    </script>
     <div class="mx-auto">
         <header class="mx-auto bg-white ">
             <div class=" mau_header text-white ">
@@ -27,8 +32,6 @@
                     
                     <div class="dki_dnhap">
                     <p>Giờ hoạt động:Thứ Hai -Chủ Nhật | 10h30 - 22h30</p>
-                    <a class="dang_ki" href="index.php?act=dang_ky">Đăng kí</a>
-                    <a class="dang_nhap" href="index.php?act=dang_nhap">Đăng nhập</a>
             </div>
                 </div>
                 
@@ -46,14 +49,20 @@
                     <a href="index.php"><img src="view/public/image/logo-01.svg" alt="" height="100px" width="200px" class="m-2"></a>
                 </div>
 
-                <div class="item mt-3 p-3 mr-4 p-5">
-                    <div class="flex space-x-10">
+                <div class="item mt-3 p-3 mr-4 p-5 header2">
+                    <div class="flex space-x-10 navbar">
                         <ul class="flex space-x-5 font-bold " id="menu">
                             <li><a href="index.php">Trang chủ</a></li>
                             <li><a href="index.php?act=gt">Giới thiệu</a></li>
                             <li><a href="index.php?act=td">Thực đơn</a></li>
                             <li><a href="index.php?act=tt">Tin tức</a></li>
                             <li><a href="index.php?act=lh">Liên hệ</a></li>
+                            <li><a href="#">Tài khoản</a>
+                                <ul>
+                                    <li><a href="index.php?act=dang_ky">Đăng ký</a></li>
+                                    <li><a href="index.php?act=dang_nhap">Đăng nhập</a></li>
+                                </ul>
+                            </li>
 
                         </ul>
                         <ul class="flex space-x-2">
