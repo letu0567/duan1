@@ -89,6 +89,9 @@
             case 'dang_ky':
                 include "view/tai_khoan/dangky.php";
                 break;
+            case 'admin':
+                include "admin/index.php";
+                break;
             case 'dangky':
                 if (isset($_POST["dangky"])&& ($_POST["dangky"])) {
                     $name = $_POST["name"];
@@ -99,7 +102,7 @@
                     them_tai_khoan($name, $email, $pass, $address, $tel);
                     // setcookie("dangdy", "Đăng ký thành công",time()+2);
                     // header('location: index.php');
-                    // $thong_bao = "Đăng Ký Thành Công";
+                    $thong_bao = "Đăng Ký Thành Công";
 
                 }
                 include "view/tai_khoan/dangky.php";

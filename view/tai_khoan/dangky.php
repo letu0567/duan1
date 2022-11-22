@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="view/public/css/dangky.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 <div class="content">
@@ -37,6 +38,13 @@
   <input type="text" class="inputText" name="tel" required/>
   <span class="floating-label">Số điện thoại</span>
 </div>
+<p class="thong_bao">
+  <?php 
+    if(isset($thong_bao)&& ($thong_bao != "")){
+      echo  '<i class="fa-regular fa-circle-check"></i>' . $thong_bao  ;
+    }
+  ?>
+</p>
 
     <input type="submit" class="register-buttton" value="Đăng ký" name="dangky">
     <div class="dang_nhap_con">

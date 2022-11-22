@@ -65,6 +65,7 @@
                                             extract($_SESSION['user']);  
                                     ?>  
                                     <li><a href="#"><?= $name ?></a></li>
+                                    <li><a href="index.php?act=admin">Đăng nhập admin</a></li>
                                     <li><a href="index.php?act=dang_xuat">Đăng xuất</a></li>
                                     
                                     <?php }else{ ?>
