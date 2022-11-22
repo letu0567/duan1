@@ -64,10 +64,13 @@
                                         if (isset($_SESSION['user'])) {
                                             extract($_SESSION['user']);  
                                     ?>  
-                                    <li><a href="#"><?= $name ?></a></li>
-                                    <li><a href="index.php?act=admin">Đăng nhập admin</a></li>
+                                    <!-- <li><a href="#"><?= $name ?></a></li> -->
+                                    <?php if ($role == 1) { ?>
+                                        <li><a href="admin/index.php">Đăng nhập admin</a></li>
+                                    <?php }?>
+                                    <li><a href="index.php?act=quen_mk">Quên tài khoản</a></li>
+                                    <li><a href="index.php?act=cap_nhat_tk">Cập nhật tài khoản</a></li>
                                     <li><a href="index.php?act=dang_xuat">Đăng xuất</a></li>
-                                    
                                     <?php }else{ ?>
                                             <li><a href="index.php?act=dang_ky">Đăng ký</a></li>
                                             <li><a href="index.php?act=dang_nhap">Đăng nhập</a></li>

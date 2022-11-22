@@ -95,17 +95,18 @@ font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
             position: absolute;
             left: 0;
             top: 30px;
-            width: 100px;
+            width: 160px;
+            /* min-width: 100px; */
             background-color: #fff;
             z-index: 1;
             padding: 10px 0;
             border-bottom-right-radius: 10px;
-            border-bottom-left-radius: 10px;
-            
+            border-bottom-left-radius: 10px;      
         }
         .navbar ul li ul li{
             width: 100%;
             border-top: 1px solid rgba(0, 0, 0, .1);
+            
         }
         .navbar ul li ul li a{
             padding: 0 10px;

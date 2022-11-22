@@ -1,6 +1,11 @@
 <?php
     ob_start();
-    session_start(); 
+    session_start();
+    
+    // if (isset($_SESSION['user'])){
+    //     extract($_SESSION['user']);
+    // }
+    // if (isset($_SESSION['user']) && ($role == 1)) {
     
     include "./DAO/pdo.php";
     include "./DAO/tai_khoan.php";
@@ -55,15 +60,18 @@
                     $name = $_POST['name'];
                     $pass = $_POST['pass'];
                     $check_user = check_user($name, $pass);
-                    echo "<pre>";
-                    print_r($check_user);
+                    // echo "<pre>";
+                    // print_r($check_user);
                     if (is_array($check_user)) {
                         $_SESSION['user'] = $check_user;
                         setcookie("dangnhap", "Đăng nhập thành công",time()+2);
                         header('location: index.php');die;
                     }else{
-                        setcookie("dangnhap_false", "Đăng nhập thất bại, vui lòng đăng ký hoặc kiểm tra lại!",time()+2);
-                        header('location: index.php');
+                        // setcookie("dangnhap_false", "Đăng nhập thất bại, vui lòng đăng ký hoặc kiểm tra lại!",time()+2);
+                        // $thong_bao_do = "Tài khoản không tồn tại, vui lòng đăng ký!";
+                        $_SESSION['loidn'] = "Tài khoản không tồn tại, vui lòng đăng ký!";
+                        header('location: index.php?act=dangnhap');
+                        // include "view/tai_khoan/dangnhap.php";die;
                     }
                 }
                 include "index.php";
@@ -80,18 +88,35 @@
                 break;
 
             case 'dang_xuat':
-                session_unset();
+                unset($_SESSION['user']);
                 header('location: index.php');
                 break;
-                // end dang nhap
+            case 'cap_nhat_tk':
+                include "view/tai_khoan/edit_tk.php";
+                break;
+            case 'edit_tk':
+                if (isset($_POST['capnhattk'])&&($_POST['capnhattk'])) {
+                    $id = $_POST['id'];
+                    $name = $_POST['name'];
+                    $email = $_POST['email'];
+                    $pass = $_POST['pass'];
+                    $address = $_POST['address'];
+                    $tel = $_POST['tel'];
+                    capnhat_tai_khoan($id, $name, $email, $pass, $address, $tel);
+                    $_SESSION['user'] = check_user($name,$pass);
+                    header('location: index.php');
+                }
+                include "view/tai_khoan/edit_tk.php";
+                break;
+            // end dang nhap
 
                 // star đang ký
             case 'dang_ky':
                 include "view/tai_khoan/dangky.php";
                 break;
-            case 'admin':
-                include "admin/index.php";
-                break;
+            // case 'dn_admin':
+            //     include "admin/index.php";
+            //     break;
             case 'dangky':
                 if (isset($_POST["dangky"])&& ($_POST["dangky"])) {
                     $name = $_POST["name"];

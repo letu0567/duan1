@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,10 +12,18 @@
 <div class="wrapper">
   <form class="login" action="index.php?act=dangnhap" method="post">
     <p class="title">Log in</p>
-    <input type="text" placeholder="Username" name="name" autofocus/>
+    <input type="text" placeholder="Username" name="name" required  autofocus/>
     <i class="fa fa-user"></i>
-    <input type="password" placeholder="Password" name="pass" />
+    <input type="password" placeholder="Password" name="pass" required/>
     <i class="fa fa-key"></i>
+    <p class="thong_bao2">
+      <?php 
+        if (isset($_SESSION['loidn'])) {
+          echo $_SESSION['loidn'];
+          unset($_SESSION['loidn']);
+        }
+      ?>
+    </p>
     <a href="index.php?act=quen_mk">Forgot your password?</a>
     <!-- <button> -->
       <!-- <i class="spinner"></i> -->
