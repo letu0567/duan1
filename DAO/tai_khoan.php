@@ -20,5 +20,12 @@
         $sql = "UPDATE user set name='" . $name . "',email='" . $email . "',pass='" . $pass . "',address='" . $address . "',tel='" . $tel . "' where id=" . $id;
         pdo_execute($sql);
     }
+    // Check email
+    function check($email,$name)
+{
+    $sql = "select * from user where email='" . $email . "' AND name ='".$name."' ";
+    $kqem = pdo_query_one($sql);
+    return $kqem;
+}
 
 ?>

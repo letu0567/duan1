@@ -20,11 +20,25 @@
   <input type="text" class="inputText" name="name" required/>
   <span class="floating-label">Your name</span>
 </div>
+<p>
+  <?php
+    if (isset($thongbao_false_nm)) {
+      echo $thongbao_false_nm = "Tên đăng nhập đã tồn tại, vui lòng nhập tên khác!";
+    }
+  ?>
+</p>
     
   <div class="email">
   <input type="text" class="inputText" name="email" required/>
   <span class="floating-label">Your email</span>
 </div>
+<p>
+  <?php
+    if (isset($thongbao_false_em)) {
+      echo $thongbao_false_em = "Email đã tồn tại, vui lòng nhập email khác!";
+    }
+  ?>
+</p>
 
 <div class="password">
   <input type="text" class="inputText" name="pass" required/>

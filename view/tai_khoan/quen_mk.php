@@ -9,14 +9,21 @@
 </head>
 <body>
 <div class="wrapper">
-  <form class="login" action="index.php?act=quenmk">
+  <form class="login" action="index.php?act=quenmk" method="post">
     <p class="title">Quên Mật Khẩu</p>
-    <input type="email" placeholder="Nhập email đã đăng ký" name="email" autofocus/>
+    <input type="email" placeholder="Nhập email đã đăng ký" name="email" required autofocus/>
     <i class="fa fa-user"></i>
-    <button>
+ <p>
+  <?php 
+    if (isset($thongbao)) {
+      echo $thongbao;
+    }
+  ?>
+ </p>
+    <!-- <button> -->
       <!-- <i class="spinner"></i> -->
-      <input type="submit" name="quenmk" value="Gửi">
-    </button>
+      <input class="state" type="submit" name="guiemail" value="Gửi">
+    <!-- </button> -->
   </form>
   <footer><a target="blank" href="https://www.facebook.com/letu0567/">fa.me</a></footer>
   </p>

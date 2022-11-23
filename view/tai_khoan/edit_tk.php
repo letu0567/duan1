@@ -19,7 +19,6 @@
         if (isset($_SESSION['user']) && (is_array($_SESSION['user']))) {
             extract($_SESSION['user']);
         }
-        var_dump($_SESSION['user']);
     ?>
   <form action="index.php?act=edit_tk" method="post">
     
@@ -42,7 +41,7 @@
   <span class="floating-label">Địa chỉ</span>
 </div>
 <div class="name">
-  <input type="text" class="inputText" name="tel" value="<?= $tel ?>" required/>
+  <input type="text" class="inputText" name="tel" value="+84 <?= $tel ?>" required/>
   <span class="floating-label">Số điện thoại</span>
 </div>
     <input type="hidden" name="id" value="<?= $id ?>">

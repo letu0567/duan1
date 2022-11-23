@@ -39,12 +39,14 @@
                                 
             
             default:
-                include "index.php";
+                include "content.php";
                 break;
         }
 
 
 
+    }else{
+        include "content.php";
     }
 
 
