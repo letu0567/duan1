@@ -16,15 +16,16 @@
                             </thead>
                             <tbody>
                             <tr>
-                                    <td>01</td>
-                                    <td>Gà nướng củi</td>                       
-                                    <td>
-                                        <a href="#">Sửa</a>
-                                        <a href="#">Xóa</a>
-                                    </td>
-                                </tr>
-                                
-                                
+                                <?php foreach($listthucdon as $thucdon):?>
+                                                 
+                                        <td><?=$thucdon['id']?></td>
+                                        <td><?=$thucdon['name']?></td>                       
+                                        <td>
+                                            <a href="index.php?act=suatd&id=<?=$thucdon['id']?>"><button type="button" class="btn btn-info">SỬA</button></a>
+                                            <a href="index.php?act=xoa_thucdon&id=<?=$thucdon['id']?>"><button type="button" class="btn btn-danger">XÓA</button></a>
+                                        </td>
+                                    </tr>
+                                     <?php endforeach?>  
                             </tbody>
                         </table>
                         <div class="chucnang">

@@ -15,25 +15,36 @@
                                     <th>Giá</th>
                                     <th>Mô tả</th>
                                     <th>Số lượng</th>
-                                    <th>Lượt xem</th>
+                                    
                                     <th></th>
                                 </tr>
                             </thead>
                             <tbody>
+                                <?php foreach($listmonan as $value): ?>
+                                    <?php 
+                                    extract($value);
+                                    $hinhpath="../upload/".$image;
+                                    if (is_file($hinhpath)) {
+                                        $hinh="<img src='".$hinhpath."' height='80'>";
+                                    }else{
+                                        $hinh=" không có hình";
+                                    }
+                                    ?>
                             <tr>
-                                    <td>01</td>
-                                    <td>Gà nướng củi nguyên con</td>                       
-                                    <td>Ảnh </td>                       
-                                    <td>580.000vnd</td>                       
-                                    <td>Gà siêu ngon</td>                       
-                                    <td>1</td>                       
-                                    <td>100</td>                       
+                                    <td><?=$value['id']?></td>
+                                    <td><?=$value['name']?></td>                       
+                                    <td><?=$hinh?></td>                      
+                                    <td><?=$value['price']?></td>                       
+                                    <td><?=$value['description']?></td>                       
+                                    <td><?=$value['quantity']?></td>                      
+                                                          
                                     <td>
-                                        <a href="#">Sửa</a>
-                                        <a href="#">Xóa</a>
+                                    <a href="index.php?act=sua_monan&id=<?=$value['id']?>"><button type="button" class="btn btn-info">SỬA</button></a>
+                                    <a href="index.php?act=xoa_monan&id=<?=$value['id']?>"><button type="button" class="btn btn-danger">XÓA</button></a>
                                     </td>
                                 </tr>
-                                
+                                 
+                                <?php endforeach ?>
                                 
                             </tbody>
                         </table>
