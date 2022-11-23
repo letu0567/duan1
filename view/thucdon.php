@@ -13,7 +13,6 @@
     <div class="mx-auto">
     <div class="danhmuc_monan">
                     <h2>Thực đơn ZeeZee Chicken House</h2>
-                
           </div>
         <div class="slide-show">
          
@@ -84,11 +83,8 @@
         </div>
         
         <div class="body">
-<<<<<<< HEAD
           <div class="danhmuc_monan">
-                    <h2 class="font-bold ">Thực đơn ZeeZee Chicken House</h2>
-                
-=======
+                    <h2 class="font-bold ">Thực đơn ZeeZee Chicken House</h2>         
          
           <div class="danh_muc">
             <div class="td_danhmuc">
@@ -116,7 +112,6 @@
                     <p><a href=""> MÓN KHÁC</a></p>
               </div>
              </div>
->>>>>>> 842db8de61142104610b226ad55459c7d4ccafb1
           </div>
           <div class="mon_khai_vi">
             <div class="td_mon">
