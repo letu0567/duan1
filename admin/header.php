@@ -18,7 +18,13 @@
             <div class="thongtin_user">
                 <div class="thongtin_user_con">
                 <img src="../view/public/image/z3867444882970_563680b6137cf5fd44a18c201e22bd1f.jpg" width="100px" alt="">
-                <h3>Lê Tú</h3>
+                <?php
+                    if (isset($_SESSION['user'])) {
+                        extract($_SESSION['user']);
+                        
+                    }
+                ?>
+                <h3><?= $name ?></h3>
                 <p>Chào mừng bạn trở lại</p>
                 </div>
                 <div class="thong_tin_user_con2">

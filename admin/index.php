@@ -1,8 +1,13 @@
 <?php
+    session_start();
     include "header.php";
     include "../DAO/pdo.php";
     include "../DAO/thucdon.php";
     include "../DAO/mon_an.php";
+    include "../DAO/tai_khoan.php";
+
+    $check = check($email,$name);
+    $_SESSION['check_name'] = $check;
 
     if(isset($_GET["act"])){
         $act = $_GET["act"];

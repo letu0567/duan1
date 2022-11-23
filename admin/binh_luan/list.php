@@ -24,7 +24,7 @@
                                     <td>02</td>
                                     <td>23</td>
                                     <td>15/11/2022</td>
-                                    <td><a href="#">Xóa</a></td>
+                                    <td><a href="#" class="btn btn-danger">Xóa</a></td>
                                 </tr>
                             </tbody>
                         </table>

@@ -28,4 +28,11 @@
     return $kqem;
 }
 
+//     function loadone_tai_khoan($id)
+//     {
+//     $sql = "select * from user where id=" . $id;
+//     $hh = pdo_query_one($sql);
+//     return $hh;
+// }
+
 ?>
