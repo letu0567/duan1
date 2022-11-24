@@ -27,6 +27,18 @@
     $kqem = pdo_query_one($sql);
     return $kqem;
 }
+function check_name($name)
+{
+    $sql = "select * from user where name ='".$name."' ";
+    $kqem = pdo_query_one($sql);
+    return $kqem;
+}
+function check_email($email)
+{
+    $sql = "select * from user where email='" . $email . "' ";
+    $kqem = pdo_query_one($sql);
+    return $kqem;
+}
 
 //     function loadone_tai_khoan($id)
 //     {

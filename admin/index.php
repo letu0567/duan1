@@ -6,8 +6,7 @@
     include "../DAO/mon_an.php";
     include "../DAO/tai_khoan.php";
 
-    $check = check($email,$name);
-    $_SESSION['check_name'] = $check;
+    
 
     if(isset($_GET["act"])){
         $act = $_GET["act"];

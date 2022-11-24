@@ -137,14 +137,29 @@
                     $tel = $_POST["tel"];
                     // ktra emai tồn tại trên database
                     $_SESSION['check'] = check($email,$name);
-                    if (isset($_SESSION['check']) ) {
-                        $thongbao_false_em = "";   
-                        $thongbao_false_nm = "";   
+                    $_SESSION['check_name'] = check_name($name);
+                    $_SESSION['check_email'] = check_email($email);
+                    
+                    if (isset($_SESSION['check_email']) ) {
+                        $thongbao_false_em = ""; 
+                       
+                        // if (($_SESSION['check']['email']) != $email) {
+                        //     $thongbao_false_em = "";   
+                        // // $thongbao_false_nm = ""; 
+                        // }
+                        // if (($_SESSION['check']) != $name) {
+                        //     $thongbao_false_nm = "";
+                        // }
                                      
+                    }
+                    if (isset($_SESSION['check_name']) ) {
+                        $thongbao_false_nm = "";       
                     }else{
                         them_tai_khoan($name, $email, $pass, $address, $tel);
                         $thong_bao = "Đăng Ký Thành Công";
                     }
+
+                    
 
                     // if (isset($_SESSION['check_name']['name']) ) {
                     //     $thongbao_false_nm = "Tên đăng nhập đã tồn tại, vui lòng nhập email khác!";                 
