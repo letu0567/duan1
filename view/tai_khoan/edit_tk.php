@@ -41,9 +41,17 @@
   <span class="floating-label">Địa chỉ</span>
 </div>
 <div class="name">
-  <input type="text" class="inputText" name="tel" value="+84 <?= $tel ?>" required/>
+  <input type="text" class="inputText" name="tel" value="<?= $tel ?>" required/>
   <span class="floating-label">Số điện thoại</span>
 </div>
+<p>
+        <?php 
+            if (isset($thongbao_capnhat) && ($thongbao_capnhat) != "") {
+              echo $thongbao_capnhat;
+            }
+        ?>
+
+</p>
     <input type="hidden" name="id" value="<?= $id ?>">
     <input type="submit" class="register-buttton" value="Cập nhật" name="capnhattk">
     </form>

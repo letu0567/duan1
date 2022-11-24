@@ -59,20 +59,29 @@
                 if (isset($_POST["dangnhap"]) && ($_POST["dangnhap"])) {
                     $name = $_POST['name'];
                     $pass = $_POST['pass'];
-                    $check_user = check_user($name, $pass);
-                    // echo "<pre>";
-                    // print_r($check_user);
-                    if (is_array($check_user)) {
-                        $_SESSION['user'] = $check_user;
-                        setcookie("dangnhap", "Đăng nhập thành công",time()+2);
-                        header('location: index.php');die;
+                    $role = check_user($name, $pass);
+                    $check_user = check_user2($name, $pass);
+                    $_SESSION['role'] = $role;
+                    $_SESSION['user'] = $check_user;
+
+                    if (is_array($_SESSION['user'])) {
+                        if ($role == 1) {
+                            setcookie("dangnhap","Đăng nhập thành công!",time()+2);
+                            header('location: admin/index.php');
+                        }
                     }else{
-                        // setcookie("dangnhap_false", "Đăng nhập thất bại, vui lòng đăng ký hoặc kiểm tra lại!",time()+2);
-                        // $thong_bao_do = "Tài khoản không tồn tại, vui lòng đăng ký!";
-                        $_SESSION['loidn'] = "Sai tên đăng nhập hoặc mật khẩu";
-                        header('location: index.php?act=dangnhap');
-                        // include "view/tai_khoan/dangnhap.php";die;
+                        $_SESSION['loidn'] = "Sai tên đăng nhập hoặc mật khẩu!";
                     }
+                    // if ($role == 1) {
+                    //     setcookie("dangnhap","Đăng nhập thành công!",time()+2);
+                    //     header('location: admin/index.php');
+                    // }else{
+                    //     header('location: index.php');
+                    // }
+                    // if (condition) {
+                    //     # code...
+                    // }
+                    
                 }
                 include "index.php";
                 break;
@@ -114,7 +123,8 @@
                     $address = $_POST['address'];
                     $tel = $_POST['tel'];
                     capnhat_tai_khoan($id, $name, $email, $pass, $address, $tel);
-                    $_SESSION['user'] = check_user($name,$pass);
+                    $thongbao_capnhat = "Cập nhật thành công";
+                    $_SESSION['user'] = check_user2($name,$pass);
                     header('location: index.php?act=cap_nhat_tk');
                 }
                 include "view/tai_khoan/edit_tk.php";
@@ -136,41 +146,14 @@
                     $address = $_POST["address"];
                     $tel = $_POST["tel"];
                     // ktra emai tồn tại trên database
-                    $_SESSION['check'] = check($email,$name);
-                    $_SESSION['check_name'] = check_name($name);
-                    $_SESSION['check_email'] = check_email($email);
-                    
-                    if (isset($_SESSION['check_email']) ) {
-                        $thongbao_false_em = ""; 
-                       
-                        // if (($_SESSION['check']['email']) != $email) {
-                        //     $thongbao_false_em = "";   
-                        // // $thongbao_false_nm = ""; 
-                        // }
-                        // if (($_SESSION['check']) != $name) {
-                        //     $thongbao_false_nm = "";
-                        // }
-                                     
+                    $_SESSION['check'] = check($email,$name);                 
+                    if (isset($_SESSION['check']['email']) ) {
+                        $thongbao_false_em = "";                                                          
                     }
-                    if (isset($_SESSION['check_name']) ) {
-                        $thongbao_false_nm = "";       
-                    }else{
+                    else{
                         them_tai_khoan($name, $email, $pass, $address, $tel);
                         $thong_bao = "Đăng Ký Thành Công";
-                    }
-
-                    
-
-                    // if (isset($_SESSION['check_name']['name']) ) {
-                    //     $thongbao_false_nm = "Tên đăng nhập đã tồn tại, vui lòng nhập email khác!";                 
-                    // }else{
-                    //     them_tai_khoan($name, $email, $pass, $address, $tel);
-                    //     $thong_bao = "Đăng Ký Thành Công";
-                    // }
-                    // setcookie("dangdy", "Đăng ký thành công",time()+2);
-                    // header('location: index.php');
-                    
-
+                    }                                       
                 }
                 include "view/tai_khoan/dangky.php";
                 break;

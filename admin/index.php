@@ -1,5 +1,6 @@
 <?php
     session_start();
+    ob_start();
     include "header.php";
     include "../DAO/pdo.php";
     include "../DAO/thucdon.php";
@@ -7,7 +8,8 @@
     include "../DAO/tai_khoan.php";
 
     
-
+    if (isset($_SESSION['role']) && ($_SESSION['role']) == 1) {
+    
     if(isset($_GET["act"])){
         $act = $_GET["act"];
         switch ($act) {
@@ -116,7 +118,7 @@
                 $listmonan=loadall_monan();
                 include "mon_an/list.php";
                 break;    
-                // 
+                
             case 'qldm':
                 include "dat_mon/list.php";
                 break;
@@ -127,9 +129,37 @@
                 include "binh_luan/list.php";
                 break;
             case 'qlkh':
+                $list_tai_khoan = loadall_tai_khoan();
                 include "tai_khoan/list.php";
                 break;
-            
+            case 'edit_tk':
+                if (isset($_POST['cap_nhap']) && ($_POST['cap_nhap']) ) {
+                    $id = $_POST['id'];
+                    $name = $_POST['name'];
+                    $email = $_POST['email'];
+                    $pass = $_POST['pass'];
+                    $address = $_POST['address'];
+                    $tel = $_POST['tel'];
+                    $role = $_POST['role']; 
+                    capnhat_tai_khoan2($id, $name, $email, $pass, $address, $tel,$role);
+                }
+                $list_tai_khoan = loadall_tai_khoan();
+                include "tai_khoan/list.php";
+                break;
+            case 'suatk':
+                if (isset($_GET['id']) && ($_GET['id'] > 0)) {
+                    $onetk = loadone_tai_khoan($_GET['id']);
+                }
+                include "tai_khoan/edit_tk.php";
+                break;
+            case 'xoatk':
+                if (isset($_GET['id']) && ($_GET['id'] > 0)) {
+                    xoa_tai_khoan($_GET['id']);
+                }
+                // $sql = "select * from user order by id desc";
+                $list_tai_khoan = loadall_tai_khoan();
+                include "tai_khoan/list.php";
+                break;
             case 'qldh':
                 include "don_hang/list.php";
                 break;
@@ -152,6 +182,9 @@
 
 
     include "footer.php";
+}else{
+    header("location: ../index.php");
+}
 ?>
 
             

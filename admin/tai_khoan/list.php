@@ -11,7 +11,7 @@
                                 <tr>
                                     <th>#</th>
                                     <th>Ảnh đại diện</th>                             
-                                    <th>Họ tên</th>
+                                    <th>Username</th>
                                     <th>Mật khẩu</th>
                                     <th>Email</th>
                                     <th>Địa chỉ</th>
@@ -21,7 +21,29 @@
                                 </tr>
                             </thead>
                             <tbody>
-                            <tr>
+                                <?php foreach ($list_tai_khoan as $taikhoan) { 
+                                    extract($taikhoan);
+                                    $suatk = "index.php?act=suatk&id=".$id;
+                                    $xoatk = "index.php?act=xoatk&id=".$id;
+                                    if ($role == 1) {
+                                        $role = "Admin";
+                                    }else{
+                                        $role = "Khách hàng";
+                                    }
+                                    echo '<tr>
+                                    
+                                    <td>'.$id.'</td>
+                                    <td>'.$avatar.'</td>
+                                    <td>'.$name.'</td>
+                                    <td>'.$pass.'</td>
+                                    <td>'.$email.'</td>
+                                    <td>'.$address.'</td>
+                                    <td>'.$tel.'</td>
+                                    <td>'.$role.'</td>
+                                    <td><a  href="'.$suatk.'"><input type="button" value="Sửa" class="btn btn-info"></a> <a onclick="return Del()"; href="'.$xoatk.'"><input type="button" value="Xóa" class="btn btn-danger"></a></td>
+                                    </tr>';
+                               } ?>
+                            <!-- <tr>
                                     <td>01</td>
                                     <td>Ảnh</td>
                                     <td>Lê Tú</td>
@@ -34,49 +56,7 @@
                                         <a href="#">Sửa</a>
                                         <a href="#">Xóa</a>
                                     </td>
-                                </tr>
-                                <tr>
-                                    <td>02</td>
-                                    <td>Ảnh</td>
-                                    <td>Hoàng Huy</td>
-                                    <td>1234</td>
-                                    <td>huy0567@gmail.com</td>
-                                    <td>Hà nội</td>
-                                    <td>0366170434</td>
-                                    <td>Admin</td>
-                                    <td>
-                                        <a href="#">Sửa</a>
-                                        <a href="#">Xóa</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>03</td>
-                                    <td>Ảnh</td>
-                                    <td>Việt Hà</td>
-                                    <td>12345</td>
-                                    <td>letu0567@gmail.com</td>
-                                    <td>Hà nội</td>
-                                    <td>0366170434</td>
-                                    <td>Admin</td>
-                                    <td>
-                                        <a href="#">Sửa</a>
-                                        <a href="#">Xóa</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>04</td>
-                                    <td>Ảnh</td>
-                                    <td>Trọng Dũng</td>
-                                    <td>123456</td>
-                                    <td>dung0567@gmail.com</td>
-                                    <td>Hà nội</td>
-                                    <td>0366170434</td>
-                                    <td>Khách hàng</td>
-                                    <td>
-                                        <a href="#">Sửa</a>
-                                        <a href="#">Xóa</a>
-                                    </td>
-                                </tr>
+                                </tr> -->                             
                             </tbody>
                         </table>
                     </form>
