@@ -112,39 +112,13 @@
               </div>
              </div>
           </div>
-          <div class="mon_khai_vi">
+          <!-- <div class="mon_khai_vi">
             <div class="td_mon">
               <h2><a href=""> Món Khai vị</a></h2>
             </div>
             <div class="mons">
-            <?php
-            $img_path='upload/';
-                 foreach($sp_new as $sp){
-                  extract($sp);
-                  $hinh=$img_path.$image;
-                  
-                  echo '
-                  
-            
-                <div class="mon1">
-                  <div class="anh1">
-                  <img src="'.$hinh.'" alt="" class="img4">
-                  </div>
-                 <div class="mota1">
-                  <h4 class="a "><a href="">'.$name.'</a></h4>
-                  <p class="a">Rau salat các loại, ớt chuông, dầu ô liu, sốt chanh leo</p>
-                  <p class=" gia a">'.$price.'</p>
-                  <button class="btn" >ĐẶT MÓN</button>
-                 </div>
-               </div>
-            
-            
-                  ';
-                 
-                 }
-            ?>
             </div>
-            </div>
+            </div> -->
            <!--  <div class="mons">
               <div class="mon1">
                 <div class="anh1">
@@ -221,19 +195,21 @@
           <!--  -->
           <div class="mon_ga">
             <div class="td_mon">
-              <h2><a href=""> Món Gà </a></h2>
+              <h2><a href=""> Món Mới</a></h2>
            </div>
            <div class="mon2">
-            <?php foreach($sp_new as $sp){
+            
+            <?php
+            $img_path='upload/';
+             foreach($sp_new as $sp){
                   extract($sp);
                   $hinh=$img_path.$image;
                   echo '<div class="monga_2">
                   <img src="'.$hinh.'" alt="" class="img3">
-                  <h4 class="td2 b"><a href="">"'.$name.'"</a></h4>
-                  <p class=" gia b ">"'.$price.'"</p>
+                  <h4 class="td2 b"><a href="">'.$name.'</a></h4>
+                  <p class=" gia b ">'.$price.'</p>
                   <button class="btn" >ĐẶT MÓN</button>
-                </div>';
-            
+                </div> ';        
             }
             ?>
             <!-- <div class="monga_2">
@@ -280,7 +256,7 @@
               <p class=" gia b ">129.000đ</p>
               <button class="btn " >ĐẶT MÓN</button>
             </div> -->
-           </div>
+           <!-- </div>
           </div>
           <div class="mon_rau">
             <div class="td_mon1">
@@ -393,7 +369,7 @@
               
              
               
-           </div>
+           </div> -->
            
           </div>
           <!-- divbody -->

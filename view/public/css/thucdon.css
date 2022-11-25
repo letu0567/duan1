@@ -218,7 +218,9 @@
      margin-bottom: 50px;
      background-color: orangered;
      /* margin-left: 39%;  */
-     margin: 20px auto;
+     margin-left: auto;
+     margin-right: auto;
+     margin-bottom: 60px;
   }
   .td_mon h2{
     color: rgb(255, 255, 255);
@@ -266,20 +268,28 @@
     /* margin-top: 30px; */
      padding-top: 50px;
      padding-bottom: 60px; 
-     background-image: url(../image/IMG_2816.jpg);
+     /* background-image: url(../image/IMG_2816.jpg); */
   }
   .mon2{
-    display: flex;
-    justify-content: center;
-    justify-content: space-around;
-    margin-top: 50px;
+    /* display: flex; */
+    /* justify-content: center;
+    justify-content: space-around; */
+    /* margin-top: 50px;
     margin-left: 50px;
-    margin-right: 50px; 
+    margin-right: 50px;  */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 30px;
+    row-gap: 30px;
+    width: 80%;
+    margin: 0 auto;
   }
   .monga_2{
     background-color: rgb(241, 240, 240);
     padding: 3px;
     text-align: center;
+    /* float: left;
+    margin: 0 40px; */
     
 
   }
