@@ -83,8 +83,7 @@
         </div>
         
         <div class="body">
-          <div class="danhmuc_monan">
-                    <h2 class="font-bold ">Thực đơn ZeeZee Chicken House</h2>         
+                
          
           <div class="danh_muc">
             <div class="td_danhmuc">
@@ -116,8 +115,35 @@
           <div class="mon_khai_vi">
             <div class="td_mon">
               <h2><a href=""> Món Khai vị</a></h2>
-           </div>
-             <div class="mons">
+            </div>
+            <?php
+            $img_path='upload/';
+            $i=0;
+                 foreach($sp_new as $sp){
+                  extract($sp);
+                  $hinh=$img_path.$image;
+                  
+                  echo '
+                  
+            <div class="mons">
+                <div class="mon1">
+                  <div class="anh1">
+                  <img src="'.$hinh.'" alt="" class="img4">
+                  </div>
+                 <div class="mota1">
+                  <h4 class="a "><a href="">'.$name.'</a></h4>
+                  <p class="a">Rau salat các loại, ớt chuông, dầu ô liu, sốt chanh leo</p>
+                  <p class=" gia a">'.$price.'</p>
+                  <button class="btn" >ĐẶT MÓN</button>
+                 </div>
+               </div>
+            </div>
+            
+                  ';
+                 
+                 }
+            ?>
+           <!--  <div class="mons">
               <div class="mon1">
                 <div class="anh1">
                   <img src="view/public/image/monkhaivi_1.jpg" alt="" class="img4">
@@ -140,8 +166,8 @@
                   <button class="btn" >ĐẶT MÓN</button>
                 </div>
               </div>
-             </div>
-             <div class="mons">
+          </div>
+              <div class="mons">
               <div class="mon1">
                 <div class="anh1">
                   <img src="view/public/image/monkhaivi_3.jpg" alt="" class="img4">
@@ -188,8 +214,9 @@
                   <button class="btn" >ĐẶT MÓN</button>
                 </div>
               </div>
-             </div>
+             </div> -->
           </div>
+          <!--  -->
           <div class="mon_ga">
             <div class="td_mon">
               <h2><a href=""> Món Gà </a></h2>

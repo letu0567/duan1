@@ -8,9 +8,12 @@
     // if (isset($_SESSION['user']) && ($role == 1)) {
     
     include "./DAO/pdo.php";
+    include "./DAO/mon_an.php";
     include "./DAO/tai_khoan.php";
     include "./view/header.php";
-
+    
+   $sp_new=loadall_trangchu();
+   
     if(isset($_GET["act"])){
         $act = $_GET["act"];
         switch ($act) {
