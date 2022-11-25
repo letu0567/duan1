@@ -602,6 +602,7 @@ input[type=file]{
     box-sizing: border-box;  
     border: 2px solid #e0ad06;  
     border-radius: 4px;
+    max-height: 200px;
 }
 
 /* css table */
@@ -679,4 +680,25 @@ table {
 
 
 /* end qtri admin */
+
+.box_search{
+    margin: 20px 0;
+}
+.box_search>.input_search{
+    padding:  5px 8px ;
+    outline: none;
+    width: 200px;
+    border-radius: 10px;
+    border: 2px solid gray;
+    /* height: 20px; */
+}
+.box_search>.input_submit_search{
+    padding:  7px ;
+    outline: none;
+    border: none;
+    background-color: #F7A605;
+    border-radius: 10px;
+    /* width: 200px; */
+    /* height: 20px; */
+}
 

@@ -5,12 +5,18 @@
                 <div class="box_duoi">
                     <h5>Quản lý khách hàng</h5>
                     <div class="gach_duoiadmin"></div>
-                    <form action="" method="POST">
+                    <form action="index.php?act=qlkh" method="post">
+                        <div class="box_search">
+                        <input class="input_search" type="text" name="keyw" placeholder="Nhập tên tài khoản">                      
+                        <input type="submit" value="Search" name="search_kh" class="input_submit_search">
+                        </div>
+                        <!-- <button><a href="index.php?act=qlkh">Danh sách</a></button> -->
+                    </form>
+                    <!-- <form action="" method="POST"> -->
                         <table>
                             <thead>
                                 <tr>
-                                    <th>#</th>
-                                    <th>Ảnh đại diện</th>                             
+                                    <th>#</th>                           
                                     <th>Username</th>
                                     <th>Mật khẩu</th>
                                     <th>Email</th>
@@ -33,7 +39,7 @@
                                     echo '<tr>
                                     
                                     <td>'.$id.'</td>
-                                    <td>'.$avatar.'</td>
+
                                     <td>'.$name.'</td>
                                     <td>'.$pass.'</td>
                                     <td>'.$email.'</td>
@@ -59,6 +65,6 @@
                                 </tr> -->                             
                             </tbody>
                         </table>
-                    </form>
+                    <!-- </form> -->
                 </div>
             </div>

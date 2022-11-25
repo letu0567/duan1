@@ -44,7 +44,7 @@
                         
                         <div class="form_con">
                         <label class="form_text2" for="">Mô tả</label><br>
-                        <textarea class="box_textarea" name="description" cols="30" rows="10"></textarea>
+                        <textarea class="box_textarea" name="description" cols="30" rows="5"></textarea>
                         </div>
                         <div class="chucnang">
                             <input type="submit" name="themmoi" value="Create">

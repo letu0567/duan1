@@ -64,13 +64,19 @@
                     $_SESSION['role'] = $role;
                     $_SESSION['user'] = $check_user;
 
-                    if (is_array($_SESSION['user'])) {
+                    if (isset($_SESSION['role'])) {
                         if ($role == 1) {
                             setcookie("dangnhap","Đăng nhập thành công!",time()+2);
-                            header('location: admin/index.php');
+                            header('location: admin/index.php');die;
                         }
-                    }else{
-                        $_SESSION['loidn'] = "Sai tên đăng nhập hoặc mật khẩu!";
+                    }
+                    if (is_array($_SESSION['user'])) {
+                        setcookie("dangnhap","Đăng nhập thành công!",time()+2);
+                        header('location: index.php');die;
+                    }
+                        
+                    if (!is_array($_SESSION['user'])) {
+                        $_SESSION['loidn'] = "Sai tên đăng nhập or mật khẩu!";
                     }
                     // if ($role == 1) {
                     //     setcookie("dangnhap","Đăng nhập thành công!",time()+2);
