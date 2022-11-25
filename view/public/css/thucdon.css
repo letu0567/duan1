@@ -184,8 +184,8 @@
   .mons{
     display: flex;
     justify-content: space-between;
-    margin-left: 80px;
-    margin-right: 80px; 
+    /* margin-left: 80px;
+    margin-right: 80px;  */
   }
   .mon1{
     display: flex;

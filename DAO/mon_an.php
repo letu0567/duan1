@@ -26,4 +26,10 @@ function delete_monan($id){
     $sql="DELETE FROM mon_an where id=".$id;
     pdo_execute($sql);
 }
+
+function loadall_trangchu(){
+     $sql="SELECT *FROM mon_an where id order by id desc limit 0,6";
+    $mon_an_trangchu= pdo_query($sql);
+     return $mon_an_trangchu;
+}
 ?>
