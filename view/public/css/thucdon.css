@@ -197,6 +197,18 @@
     margin-left: 10px;
     
   }
+  .mon1:hover{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.444) ;
+  }
+  .monga_2:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.733) ;
+  }
+  .monga_3:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.351) ;
+  }
+  .nuocngot:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.351) ;
+  }
   .td_mon{
     
     padding: 10px 0px;
@@ -205,7 +217,8 @@
     border-bottom-right-radius:20px ;
      margin-bottom: 50px;
      background-color: orangered;
-     margin-left: 39%; 
+     /* margin-left: 39%;  */
+     margin: 20px auto;
   }
   .td_mon h2{
     color: rgb(255, 255, 255);
@@ -293,7 +306,8 @@
     border-bottom-right-radius:20px ;
      margin-bottom: 50px;
      background-color: orangered;
-     margin-left: 36%; 
+     /* margin-left: 36%;  */
+     margin: 40px auto;
   }
   .td_mon1 h2{
     color: rgb(255, 255, 255);

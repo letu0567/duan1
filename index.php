@@ -98,7 +98,7 @@
             case 'quenmk':
                 if (isset($_POST['guiemail']) && ($_POST['guiemail'])) {
                     $email = $_POST['email'];
-                    print_r($email);
+                    // print_r($email);
                     $check_email = check($email,$name);
                     // if (isset($check_email['email'])) {
                     //     $_SESSION['your_mk'] = "Mật khẩu của bạn là: " . $check_email['pass'];

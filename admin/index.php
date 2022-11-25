@@ -148,7 +148,7 @@
                     $role = $_POST['role']; 
                     capnhat_tai_khoan2($id, $name, $email, $pass, $address, $tel,$role);
                 }
-                $list_tai_khoan = loadall_tai_khoan($keyw);
+                $list_tai_khoan = loadall_tai_khoan("");
                 include "tai_khoan/list.php";
                 break;
             case 'suatk':
