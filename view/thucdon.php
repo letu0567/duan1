@@ -90,7 +90,10 @@
               <h1>Danh Mục Món Ăn</h1>
             </div>
              <div class="all_dm">
-              <?php foreach ($dsthucdon as $dstd) {
+              
+              <?php 
+              foreach ($dsthucdon as $dstd) {
+                
                 extract($dstd);
                 $linktd = "index.php?act=loadtd&idtd=".$id;
                 echo '<div class="danh_muc1">
