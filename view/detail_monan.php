@@ -92,31 +92,32 @@
     </div>
     <div class="container_monan_ct">
     <div class="mon_anct">
+    <?php extract($one_monan) ?>
         <div class="box_right">
-            <img class="anh_ct" src="./public/image/5.jpg" alt="">
+            <?php
+                $img = $img_path.$image;
+                echo '<img class="anh_ct" src="'.$img.'" alt="">'
+            ?>
         </div>
         <div class="box_left">
+            
             <div class="box_con">
-            <h1 class="title_ct">Mẹt gà lợn 10 món</h1>
-            <p class="danhmuc_ct">Danh mục: <a href="#">Gà cay xé</a></p>
-            <span class="price_ct">599.000vnd</span>
+            <h1 class="title_ct"><?= $name ?></h1>
+            <p class="danhmuc_ct">Danh mục: <a href="#"><?php 
+                foreach ($all_thucdon as $thucdon) {
+                    extract($thucdon);
+                    if ($id_thucdon == $id) {
+                        echo $name;
+                    }
+                }
+            ?></a></p>
+            <span class="price_ct">$<?= $price ?></span>
             </div>
             <div class="gach_duoi_ct"></div>
-            <p class="desc_ct">Mẹt Gà Lợn 10 món phù hợp 4-6 ng gồm có :
-
-                Gà hấp lá chanh,
-                Gà quay mắc mật/giòn bì,
-                Gà chiên vị tỏi ớt,
-                Lợn mán xào lăn,
-
-                Dồi sụn nướng,
-                Lợn bóp giềng Tây Bắc,
-                Xôi chiên nhân thịt băm,
-                Xôi hấp hành ruốc,
-                Chân rút xương dầm cóc bao tử,
-                Salad rau xanh</p>
+            <p class="desc_ct"><?= $description ?></p>
             <input class="input_ct" type="submit" value="Đặt món" name="datmon">
         </div>
+
     </div>
     <div class="binh_luan_box">
         <h1 class="danhgia">Bình luận(0)</h1>
@@ -132,30 +133,18 @@
     <h1 class="sanphamlienquan">SẢN PHẨM LIÊN QUAN</h1>
     <div class="gach_duoi_ct"></div>
     <div class="box_splienquan">
-    <div class="monga_2">
-              <img src="view/public/image/monga_3.jpg" alt="" class="img3">
-              <h4 class="td2 b"><a href="">Mix tim gà, má gà nướng củi</a></h4>
-              <p class=" gia b ">50.000đ</p>
-              <button class="btn" >ĐẶT MÓN</button>
-            </div>
-            <div class="monga_2">
-              <img src="view/public/image/monga_4.jpg" alt="" class="img3">
-              <h4 class="td2 b"><a href="">Cháo gà hạt kê nấm</a></h4>
-              <p class=" gia b ">79.000đ</p>
-              <button class="btn" >ĐẶT MÓN</button>
-            </div>
-            <div class="monga_2">
-              <img src="view/public/image/monga_5.jpg" alt="" class="img3">
-              <h4 class="td2 b"><a href="">Gà cà ry kiểu Thái</a></h4>
-              <p class=" gia b ">119.000đ</p>
-              <button class="btn" >ĐẶT MÓN</button>
-            </div>
-            <div class="monga_2">
-              <img src="view/public/image/monga_5.jpg" alt="" class="img3">
-              <h4 class="td2 b"><a href="">Gà cà ry kiểu Thái</a></h4>
-              <p class=" gia b ">119.000đ</p>
-              <button class="btn" >ĐẶT MÓN</button>
-            </div>
+        
+        <?php foreach ($monan_cungloai as $monan) {
+            extract($monan);
+            $img2 = $img_path2.$image;
+            $link_monan_ct = "index.php?act=monan_ct&idma=".$id;
+            echo '<div class="monga_2">
+            <a href="'.$link_monan_ct.'"><img src="'.$img2.'" alt="" class="img3">
+            <h4 class="td2 b">'.$name.'</h4>
+            <p class=" gia b ">'.$price.'</p></a>
+            <button class="btn" >ĐẶT MÓN</button>
+          </div>';
+        } ?>
     </div>
     </div>
     </div>

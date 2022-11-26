@@ -9,11 +9,13 @@
     
     include "./DAO/pdo.php";
     include "./DAO/mon_an.php";
+    include "./DAO/thucdon.php";
     include "./DAO/tai_khoan.php";
+    include "./global.php";
     include "./view/header.php";
     
    $sp_new=loadall_trangchu();
-   
+   $dsthucdon = loadall_thucdon() ;
     if(isset($_GET["act"])){
         $act = $_GET["act"];
         switch ($act) {
@@ -29,7 +31,28 @@
                 include "view/thucdon.php";
                 break;
             case 'monan_ct':
-                include "view/detail_monan.php";
+                
+                if (isset($_GET['idma']) && ($_GET['idma']) > 0) {                  
+                    $one_monan = loadone_monan($_GET['idma']);
+                    $all_thucdon = loadall_thucdon();
+                    extract($one_monan);
+                    $monan_cungloai = load_monan_cungloai($id,$id_thucdon);
+                    include "view/detail_monan.php";
+                }else{
+                    include "view/content.php";
+                }
+                
+                break;
+            case 'loadtd':
+            
+                if (isset($_GET['idtd']) && ($_GET['idtd']) > 0) {               
+                    $dsma = loadalll_monan("", $_GET['idtd']);
+                    $ten_td = load_ten_thucdon($_GET['idtd']);
+                    include "view/load_monan.php";
+                }else{
+                    include "view/load_monan.php";
+                }
+                
                 break;
 
                 // end thực đơn

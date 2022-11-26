@@ -90,26 +90,14 @@
               <h1>Danh Mục Món Ăn</h1>
             </div>
              <div class="all_dm">
-              <div class="danh_muc1">
-              <i class="fa-solid fa-burger fa-solid1"></i>
-                    <p><a href=""> MÓN KHAI VỊ</a></p>
-              </div>
-              <div class="danh_muc1">
-              <i class="fa-solid fa-drumstick-bite fa-solid1"></i>
-                    <p><a href=""> MÓN GÀ</a></p>
-             </div>
-              <div class="danh_muc1">
-                    <i class="fa-solid fa-leaf fa-solid1"></i>
-                    <p><a href=""> MÓN RAU</a></p>
-              </div>
-              <div class="danh_muc1">
-              <i class="fa-solid fa-wine-bottle fa-solid1"></i>
-                    <p><a href=""> ĐỒ UỐNG</a></p>
-              </div>
-              <div class="danh_muc1">
-              <i class="fa-solid fa-bread-slice fa-solid1"></i>
-                    <p><a href=""> MÓN KHÁC</a></p>
-              </div>
+              <?php foreach ($dsthucdon as $dstd) {
+                extract($dstd);
+                $linktd = "index.php?act=loadtd&idtd=".$id;
+                echo '<div class="danh_muc1">
+                <i class="fa-solid fa-drumstick-bite fa-solid1"></i>
+                      <p><a href="'.$linktd.'"> '.$name.'</a></p>
+               </div>';
+              } ?>
              </div>
           </div>
           <!-- <div class="mon_khai_vi">
@@ -204,7 +192,7 @@
              foreach($sp_new as $sp){
                   extract($sp);
                   $hinh=$img_path.$image;
-                  $link_monan_ct = "index.php?act=monan_ct";
+                  $link_monan_ct = "index.php?act=monan_ct&idma=".$id;
                   echo '<div class="monga_2">
                   <a href="'.$link_monan_ct.'"><img src="'.$hinh.'" alt="" class="img3">
                   <h4 class="td2 b">'.$name.'</h4>
