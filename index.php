@@ -28,6 +28,10 @@
             case 'td':
                 include "view/thucdon.php";
                 break;
+            case 'monan_ct':
+                include "view/detail_monan.php";
+                break;
+
                 // end thực đơn
 
                 // star tintuc

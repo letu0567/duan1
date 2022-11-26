@@ -406,3 +406,104 @@
     width: 129px;
     height: 129px;
   }
+  .container_monan_ct{
+    width: 80%;
+    /* background-color: #b9b9b9; */
+    margin: 20px auto;
+  }
+  .mon_anct{
+    display: flex;
+  }
+  .box_right{
+    flex-basis: 48%;
+    /* background-image: url(../image/5.jpg); */
+
+  }
+  .box_left{
+    flex-basis:  48%;
+    margin-left: 3%;
+    padding-right: 5%;
+  }
+  .box_con{
+    line-height: 45px;
+  }
+  .title_ct{
+    font-size: 30px;
+    font-weight: 600;
+  }
+  .danhmuc_ct{
+    font-size: 20px;
+  }
+  .danhmuc_ct a{
+    font-size: 20px;
+    color: #B82026;
+  }
+  .price_ct{
+    color: red;
+    font-size: 25px;
+    font-weight: 500;
+  }
+  .input_ct{
+    background-color: #e47a02;
+    width: 60%;
+    /* margin-left: 20%; */
+    margin-top: 8%;
+    padding: 5px 0;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+  }
+  .input_ct:hover{
+    background-color: #aa5b01;
+  }
+  .gach_duoi_ct{
+    margin-top: 10px;
+    border-bottom: 1px solid rgb(181, 181, 181);
+  }
+  .desc_ct{
+    margin-top: 20px;
+  }
+  .binh_luan_box{
+    margin-top: 50px;
+  }
+  .danhgia{
+    width: 300px;
+    font-size: 20px;
+    font-weight: 500;
+    /* border-bottom: 2px solid red; */
+    /* padding-bottom: 10px; */
+    /* position: ; */
+  }
+  .sanphamlienquan{
+    width: 300px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 50px;
+  }
+  #mota_ct{
+    border: 1px solid rgb(190, 190, 190);
+    width: 100%;
+    height: 100px;
+  }
+  .nhanxet{
+    font-size: 17px;
+    margin: 10px 0;
+  }
+  .input_binhluan{
+    background-color: #0452d8;
+    padding: 5px 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+    color: #fff;
+    cursor: pointer;
+  }
+  .input_binhluan:hover{
+    background-color: #0342ad;
+  }
+  .box_splienquan{
+    margin-top: 30px;
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 30px;
+  }

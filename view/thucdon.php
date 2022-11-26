@@ -204,14 +204,16 @@
              foreach($sp_new as $sp){
                   extract($sp);
                   $hinh=$img_path.$image;
+                  $link_monan_ct = "index.php?act=monan_ct";
                   echo '<div class="monga_2">
-                  <img src="'.$hinh.'" alt="" class="img3">
-                  <h4 class="td2 b"><a href="">'.$name.'</a></h4>
-                  <p class=" gia b ">'.$price.'</p>
+                  <a href="'.$link_monan_ct.'"><img src="'.$hinh.'" alt="" class="img3">
+                  <h4 class="td2 b">'.$name.'</h4>
+                  <p class=" gia b ">'.$price.'</p></a>
                   <button class="btn" >ĐẶT MÓN</button>
                 </div> ';        
             }
             ?>
+            <a href=""></a>
             <!-- <div class="monga_2">
               <img src="view/public/image/monga_2.jpg" alt="" class="img3">
               <h4 class="td2 b"><a href="">Canh gà ác hầm</a></h4>
