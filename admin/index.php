@@ -5,6 +5,7 @@
     include "../DAO/pdo.php";
     include "../DAO/thucdon.php";
     include "../DAO/mon_an.php";
+    include "../DAO/thong_ke.php";
     include "../DAO/tai_khoan.php";
 
     
@@ -165,9 +166,13 @@
                 include "don_hang/list.php";
                 break;
             case 'qltk':
+                 $thongke=loadall_thongke();
                 include "thongke/list.php";
                 break;
-                                
+             case 'bieudo':
+                $thongke=loadall_thongke();
+                include "thongke/bieudo.php";
+                break;                   
             
             default:
                 include "content.php";
