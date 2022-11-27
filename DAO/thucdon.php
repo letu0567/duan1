@@ -22,9 +22,5 @@ function delete_thucdon($id){
     $sql="DELETE FROM thucdon where id=".$id;
     pdo_execute($sql);
 }
-function load_monan_thucdon($idtd){
-    $sql = "select * from mon_an AND id_thucdon = '".$idtd."' order by id desc ";
-    $list_monan = pdo_query($sql);
-    return $list_monan;
-}
+
 ?>
