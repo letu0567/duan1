@@ -404,6 +404,7 @@ body{
     position: fixed;
     right: 20px;
     top: 350px;
+    z-index: 1;
 }
 .link a:hover{
     cursor: pointer;
@@ -679,4 +680,42 @@ table {
 
 
 /* end qtri admin */
+
+.box_search{
+    margin: 20px 0;
+}
+.box_search>.input_search{
+    padding:  5px 8px ;
+    outline: none;
+    width: 200px;
+    border-radius: 10px;
+    border: 2px solid #F7A605;
+    /* height: 20px; */
+    transition: all ease .10s;
+}
+.box_search>.input_search:focus{
+    border: 2px solid black;
+}
+.box_search>.input_submit_search{
+    padding:  7px ;
+    outline: none;
+    border: none;
+    background-color: #F7A605;
+    border-radius: 10px;
+    /* width: 200px; */
+    /* height: 20px; */
+}
+.box_search>.input_submit_search:hover{
+    padding:  7px ;
+    outline: none;
+    border: none;
+    background-color: #c88602;
+    border-radius: 10px;
+    /* width: 200px; */
+    /* height: 20px; */
+}
+.hinh_trangchu{
+    width: 296px;
+    height: 296px;
+}
 

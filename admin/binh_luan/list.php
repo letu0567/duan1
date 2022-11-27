@@ -18,14 +18,29 @@
                                 </tr>
                             </thead>
                             <tbody>
-                            <tr>
-                                    <td>01</td>
-                                    <td>Ahihi</td>
-                                    <td>02</td>
-                                    <td>23</td>
-                                    <td>15/11/2022</td>
-                                    <td><a href="#" class="btn btn-danger">Xóa</a></td>
-                                </tr>
+                            
+                                <?php foreach ($list_bl as $bl) {
+                                    extract($bl);
+                                    // foreach ($list_user as $user) {
+                                    //     extract($user);
+                                    //     // print_r($user);
+                                    //     if ($id == $id_user) {
+                                    //         $name_user = $name;
+                                    //     }
+                                    // }
+                                    $xoatk = "index.php?act=xoabl&id=".$id;
+                                    echo '
+                                    <tr>
+                                        <td>'.$id.'</td>
+                                        <td>'.$content.'</td>
+                                        <td>'.$id_user.'</td>
+                                        <td>'.$id_monan.'</td>
+                                        <td>'.$date.'</td>
+                                        <td><a href="'.$xoatk.'" class="btn btn-danger">Xóa</a></td>
+                                    </tr>';
+                                } ?>
+
+                                
                             </tbody>
                         </table>
                     </form>

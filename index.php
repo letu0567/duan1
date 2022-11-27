@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
 ob_start();
 session_start();
 
@@ -15,6 +16,28 @@ include "./DAO/datban.php";
 if (isset($_GET["act"])) {
     $act = $_GET["act"];
     switch ($act) {
+=======
+    ob_start();
+    session_start();
+    
+    // if (isset($_SESSION['user'])){
+    //     extract($_SESSION['user']);
+    // }
+    // if (isset($_SESSION['user']) && ($role == 1)) {
+    
+    include "./DAO/pdo.php";
+    include "./DAO/mon_an.php";
+    include "./DAO/thucdon.php";
+    include "./DAO/tai_khoan.php";
+    include "./global.php";
+    include "./view/header.php";
+    
+   $sp_new=loadall_trangchu();
+   $dsthucdon = loadall_thucdon() ;
+    if(isset($_GET["act"])){
+        $act = $_GET["act"];
+        switch ($act) {
+>>>>>>> 0cb9835b18907be624469d583c3e9ec3651ae801
             // star gioithieu
         case 'gt':
             include "view/giothieu.php";
@@ -23,10 +46,42 @@ if (isset($_GET["act"])) {
             // endgioithieu
 
             // star thực đơn
+<<<<<<< HEAD
         case 'td':
             include "view/thucdon.php";
             break;
             // end thực đơn
+=======
+            case 'td':
+                include "view/thucdon.php";
+                break;
+            case 'monan_ct':
+                
+                if (isset($_GET['idma']) && ($_GET['idma']) > 0) {                  
+                    $one_monan = loadone_monan($_GET['idma']);
+                    $all_thucdon = loadall_thucdon();
+                    extract($one_monan);
+                    $monan_cungloai = load_monan_cungloai($id,$id_thucdon);
+                    include "view/detail_monan.php";
+                }else{
+                    include "view/content.php";
+                }
+                
+                break;
+            case 'loadtd':
+            
+                if (isset($_GET['idtd']) && ($_GET['idtd']) > 0) {               
+                    $dsma = loadalll_monan("", $_GET['idtd']);
+                    $ten_td = load_ten_thucdon($_GET['idtd']);
+                    include "view/load_monan.php";
+                }else{
+                    include "view/load_monan.php";
+                }
+                
+                break;
+
+                // end thực đơn
+>>>>>>> 0cb9835b18907be624469d583c3e9ec3651ae801
 
             // star tintuc
         case 'tt':
@@ -53,6 +108,7 @@ if (isset($_GET["act"])) {
             // end đặt bàn
 
 
+<<<<<<< HEAD
 
             case 'xacnhan';
             if(isset($_POST['xacnhan'])&&($_POST['xacnhan'])){
@@ -104,6 +160,21 @@ if (isset($_GET["act"])) {
                     if ($role == 1) {
                         setcookie("dangnhap", "Đăng nhập thành công!", time() + 2);
                         header('location: admin/index.php');
+=======
+                    if (isset($_SESSION['role'])) {
+                        if ($role == 1) {
+                            setcookie("dangnhap","Đăng nhập thành công!",time()+2);
+                            header('location: admin/index.php');die;
+                        }
+                    }
+                    if (is_array($_SESSION['user'])) {
+                        setcookie("dangnhap","Đăng nhập thành công!",time()+2);
+                        header('location: index.php');die;
+                    }
+                        
+                    if (!is_array($_SESSION['user'])) {
+                        $_SESSION['loidn'] = "Sai tên đăng nhập or mật khẩu!";
+>>>>>>> 0cb9835b18907be624469d583c3e9ec3651ae801
                     }
                 } else {
                     $_SESSION['loidn'] = "Sai tên đăng nhập hoặc mật khẩu!";
@@ -118,9 +189,32 @@ if (isset($_GET["act"])) {
                 //     # code...
                 // }
 
+<<<<<<< HEAD
             }
             include "index.php";
             break;
+=======
+            case 'quen_mk':
+                include "view/tai_khoan/quen_mk.php";
+                break;
+            case 'quenmk':
+                if (isset($_POST['guiemail']) && ($_POST['guiemail'])) {
+                    $email = $_POST['email'];
+                    // print_r($email);
+                    $check_email = check($email,$name);
+                    // if (isset($check_email['email'])) {
+                    //     $_SESSION['your_mk'] = "Mật khẩu của bạn là: " . $check_email['pass'];
+                    //     header("location: index.php?act=quen_mk");
+                    // }
+                    if ((is_array($check_email))) {
+                        $thongbao = "Mật khẩu của bạn là:" . $check_email['pass'];
+                    } else {
+                        $thongbao = "Email này không tồn tại!";
+                    }
+                }
+                include "view/tai_khoan/quen_mk.php";
+                break;
+>>>>>>> 0cb9835b18907be624469d583c3e9ec3651ae801
 
         case 'quen_mk':
             include "view/tai_khoan/quen_mk.php";
@@ -197,7 +291,15 @@ if (isset($_GET["act"])) {
 
         default:
             include "./view/content.php";
+<<<<<<< HEAD
             break;
+=======
+                break;
+        }
+    }else{
+        $loadall = loadall_trangchu2();
+        include "./view/content.php";
+>>>>>>> 0cb9835b18907be624469d583c3e9ec3651ae801
     }
 } else {
     include "./view/content.php";

@@ -53,9 +53,13 @@
     return $kqem;
 }
 
-    function loadall_tai_khoan()
+    function loadall_tai_khoan($keyw)
     {
-        $sql = "select * from user order by id ";
+        $sql = "select * from user where 1";
+        if ($keyw != "") {
+            $sql .= " and name like '%" . $keyw . "%'";
+        }
+        $sql .= " order by id desc";
         $list_tai_khoan = pdo_query($sql);
         return $list_tai_khoan;
     }

@@ -1,7 +1,6 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +9,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="view/public/css/style2.css">
     <link rel="stylesheet" href="view/public/css/style.css">
+    <!-- <link rel="stylesheet" href="view/public/css/thucdon.css"> -->
     <!-- <link rel="stylesheet" href="./public/js/js.js"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
@@ -65,7 +65,7 @@
                                         if (isset($_SESSION['user'])) {
                                             extract($_SESSION['user']);  
                                     ?>  
-                                    <!-- <li><a href="#"><?= $name ?></a></li> -->
+                                    <!-- <li><a href="#"></a></li> -->
                                     <?php if ($role == 1) { ?>
                                         <li><a href="admin/index.php">Đăng nhập admin</a></li>
                                     <?php }?>
