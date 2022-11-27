@@ -1,6 +1,6 @@
 <?php 
 function loadall_thucdon(){
-    $sql= 'SELECT * FROM thucdon order by id desc';
+    $sql= 'SELECT * FROM thucdon order by id';
    $list_thucdon = pdo_query($sql);
 return $list_thucdon;
 }
@@ -22,4 +22,5 @@ function delete_thucdon($id){
     $sql="DELETE FROM thucdon where id=".$id;
     pdo_execute($sql);
 }
+
 ?>

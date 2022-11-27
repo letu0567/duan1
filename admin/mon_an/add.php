@@ -9,13 +9,13 @@
                     <div class="form_con">
                         <label class="form_text1" for="">Danh mục</label><br>
                             <select name="id_td" id="" class="box_select">
+                                <option value="0" selected>Chọn thực đơn</option>
                                 <?php foreach($listthucdon as $thucdon){
                                     extract($thucdon);
                                    
                                     echo '<option value="'.$id.'">'.$name.'</option>';
                                 }
                                  ?>
-                                <!-- <option value="0">--Chọn danh mục--</option> -->
                             </select>
                         </div>
                             <div class="form_con_box">
@@ -44,7 +44,7 @@
                         
                         <div class="form_con">
                         <label class="form_text2" for="">Mô tả</label><br>
-                        <textarea class="box_textarea" name="description" cols="30" rows="10"></textarea>
+                        <textarea class="box_textarea" name="description" cols="30" rows="5"></textarea>
                         </div>
                         <div class="chucnang">
                             <input type="submit" name="themmoi" value="Create">

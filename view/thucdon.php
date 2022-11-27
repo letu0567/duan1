@@ -83,41 +83,34 @@
         </div>
         
         <div class="body">
-          <div class="danhmuc_monan">
-                    <h2 class="font-bold ">Thực đơn ZeeZee Chicken House</h2>         
+                
          
           <div class="danh_muc">
             <div class="td_danhmuc">
               <h1>Danh Mục Món Ăn</h1>
             </div>
              <div class="all_dm">
-              <div class="danh_muc1">
-              <i class="fa-solid fa-burger fa-solid1"></i>
-                    <p><a href=""> MÓN KHAI VỊ</a></p>
-              </div>
-              <div class="danh_muc1">
-              <i class="fa-solid fa-drumstick-bite fa-solid1"></i>
-                    <p><a href=""> MÓN GÀ</a></p>
-             </div>
-              <div class="danh_muc1">
-                    <i class="fa-solid fa-leaf fa-solid1"></i>
-                    <p><a href=""> MÓN RAU</a></p>
-              </div>
-              <div class="danh_muc1">
-              <i class="fa-solid fa-wine-bottle fa-solid1"></i>
-                    <p><a href=""> ĐỒ UỐNG</a></p>
-              </div>
-              <div class="danh_muc1">
-              <i class="fa-solid fa-bread-slice fa-solid1"></i>
-                    <p><a href=""> MÓN KHÁC</a></p>
-              </div>
+              
+              <?php 
+              foreach ($dsthucdon as $dstd) {
+                
+                extract($dstd);
+                $linktd = "index.php?act=loadtd&idtd=".$id;
+                echo '<div class="danh_muc1">
+                <i class="fa-solid fa-drumstick-bite fa-solid1"></i>
+                      <p><a href="'.$linktd.'"> '.$name.'</a></p>
+               </div>';
+              } ?>
              </div>
           </div>
-          <div class="mon_khai_vi">
+          <!-- <div class="mon_khai_vi">
             <div class="td_mon">
               <h2><a href=""> Món Khai vị</a></h2>
-           </div>
-             <div class="mons">
+            </div>
+            <div class="mons">
+            </div>
+            </div> -->
+           <!--  <div class="mons">
               <div class="mon1">
                 <div class="anh1">
                   <img src="view/public/image/monkhaivi_1.jpg" alt="" class="img4">
@@ -140,8 +133,8 @@
                   <button class="btn" >ĐẶT MÓN</button>
                 </div>
               </div>
-             </div>
-             <div class="mons">
+          </div>
+              <div class="mons">
               <div class="mon1">
                 <div class="anh1">
                   <img src="view/public/image/monkhaivi_3.jpg" alt="" class="img4">
@@ -188,20 +181,31 @@
                   <button class="btn" >ĐẶT MÓN</button>
                 </div>
               </div>
-             </div>
-          </div>
+             </div> -->
+          
+          <!--  -->
           <div class="mon_ga">
             <div class="td_mon">
-              <h2><a href=""> Món Gà </a></h2>
+              <h2><a href=""> Món Mới</a></h2>
            </div>
            <div class="mon2">
-            <div class="monga_2">
-              <img src="view/public/image/monga_1.jpg" alt="" class="img3">
-              <h4 class="td2 b"><a href="">Gà nướng củi nguyên con</a></h4>
-              <p class=" gia b ">580.000đ</p>
-              <button class="btn" >ĐẶT MÓN</button>
-            </div>
-            <div class="monga_2">
+            
+            <?php
+            $img_path='upload/';
+             foreach($sp_new as $sp){
+                  extract($sp);
+                  $hinh=$img_path.$image;
+                  $link_monan_ct = "index.php?act=monan_ct&idma=".$id;
+                  echo '<div class="monga_2">
+                  <a href="'.$link_monan_ct.'"><img src="'.$hinh.'" alt="" class="img3">
+                  <h4 class="td2 b">'.$name.'</h4>
+                  <p class=" gia b ">'.$price.'</p></a>
+                  <button class="btn" >ĐẶT MÓN</button>
+                </div> ';        
+            }
+            ?>
+            <a href=""></a>
+            <!-- <div class="monga_2">
               <img src="view/public/image/monga_2.jpg" alt="" class="img3">
               <h4 class="td2 b"><a href="">Canh gà ác hầm</a></h4>
               <p class=" gia b ">195.000đ</p>
@@ -226,8 +230,8 @@
               <h4 class="td2 b"><a href="">Gà cà ry kiểu Thái</a></h4>
               <p class=" gia b ">119.000đ</p>
               <button class="btn" >ĐẶT MÓN</button>
-            </div>
-            <div class="monga_2">
+            </div> -->
+            <!-- <div class="monga_2">
               <img src="view/public/image/monga_6.jpg" alt="" class="img3">
               <h4 class="td2 b"><a href="">Cánh gà sốt me</a></h4>
               <p class=" gia b ">85.000đ</p>
@@ -244,8 +248,8 @@
               <h4 class="td2 b"><a href="">Salad Caesar gà nướng</a></h4>
               <p class=" gia b ">129.000đ</p>
               <button class="btn " >ĐẶT MÓN</button>
-            </div>
-           </div>
+            </div> -->
+           <!-- </div>
           </div>
           <div class="mon_rau">
             <div class="td_mon1">
@@ -358,7 +362,7 @@
               
              
               
-           </div>
+           </div> -->
            
           </div>
           <!-- divbody -->

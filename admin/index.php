@@ -5,8 +5,13 @@
     include "../DAO/pdo.php";
     include "../DAO/thucdon.php";
     include "../DAO/mon_an.php";
+    include "../DAO/thong_ke.php";
     include "../DAO/tai_khoan.php";
+<<<<<<< HEAD
     include "../DAO/datban.php";
+=======
+    include "../DAO/binhluan.php";
+>>>>>>> 0cb9835b18907be624469d583c3e9ec3651ae801
 
     
     if (isset($_SESSION['role']) && ($_SESSION['role']) == 1) {
@@ -127,10 +132,24 @@
                 include "dat_ban/list.php";
                 break;
             case 'qlbl':
+                $list_user = loadall_user();
+                $list_bl = loadall_binhluan2();
+                include "binh_luan/list.php";
+                break;
+            case 'xoabl':
+                if (isset($_GET['id']) && ($_GET['id'] > 0)) {
+                    xoa_binhluan($_GET['id']);
+                }
+                $list_bl = loadall_binhluan2();
                 include "binh_luan/list.php";
                 break;
             case 'qlkh':
-                $list_tai_khoan = loadall_tai_khoan();
+                if (isset($_POST['search_kh']) && ($_POST['search_kh'])) {
+                    $keyw = $_POST['keyw'];
+                }else{
+                    $keyw = "";
+                }
+                $list_tai_khoan = loadall_tai_khoan($keyw);
                 include "tai_khoan/list.php";
                 break;
             case 'edit_tk':
@@ -144,7 +163,7 @@
                     $role = $_POST['role']; 
                     capnhat_tai_khoan2($id, $name, $email, $pass, $address, $tel,$role);
                 }
-                $list_tai_khoan = loadall_tai_khoan();
+                $list_tai_khoan = loadall_tai_khoan("");
                 include "tai_khoan/list.php";
                 break;
             case 'suatk':
@@ -157,17 +176,17 @@
                 if (isset($_GET['id']) && ($_GET['id'] > 0)) {
                     xoa_tai_khoan($_GET['id']);
                 }
-                // $sql = "select * from user order by id desc";
-                $list_tai_khoan = loadall_tai_khoan();
-                include "tai_khoan/list.php";
-                break;
             case 'qldh':
                 include "don_hang/list.php";
                 break;
             case 'qltk':
+                 $thongke=loadall_thongke();
                 include "thongke/list.php";
                 break;
-                                
+             case 'bieudo':
+                $thongke=loadall_thongke();
+                include "thongke/bieudo.php";
+                break;                   
             
             default:
                 include "content.php";

@@ -54,7 +54,7 @@ $hinhpath="../upload/".$image;
                         
                         <div class="form_con">
                         <label class="form_text2" for="">Mô tả</label><br>
-                        <textarea class="box_textarea" name="description"  cols="30" rows="10"> <?=$description?></textarea>
+                        <textarea class="box_textarea" name="description"  cols="30" rows="4"> <?=$description?></textarea>
                         </div>
                         <div class="chucnang">
                         <input type="hidden" name="id" value="<?=$id?>">
