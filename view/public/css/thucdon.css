@@ -406,6 +406,9 @@
     width: 129px;
     height: 129px;
   }
+  /* .container_detail_monan{
+    background-color: #fff;
+  } */
   .container_monan_ct{
     width: 80%;
     /* background-color: #fff; */
@@ -418,6 +421,7 @@
   .mon_anct{
     display: flex;
   }
+  
   .box_right{
     flex-basis: 48%;
     /* background-image: url(../image/5.jpg); */
@@ -470,7 +474,7 @@
     margin-top: 20px;
   }
   .binh_luan_box{
-    margin-top: 120px;
+    margin-top: 25% ;
   }
   .danhgia{
     width: 300px;
@@ -516,4 +520,25 @@
   .anh_ct{
     width: 60%;
     margin: 5% auto;
+  }
+  .bl_khachhang{
+    display: flex;
+    
+  }
+  .bl_img_kh i{
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 20px;
+  }
+  .bl_kh_con{
+    margin-top: 15px;
+    margin-left: 5px;
+    line-height: 35px;
+  }
+  .name_tk{
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .time_tk{
+    font-size: 13px;
   }

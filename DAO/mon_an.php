@@ -43,6 +43,11 @@ function loadall_trangchu(){
     $mon_an_trangchu= pdo_query($sql);
      return $mon_an_trangchu;
 }
+function loadall_trangchu2(){
+    $sql="SELECT *FROM mon_an order by id desc limit 0,8";
+   $mon_an_trangchu2= pdo_query($sql);
+    return $mon_an_trangchu2;
+}
 // function load_monan_thucdon($idtd){
 //     $sql = "select * from mon_an AND id_thucdon = '".$idtd."' order by id desc ";
 //     $list_monan = pdo_query($sql);

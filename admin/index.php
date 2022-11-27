@@ -7,6 +7,7 @@
     include "../DAO/mon_an.php";
     include "../DAO/thong_ke.php";
     include "../DAO/tai_khoan.php";
+    include "../DAO/binhluan.php";
 
     
     if (isset($_SESSION['role']) && ($_SESSION['role']) == 1) {
@@ -127,6 +128,15 @@
                 include "dat_ban/list.php";
                 break;
             case 'qlbl':
+                $list_user = loadall_user();
+                $list_bl = loadall_binhluan2();
+                include "binh_luan/list.php";
+                break;
+            case 'xoabl':
+                if (isset($_GET['id']) && ($_GET['id'] > 0)) {
+                    xoa_binhluan($_GET['id']);
+                }
+                $list_bl = loadall_binhluan2();
                 include "binh_luan/list.php";
                 break;
             case 'qlkh':

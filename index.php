@@ -201,6 +201,7 @@
                 break;
         }
     }else{
+        $loadall = loadall_trangchu2();
         include "./view/content.php";
     }
     include "./view/footer.php";

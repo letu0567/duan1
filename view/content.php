@@ -58,73 +58,83 @@
                 Thực đơn ZeeZee Chicken House
             </h1>
             <div class="menu">
-                <div class="grid flex grid-cols-4 gap-8 pt-10">
-                    <div class="">
-                        <img src="view/public/image/2.jpg" alt="">
-                        <div class="pt-5">
-                            <h1 class="text-xl font-bold text-center hover:text-red-900">Gà nướng củi nguyên con</h1>
-                            <p class="text-xl font-bold text-center">120.000</p>
-                        </div>
-                    </div>
-                    <div class="">
-                        <img src="view/public/image/2.jpg" alt="">
-                        <div class="pt-5">
-                            <h1 class="text-xl font-bold text-center hover:text-red-900">Gà nướng củi nguyên con</h1>
-                            <p class="text-xl font-bold text-center">120.000</p>
-                        </div>
-                    </div>
-                    <div class="">
-                        <img src="view/public/image/2.jpg" alt="">
-                        <div class="pt-5">
-                            <h1 class="text-xl font-bold text-center hover:text-red-900">Gà nướng củi nguyên con</h1>
-                            <p class="text-xl font-bold text-center">120.000</p>
-                        </div>
-                    </div>
-                    <div class="">
-                        <img src="view/public/image/2.jpg" alt="">
-                        <div class="pt-5">
-                            <h1 class="text-xl font-bold text-center hover:text-red-900">Gà nướng củi nguyên con</h1>
-                            <p class="text-xl font-bold text-center">120.000</p>
-                        </div>
-                    </div>
-
-
-
-                </div>
-                <div class="grid flex grid-cols-4 gap-8 pt-10">
-                    <div class="">
-                        <img src="view/public/image/2.jpg" alt="">
-                        <div class="pt-5">
-                            <h1 class="text-xl font-bold text-center hover:text-red-900">Gà nướng củi nguyên con</h1>
-                            <p class="text-xl font-bold text-center">120.000</p>
-                        </div>
-                    </div>
-                    <div class="">
-                        <img src="view/public/image/2.jpg" alt="">
-                        <div class="pt-5">
-                            <h1 class="text-xl font-bold text-center hover:text-red-900">Gà nướng củi nguyên con</h1>
-                            <p class="text-xl font-bold text-center">120.000</p>
-                        </div>
-                    </div>
-                    <div class="">
-                        <img src="view/public/image/2.jpg" alt="">
-                        <div class="pt-5">
-                            <h1 class="text-xl font-bold text-center hover:text-red-900">Gà nướng củi nguyên con</h1>
-                            <p class="text-xl font-bold text-center">120.000</p>
-                        </div>
-                    </div>
-                    <div class="">
-                        <img src="view/public/image/2.jpg" alt="">
-                        <div class="pt-5">
-                            <h1 class="text-xl font-bold text-center hover:text-red-900">Gà nướng củi nguyên con</h1>
-                            <p class="text-xl font-bold text-center">120.000</p>
-                        </div>
-                    </div>
-
-
-
-                </div>
+            <div class="grid flex grid-cols-4 gap-8 pt-10">
+            <?php
+            $img_path='upload/';
+             foreach($loadall as $monan){
+                  extract($monan);
+                  $hinh=$img_path.$image;
+                  $link_monan_ct = "index.php?act=monan_ct&idma=".$id;
+                  echo '<div class="">
+                  <img class = "hinh_trangchu" src="'.$hinh.'" alt="">
+                  <div class="pt-5">
+                      <h1 class="text-xl font-bold text-center hover:text-red-900">'.$name.'</h1>
+                      <p class="text-xl font-bold text-center">'.$price.'</p>
+                  </div>
+              </div>';        
+            }
+            ?>
+            
             </div>
+            </div>
+<img src="" alt="" width="296px" height="">
+            
+                
+                    
+                    <!-- <div class="">
+                        <img src="view/public/image/2.jpg" alt="">
+                        <div class="pt-5">
+                            <h1 class="text-xl font-bold text-center hover:text-red-900">Gà nướng củi nguyên con</h1>
+                            <p class="text-xl font-bold text-center">120.000</p>
+                        </div>
+                    </div>
+                    <div class="">
+                        <img src="view/public/image/2.jpg" alt="">
+                        <div class="pt-5">
+                            <h1 class="text-xl font-bold text-center hover:text-red-900">Gà nướng củi nguyên con</h1>
+                            <p class="text-xl font-bold text-center">120.000</p>
+                        </div>
+                    </div>
+                    <div class="">
+                        <img src="view/public/image/2.jpg" alt="">
+                        <div class="pt-5">
+                            <h1 class="text-xl font-bold text-center hover:text-red-900">Gà nướng củi nguyên con</h1>
+                            <p class="text-xl font-bold text-center">120.000</p>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <div class="grid flex grid-cols-4 gap-8 pt-10">
+                    <div class="">
+                        <img src="view/public/image/2.jpg" alt="">
+                        <div class="pt-5">
+                            <h1 class="text-xl font-bold text-center hover:text-red-900">Gà nướng củi nguyên con</h1>
+                            <p class="text-xl font-bold text-center">120.000</p>
+                        </div>
+                    </div>
+                    <div class="">
+                        <img src="view/public/image/2.jpg" alt="">
+                        <div class="pt-5">
+                            <h1 class="text-xl font-bold text-center hover:text-red-900">Gà nướng củi nguyên con</h1>
+                            <p class="text-xl font-bold text-center">120.000</p>
+                        </div>
+                    </div>
+                    <div class="">
+                        <img src="view/public/image/2.jpg" alt="">
+                        <div class="pt-5">
+                            <h1 class="text-xl font-bold text-center hover:text-red-900">Gà nướng củi nguyên con</h1>
+                            <p class="text-xl font-bold text-center">120.000</p>
+                        </div>
+                    </div>
+                    <div class="">
+                        <img src="view/public/image/2.jpg" alt="">
+                        <div class="pt-5">
+                            <h1 class="text-xl font-bold text-center hover:text-red-900">Gà nướng củi nguyên con</h1>
+                            <p class="text-xl font-bold text-center">120.000</p>
+                        </div>
+            </div> -->
             <div class="text-center pt-10">
                 <a href="index.php?act=td"><button class="border-2 p-3 bg-green-800 text-white">KHÁM PHÁ</button></a>
             </div>
