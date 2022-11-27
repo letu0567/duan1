@@ -542,3 +542,16 @@
   .time_tk{
     font-size: 13px;
   }
+  .loi_bl{
+    width: 200px;
+    color: #fff;
+    font-size: 15px;
+    background-color: red;
+    padding: 5px 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  .loi_bl:hover{
+    background: rgb(183, 0, 0);
+  }

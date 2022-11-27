@@ -18,7 +18,7 @@
 </head>
 <body>
 <div class="binh_luan_box">
-        <h1 class="danhgia">Bình luận(0)</h1>
+        <h1 class="danhgia">Bình luận : </h1>
         <div class="gach_duoi_ct"></div>
         <!-- bình luận -->
         
@@ -52,7 +52,12 @@
         <form action="<?= $_SERVER['PHP_SELF']; ?>" method="post">
             <input type="hidden" name="id_monan" value="<?= $id_monan ?>">
             <textarea name="noidung" id="mota_ct" cols="" rows=""></textarea>
-            <input class="input_binhluan" type="submit" value="Gửi" name="gui_binhluan">
+            <?php if (isset($_SESSION['user'])) {?>
+                <input class="input_binhluan" type="submit" value="Gửi" name="gui_binhluan">
+           <?php  }else{ ?> 
+                <a href="index.php?act=dang_nhap"><div class="loi_bl">Đăng nhập để bình luận</div></a>
+            <?php } ?>
+            
         </form>
          <!-- bình luận -->
     </div>
