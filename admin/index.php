@@ -7,7 +7,11 @@
     include "../DAO/mon_an.php";
     include "../DAO/thong_ke.php";
     include "../DAO/tai_khoan.php";
+<<<<<<< HEAD
+    include "../DAO/datban.php";
+=======
     include "../DAO/binhluan.php";
+>>>>>>> 0cb9835b18907be624469d583c3e9ec3651ae801
 
     
     if (isset($_SESSION['role']) && ($_SESSION['role']) == 1) {
