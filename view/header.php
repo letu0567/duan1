@@ -17,7 +17,7 @@
 
 <body>
     <script>
-        <?php if (isset($_COOKIE['dangnhap'])) { ?>
+        <?php if (isset($_COOKIE['dangnhap'])){ ?>
         alert("<?= $_COOKIE['dangnhap']  ?>");
         <?php } ?>
     </script>
@@ -27,7 +27,7 @@
         <?php } ?>
     </script>
     <div class="mx-auto">
-        <header class="mx-auto bg-white ">
+        <header class=" bg-white mx-auto">
             <div class=" mau_header text-white ">
                 <div class="justify-between flex p-2 px-4 text-xs">
                     <p>Hotline:0334623400</p>
