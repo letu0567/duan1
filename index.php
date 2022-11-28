@@ -11,6 +11,7 @@
     include "./DAO/mon_an.php";
     include "./DAO/thucdon.php";
     include "./DAO/tai_khoan.php";
+    include "./DAO/datban.php";
     include "./global.php";
     include "./view/header.php";
     
@@ -91,10 +92,6 @@
        
             break;
         case 'db1':
-
-
-
-
             if (isset($_POST['submit'])) {
                 $name = $_POST['name'];
                 $tel = $_POST['tel'];
@@ -105,8 +102,7 @@
                 if (!empty($name) && !empty($tel)&& !empty($so_nguoi)&& !empty($ngay_dat)&& !empty($gio_dat)&& ($so_nguoi>0)  ) {
                     insert_dat_ban($name, $tel, $so_nguoi, $ngay_dat, $gio_dat, $luu_y);
                     echo '<script>alert("Đăng kí thành công")</script>';
-                    include '../duan1/view/xacnhan.php';
-               
+                    include '../duan1/view/xacnhan.php';   
             
                 } else {
                     echo '<script>alert("Cần nhập đầy đủ thông tin")</script>';
