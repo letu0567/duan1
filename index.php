@@ -1,22 +1,4 @@
 <?php
-<<<<<<< HEAD
-ob_start();
-session_start();
-
-// if (isset($_SESSION['user'])){
-//     extract($_SESSION['user']);
-// }
-// if (isset($_SESSION['user']) && ($role == 1)) {
-
-include "./DAO/pdo.php";
-include "./DAO/tai_khoan.php";
-include "./view/header.php";
-include "./DAO/datban.php";
-
-if (isset($_GET["act"])) {
-    $act = $_GET["act"];
-    switch ($act) {
-=======
     ob_start();
     session_start();
     
@@ -37,7 +19,6 @@ if (isset($_GET["act"])) {
     if(isset($_GET["act"])){
         $act = $_GET["act"];
         switch ($act) {
->>>>>>> 0cb9835b18907be624469d583c3e9ec3651ae801
             // star gioithieu
         case 'gt':
             include "view/giothieu.php";
@@ -46,12 +27,6 @@ if (isset($_GET["act"])) {
             // endgioithieu
 
             // star thực đơn
-<<<<<<< HEAD
-        case 'td':
-            include "view/thucdon.php";
-            break;
-            // end thực đơn
-=======
             case 'td':
                 include "view/thucdon.php";
                 break;
@@ -81,7 +56,6 @@ if (isset($_GET["act"])) {
                 break;
 
                 // end thực đơn
->>>>>>> 0cb9835b18907be624469d583c3e9ec3651ae801
 
             // star tintuc
         case 'tt':
@@ -108,7 +82,6 @@ if (isset($_GET["act"])) {
             // end đặt bàn
 
 
-<<<<<<< HEAD
 
             case 'xacnhan';
             if(isset($_POST['xacnhan'])&&($_POST['xacnhan'])){
@@ -156,29 +129,23 @@ if (isset($_GET["act"])) {
                 $_SESSION['role'] = $role;
                 $_SESSION['user'] = $check_user;
 
-                if (is_array($_SESSION['user'])) {
+                if (isset($_SESSION['role'])) {
                     if ($role == 1) {
-                        setcookie("dangnhap", "Đăng nhập thành công!", time() + 2);
-                        header('location: admin/index.php');
-=======
-                    if (isset($_SESSION['role'])) {
-                        if ($role == 1) {
-                            setcookie("dangnhap","Đăng nhập thành công!",time()+2);
-                            header('location: admin/index.php');die;
-                        }
-                    }
-                    if (is_array($_SESSION['user'])) {
                         setcookie("dangnhap","Đăng nhập thành công!",time()+2);
-                        header('location: index.php');die;
+                        header('location: admin/index.php');die;
                     }
-                        
-                    if (!is_array($_SESSION['user'])) {
-                        $_SESSION['loidn'] = "Sai tên đăng nhập or mật khẩu!";
->>>>>>> 0cb9835b18907be624469d583c3e9ec3651ae801
-                    }
-                } else {
-                    $_SESSION['loidn'] = "Sai tên đăng nhập hoặc mật khẩu!";
                 }
+                if (is_array($_SESSION['user'])) {
+                    setcookie("dangnhap","Đăng nhập thành công!",time()+2);
+                    header('location: index.php');die;
+                }
+                    
+                if (!is_array($_SESSION['user'])) {
+                    $_SESSION['loidn'] = "Sai tên đăng nhập or mật khẩu!";
+                }
+            } else {
+                $_SESSION['loidn'] = "Sai tên đăng nhập hoặc mật khẩu!";
+            }
                 // if ($role == 1) {
                 //     setcookie("dangnhap","Đăng nhập thành công!",time()+2);
                 //     header('location: admin/index.php');
@@ -189,11 +156,6 @@ if (isset($_GET["act"])) {
                 //     # code...
                 // }
 
-<<<<<<< HEAD
-            }
-            include "index.php";
-            break;
-=======
             case 'quen_mk':
                 include "view/tai_khoan/quen_mk.php";
                 break;
@@ -214,7 +176,6 @@ if (isset($_GET["act"])) {
                 }
                 include "view/tai_khoan/quen_mk.php";
                 break;
->>>>>>> 0cb9835b18907be624469d583c3e9ec3651ae801
 
         case 'quen_mk':
             include "view/tai_khoan/quen_mk.php";
@@ -291,17 +252,10 @@ if (isset($_GET["act"])) {
 
         default:
             include "./view/content.php";
-<<<<<<< HEAD
             break;
-=======
-                break;
-        }
-    }else{
-        $loadall = loadall_trangchu2();
-        include "./view/content.php";
->>>>>>> 0cb9835b18907be624469d583c3e9ec3651ae801
     }
 } else {
+    $loadall = loadall_trangchu2();
     include "./view/content.php";
 }
 include "./view/footer.php";
