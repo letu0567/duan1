@@ -10,7 +10,15 @@ function delete_ban_an($id){
     $sql="DELETE FROM dat_ban where id=".$id;
     pdo_execute($sql);
 }
-
+function loadall_datban(){
+    $sql="SELECT * FROM dat_ban";
+   $dat_ban= pdo_query($sql);
+   return $dat_ban;
+}
+function delete_datban($id){
+    $sql="DELETE FROM dat_ban where id=".$id;
+    pdo_execute($sql);
+}
 
 
 

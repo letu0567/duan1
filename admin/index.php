@@ -183,7 +183,21 @@
              case 'bieudo':
                 $thongke=loadall_thongke();
                 include "thongke/bieudo.php";
-                break;                   
+                break;   
+                
+                case 'db2':
+                    $sql="SELECT *FROM  dat_ban order by id desc";
+                    $listdatban=loadall_datban();
+                    include "dat_ban/list.php";
+                    break;
+                    case 'xoa_datban':
+                        if(isset($_GET['id'])&& ($_GET['id'] >0)){
+                            delete_datban($_GET['id']);
+                        }
+                        $sql = "SELECT *FROM dat_ban order by id desc";
+                        $listdatban=loadall_datban();
+                        include "dat_ban/list.php";
+                        break;  
             
             default:
                 include "content.php";

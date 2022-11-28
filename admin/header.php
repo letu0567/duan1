@@ -45,7 +45,7 @@
                     <li><a href="index.php?act=qltd">Quản lý thực đơn</a></li>
                     <li><a href="index.php?act=qlma">Quản lý món ăn</a></li>
                     <li><a href="index.php?act=qldm">Quản lý đặt món</a></li>
-                    <li><a href="index.php?act=qldb">Quản lý đặt bàn</a></li>
+                    <li><a href="index.php?act=db2">Quản lý đặt bàn</a></li>
                     <li><a href="index.php?act=qlbl">Quản lý bình luận</a></li>
                     <li><a href="index.php?act=qlkh">Quản lý khách hàng</a></li>
                     <li><a href="index.php?act=qltk">Quản lý thông kê</a></li>
