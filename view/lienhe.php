@@ -22,7 +22,7 @@
                 <p>0366170434</p>
             </div>
             <div class="lien_he_con">
-                <h2>Địa chỉ</h2>
+                <h2>Thời gian hoạt động</h2>
                 <p>Thứ Hai - Chủ Nhật: 10:30 - 22:00</p>
             </div>
         </div>
