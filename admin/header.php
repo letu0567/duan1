@@ -40,7 +40,7 @@
                 </div>
             </div>
             <nav>
-                <ul>
+                <ul class="ul1">
                     <li><a href="../index.php">Trang chủ</a></li>
                     <li><a href="index.php?act=qltd">Quản lý thực đơn</a></li>
                     <li><a href="index.php?act=qlma">Quản lý món ăn</a></li>
@@ -49,6 +49,8 @@
                     <li><a href="index.php?act=qlbl">Quản lý bình luận</a></li>
                     <li><a href="index.php?act=qlkh">Quản lý khách hàng</a></li>
                     <li><a href="index.php?act=qltk">Quản lý thông kê</a></li>
+                    <li><a href="index.php?act=ql_gt">Quản lý giới thiệu</a></li>
+                    <li><a href="index.php?act=ql_lienhe">Quản lý liên hệ</a></li>
                 </ul>
             </nav>
 

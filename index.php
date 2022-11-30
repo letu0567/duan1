@@ -12,10 +12,12 @@
     include "./DAO/thucdon.php";
     include "./DAO/tai_khoan.php";
     include "./DAO/datban.php";
+    include "./DAO/gioithieu.php";
     include "./global.php";
     include "./view/header.php";
     
    $sp_new=loadall_trangchu();
+   $gt_new=gt_trangchu();
    $dsthucdon = loadall_thucdon() ;
     if(isset($_GET["act"])){
         $act = $_GET["act"];
