@@ -9,6 +9,7 @@
     include "../DAO/tai_khoan.php";
     include "../DAO/datban.php";
     include "../DAO/binhluan.php";
+     include "../DAO/gioithieu.php";
 
     
     if (isset($_SESSION['role']) && ($_SESSION['role']) == 1) {
@@ -197,8 +198,63 @@
                         $sql = "SELECT *FROM dat_ban order by id desc";
                         $listdatban=loadall_datban();
                         include "dat_ban/list.php";
-                        break;  
-            
+                        break;                   
+            case 'ql_gt':
+                if(isset($_POST['them_moigt']) && ($_POST['them_moigt'])){
+                    $description=$_POST['mota_gt'];
+                    $filename_gt=$_FILES['hinh_gt']['name'];
+                    $target_dir = "../upload/";
+                    $target_file = $target_dir . basename($_FILES["hinh_gt"]["name"]);
+                    if (move_uploaded_file($_FILES["hinh_gt"]["tmp_name"], $target_file)) {
+                      //  echo "The file ". htmlspecialchars( basename( $_FILES["hinh"]["name"])). " has been uploaded.";
+                      } else {
+                      //  echo "Sorry, there was an error uploading your file.";
+                      }
+                    insert_gioithieu($filename_gt,$description);
+                    $thongbao="Thêm món thành công";
+                }
+                
+                include "gioi_thieu/add.php";
+                break;
+           
+           case 'danh_sach_gt':
+                    $list_gt=loadall_gioithieu();
+                    include "gioi_thieu/list.php";
+                    break; 
+             
+           case 'suagt':
+                        if(isset($_GET['id']) && ($_GET['id']>0)){
+                            $gioithieuone=loadone_gioithieu($_GET['id']);
+                        }
+                           include "gioi_thieu/update.php";
+                        break; 
+            case 'update_gt':
+                if(isset($_POST['themmoigt']) && ($_POST['themmoigt'])){
+                    $id=$_POST['id_gt'];
+                    $description=$_POST['mota_gt'];
+                    $filename_gt=$_FILES['hinh_gt']['name'];
+                    $target_dir = "../upload/";
+                    $target_file = $target_dir . basename($_FILES["hinh_gt"]["name"]);
+                    if (move_uploaded_file($_FILES["hinh_gt"]["tmp_name"], $target_file)) {
+                      //  echo "The file ". htmlspecialchars( basename( $_FILES["hinh"]["name"])). " has been uploaded.";
+                      } else {
+                      //  echo "Sorry, there was an error uploading your file.";
+                      }
+                    update_gioithieu($id,$filename_gt,$description);
+                    $thongbao="Thêm món thành công";
+                }
+                $list_gt=loadall_gioithieu();
+                include "gioi_thieu/list.php";
+                break;
+            case 'xoagt':
+                if(isset($_GET['id'])&& ($_GET['id'] >0)){
+                    delete_gioithieu($_GET['id']);
+                }
+                $sql = "SELECT *FROM gioi_thieu ";
+                $list_gt=loadall_gioithieu();
+                include "gioi_thieu/list.php";  
+                break;
+
             default:
                 include "content.php";
                 break;

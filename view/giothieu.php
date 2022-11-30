@@ -1,3 +1,11 @@
+<?php
+            foreach($gt_new as $gt1){
+                $anh_gt='upload/';  
+                extract($gt1);
+                $hinh_gt=$anh_gt.$image;
+                
+            } 
+            ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,19 +16,20 @@
     <link rel="stylesheet" href="view/public/css/gioithieu.css">
 </head>
 <body>
-    <div class="container">
-        <div class="banner">
+
+    <div class="banner">
+    <img src="<?=$hinh_gt?>" class="anhgt"  alt="">
             <div class="mau">
-                
-        </div>
+            
+             </div>
             
             <div class="tieude_1">
                 <h1>Về ZeeZee Chicken House</h1>
-            </div>
-           
-        </div>
+            </div>       
+   </div>
         <div class="noidung">
-            <p>Là một người con sinh ra từ đất Việt, được nuôi lớn bằng tiếng gà ban sớm và những món gà bình dị trong bữa cơm hàng ngày, tôi hiểu rằng: Ngay từ thuở đầu, Gà đã là một phần văn hoá, một phần cuộc sống không thể tách rời trong tôi. </p>
+        <p><?=$description?></p>
+            <!-- <p>Là một người con sinh ra từ đất Việt, được nuôi lớn bằng tiếng gà ban sớm và những món gà bình dị trong bữa cơm hàng ngày, tôi hiểu rằng: Ngay từ thuở đầu, Gà đã là một phần văn hoá, một phần cuộc sống không thể tách rời trong tôi. </p>
                 <br>
                 <p>
                 Gà là Linh vật tế thần cao quý cho những ngày Lễ, Gà có mặt trong mỗi Mùa Tết cùng bánh chưng xanh, Gà thiết đãi bạn hiền mỗi cơ duyên gặp mặt… Hay như mẹ tôi vẫn dạy từ tấm bé: “Phải có niềm tin, có dũng khí, nghị lực, phải Văn, Võ, Dũng, Nhân, Tín như loài gà!” 
@@ -43,8 +52,8 @@
                 </p>
                 <br>
                 <p>
-                Với bước đệm từ những giá trị cổ truyền chân chính, một chương mới cho món gà Việt Nam sẽ được mở ra – Bắt đầu từ Zee Zee Chicken House!</p>
+                Với bước đệm từ những giá trị cổ truyền chân chính, một chương mới cho món gà Việt Nam sẽ được mở ra – Bắt đầu từ Zee Zee Chicken House!</p> -->
         </div>
-    </div>
+    
 </body>
 </html>
