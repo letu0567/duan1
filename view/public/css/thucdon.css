@@ -1,0 +1,557 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+  font-family: huy;
+  src: url(../font/iCiel\ Rukola.otf);
+}
+/* Slideshow container */
+
+.slideshow-container {
+    max-width: 1162px;
+    min-height: 843px;
+    position: relative;
+    margin: auto;
+    
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  /* .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  } */
+  
+  /* Number text (1/3 etc) */
+  /* .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  } */
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 7px;
+    width: 7px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  .dots{
+    margin-bottom: 20px;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+    
+  }
+  
+     /* @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1} 
+  }    */
+
+  .tieude1{
+    padding-top: 40px;
+    padding-bottom: 20px;
+    padding-left: 90px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 550;
+    
+
+  }
+  .danhmuc_monan{
+    
+    margin-top: 20px;
+    
+  }
+  .danhmuc_monan h2{
+    
+    padding-top:20px ;
+    color: #B82026;
+    font-family: huy;
+    font-size: 40px;
+    letter-spacing: 2.1px;
+    text-align: center;
+    font-weight: bold;
+  }
+  .td_danhmuc h1{
+    text-align: center;
+    font-size: 40px;
+    font-family: huy;
+    color: #6d6c6c;
+  }
+  .danh_muc{
+   margin-top: 20px;
+   margin-left: auto;
+   margin-right: auto;
+   max-width: 1163px;
+    background-color: #f7983fcc;
+    padding: 15px 0px;
+    border-radius: 20px;
+    color: #ffffff;
+  }
+  .all_dm{
+    margin-top: 15px;
+   
+    display: flex;
+    justify-content: center;
+    
+   
+    align-items: center;
+  }
+  .danh_muc1{
+    margin: 0px 35px;
+    /* border-right: 1px solid red; */
+    padding: 5px;
+    transition: all ease 0.25s;
+  }
+  .mon_khai_vi{
+    
+     padding-top: 50px;
+     padding-bottom: 30px; 
+    
+    background-color:#f4f4f4;
+    
+  }
+  .fa-solid1{
+    
+    font-size: 30px;
+    /* text-align: center; */
+    /* align-items: revert; */
+    display: flex;
+    justify-content: center;
+    margin-left: 22px;
+  margin-bottom: 10px;
+   
+  }
+  .danh_muc1:hover{
+     background-color: #bb6e15;
+    transform: scale(0.9);
+    border-radius: 10px;
+   
+  }
+  .mons{
+    display: flex;
+    justify-content: space-between;
+    /* margin-left: 80px;
+    margin-right: 80px;  */
+  }
+  .mon1{
+    display: flex;
+    background-color: white;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
+    
+  }
+  .mon1:hover{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.444) ;
+  }
+  .monga_2:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.733) ;
+  }
+  .monga_3:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.351) ;
+  }
+  .nuocngot:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.351) ;
+  }
+  .td_mon{
+    
+    padding: 10px 0px;
+     width: 300px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius:20px ;
+     margin-bottom: 50px;
+     background-color: orangered;
+     /* margin-left: 39%;  */
+     margin-left: auto;
+     margin-right: auto;
+     margin-bottom: 60px;
+  }
+  .td_mon h2{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.6;
+    
+  }
+  .td_mon a{
+    text-decoration: none;
+    color: white;
+  }
+  .mota1{
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+  }
+  .mota1 h4 a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+  }
+  .gia{
+    color: rgb(247, 7, 7);
+  }
+  .btn{
+    padding: 8px;
+    background-color: rgb(219, 3, 3);
+    border: 1px solid rgb(207, 207, 207);
+    color: aliceblue;
+    border-radius: 5px;
+  }
+  .btn:hover{
+    background-color: rgb(128, 35, 35);
+    color: #eee6e6;
+  }
+  .mota1 .a{
+    padding-bottom: 8px;
+  }
+  .mota1 a:hover{
+    color: rgb(206, 7, 7);
+  }
+  .mon_ga{
+    /* margin-top: 30px; */
+     padding-top: 50px;
+     padding-bottom: 60px; 
+     /* background-image: url(../image/IMG_2816.jpg); */
+  }
+  .mon2{
+    /* display: flex; */
+    /* justify-content: center;
+    justify-content: space-around; */
+    /* margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;  */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 30px;
+    row-gap: 30px;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .monga_2{
+    background-color: rgb(241, 240, 240);
+    padding: 3px;
+    text-align: center;
+    /* float: left;
+    margin: 0 40px; */
+    
+
+  }
+  .td2{
+    padding-top: 10px;
+  }
+  .td2 a{
+    
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+  }
+  .td2 a:hover{
+    color: rgb(206, 7, 7);
+  }
+  .monga_2 .b{
+    padding-bottom: 5px;
+  }
+  .td_mon1{
+    
+    padding: 10px;
+     width: 350px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius:20px ;
+     margin-bottom: 50px;
+     background-color: orangered;
+     /* margin-left: 36%;  */
+     margin: 40px auto;
+  }
+  .td_mon1 h2{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.6;
+    
+  }
+  .td_mon1 a{
+    text-decoration: none;
+    color: white;
+  }
+  .mon_rau{
+    background-color: #ececec;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .mon3{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px; 
+  }
+  .monga_3{
+    background-color:white;
+    
+    text-align: center;
+
+  }
+  .btn1{
+    margin-bottom: 5px;
+  }
+  .monga_3 .b{
+    padding-bottom: 5px;
+  }
+  .bia_nuocngot{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #f8f5f5;
+  }
+  .douong{
+    display: flex;
+    justify-content: center;
+     
+    
+  }
+  .bia{
+     margin-left: 50px;
+     margin-right: 10px; 
+  }
+  .nuoc{
+    display: flex;
+    justify-content: center;
+   
+    margin-right: 50px;
+    
+  }
+  
+  .nuocngot{
+    margin: 0 10px;
+    background-color: #f4f4f4;
+    width: 248px;
+    height: auto;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  .nuocngot .b{
+    padding-bottom: 3px;
+  }
+  .img1{
+    width: 248px;
+    height: 166px;
+  }
+  .img2{
+    width:397px ;
+    height:550px;
+  }
+  .img3{
+    width: 285.313px;
+    height: 210.795px;
+  }
+  .img4{
+    width: 129px;
+    height: 129px;
+  }
+  /* .container_detail_monan{
+    background-color: #fff;
+  } */
+  .container_monan_ct{
+    width: 80%;
+    /* background-color: #fff; */
+    margin: 20px auto;
+  }
+  /* .box_monanct2{
+    background-color: #fff;
+    display: flex;
+  } */
+  .mon_anct{
+    display: flex;
+  }
+  
+  .box_right{
+    flex-basis: 48%;
+    /* background-image: url(../image/5.jpg); */
+    background-color: #f5f5f5;
+   height: 200px;
+  }
+  .box_left{
+    flex-basis:  48%;
+    margin-left: 3%;
+    padding-right: 5%;
+    padding-top: 3%;
+  }
+  .box_con{
+    line-height: 45px;
+  }
+  .title_ct{
+    font-size: 30px;
+    font-weight: 600;
+  }
+  .danhmuc_ct{
+    font-size: 20px;
+  }
+  .danhmuc_ct a{
+    font-size: 20px;
+    color: #B82026;
+  }
+  .price_ct{
+    color: red;
+    font-size: 25px;
+    font-weight: 500;
+  }
+  .input_ct{
+    background-color: #e47a02;
+    width: 60%;
+    /* margin-left: 20%; */
+    margin-top: 8%;
+    padding: 5px 0;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+  }
+  .input_ct:hover{
+    background-color: #aa5b01;
+  }
+  .gach_duoi_ct{
+    margin-top: 10px;
+    border-bottom: 1px solid rgb(181, 181, 181);
+  }
+  .desc_ct{
+    margin-top: 20px;
+  }
+  .binh_luan_box{
+    margin-top: 25% ;
+  }
+  .danhgia{
+    width: 300px;
+    font-size: 20px;
+    font-weight: 500;
+    /* border-bottom: 2px solid red; */
+    /* padding-bottom: 10px; */
+    /* position: ; */
+  }
+  .sanphamlienquan{
+    width: 300px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 50px;
+  }
+  #mota_ct{
+    border: 1px solid rgb(190, 190, 190);
+    width: 100%;
+    height: 100px;
+  }
+  .nhanxet{
+    font-size: 17px;
+    margin: 10px 0;
+  }
+  .input_binhluan{
+    background-color: #0452d8;
+    padding: 5px 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+    color: #fff;
+    cursor: pointer;
+  }
+  .input_binhluan:hover{
+    background-color: #0342ad;
+  }
+  .box_splienquan{
+    margin-top: 30px;
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 30px;
+  }
+  .anh_ct{
+    width: 60%;
+    margin: 5% auto;
+  }
+  .bl_khachhang{
+    display: flex;
+    
+  }
+  .bl_img_kh i{
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 20px;
+  }
+  .bl_kh_con{
+    margin-top: 15px;
+    margin-left: 5px;
+    line-height: 35px;
+  }
+  .name_tk{
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .time_tk{
+    font-size: 13px;
+  }
+  .loi_bl{
+    width: 200px;
+    color: #fff;
+    font-size: 15px;
+    background-color: red;
+    padding: 5px 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  .loi_bl:hover{
+    background: rgb(183, 0, 0);
+  }
