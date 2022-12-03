@@ -8,13 +8,14 @@
     include "./DAO/tai_khoan.php";
     include "./DAO/datban.php";
     include "./DAO/gioithieu.php";
+    include "./DAO/cart.php";
     include "./global.php";
     include "./view/header.php";
     
     if (!isset($_SESSION['mycart'])) $_SESSION['mycart'] = [];
 
     
-
+    // $listbill = loadone_cart($idbill);
    $sp_new=loadall_trangchu();
    $gt_new=gt_trangchu();
    $dsthucdon = loadall_thucdon() ;
@@ -278,7 +279,35 @@
         case 'bill':
             include "view/cart/bill.php";
             break;
+        case 'billcomfirm':
+            if (isset($_POST['okdathang']) && ($_POST['okdathang'])) {
+                if(isset($_SESSION['user'])) $iduser = $_SESSION['user']['id'];
+                else $iduser = 0;
+                $name = $_POST['name'];
+                $address = $_POST['address'];
+                $email = $_POST['email'];
+                $tel = $_POST['tel'];
+                $pttt = $_POST['pttt'];
+                $ngaydatmon = date('h:i:sa d/m/Y');
+                $tongdonhang = tongdonhang();
+                $idbill = insert_bill($iduser,$name, $email, $address, $tel,$pttt,$ngaydatmon,$tongdonhang);
 
+                // insert into cart : $session['mycart'] & idbill 
+
+                foreach ($_SESSION['mycart'] as $cart) {
+                    insert_cart($_SESSION['user']['id'],$cart[0],$cart[1],$cart[2],$cart[3],$cart[4],$cart[5],$idbill);
+                }
+                // xóa session cart
+                $_SESSION['cart'] = [];
+            }
+            $bill = loadone_bill($idbill);
+            $billct = loadall_cart($idbill);
+            include "view/cart/billcomfirm.php";
+            break;
+        case 'mybill':
+            $listbill = loadall_bill($_SESSION['user']['id']);
+            include "view/cart/mybill.php";
+            break;
 
         default:
             include "./view/content.php";

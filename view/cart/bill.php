@@ -1,31 +1,48 @@
+<form action="index.php?act=billcomfirm" method="post">
 <div class="container_giohang">
+    
     <div class="box_right_gh">
         <div class="box_thongtin_kh">
+            <?php 
+            
+                if (isset($_SESSION['user'])) {
+                    $name = $_SESSION['user']['name'];
+                    $address = $_SESSION['user']['address'];
+                    $email = $_SESSION['user']['email'];
+                    $tel = $_SESSION['user']['tel'];
+                }else{
+                    $name = "";
+                    $address = "";
+                    $email = "";
+                    $tel = "";
+                }
+
+            ?>
             <h2 class="text_thongtin_kh">Thông tin khách hàng</h2>
             <!-- <div class="gach_duoi"></div> -->
             <div class="box_gh_con">
-                <label for="">Người đặt hàng</label>
-                <input type="text">
+                <label for="">Người đặt hàng :</label>
+                <input type="text" value="<?= $name ?>" name="name">
             </div>
             <div class="box_gh_con">
-                <label for="">Địa chỉ</label>
-                <input type="text">
+                <label for="">Địa chỉ :</label>
+                <input type="text" value="<?= $address ?>" name="address">
             </div>
             <div class="box_gh_con">
-                <label for="">Email</label>
-                <input type="text">
+                <label for="">Email :</label>
+                <input type="text" value="<?= $email ?>" name="email">
             </div>
             <div class="box_gh_con">
-                <label for="">Điện thoại</label>
-                <input type="text">
+                <label for="">Điện thoại :</label>
+                <input type="text" value="<?= $tel ?>" name="tel">
             </div>
         </div>
         <div class="box_phuongthuc_tt">
             <h2 class="text_pttt">Phương thức thanh toán</h2>
             <form action="">
-                <input type="radio" name="pttt" value="Thanh toán khi nhận hàng">Thanh toán khi nhận hàng
-                <!-- <input type="radio" name="pttt" value="Chuyển khoản ngân hàng">Chuyển khoản ngân hàng
-                <input type="radio" name="pttt" value="Thanh toán online">Thanh toán online -->
+                <input type="radio" name="pttt" value="1" checked>Thanh toán khi nhận hàng
+                <!-- <input type="radio" name="pttt" value="Chuyển khoản ngân hàng">Chuyển khoản ngân hàng -->
+                <!-- <input type="radio" name="pttt" value="2">Thanh toán online -->
             </form>
         </div>
         <div class="box_tt_giohang">
@@ -79,15 +96,16 @@
     </div>
     <div class="box_left_gh">
         <div class="tong_tien">
-            <h2>Tổng tiền:</h2>
+            <h2>Tổng cộng <?= $i ?> phần</h2>
             <span>$<?= $tong ?></span>
         </div>
         <div class="gach_duoi2"></div>
         <div class="thanh_toan">
-            <h2>Tiền phải thanh toán</h2>
-            <span>$<?= $tong ?></span>
+            <h2 class="text_tien_tt">Tiền phải thanh toán</h2>
+            <span class="text_tong_tt">$<?= $tong ?></span>
         </div>
-        <input type="button" value="Đặt hàng">
+        <input type="submit" value="Đặt hàng" name="okdathang">
     </div>
-
+    
 </div>
+</form>
