@@ -189,9 +189,9 @@
               <h2><a href=""> Món Mới</a></h2>
            </div>
            <div class="mon2">
-            
+           <!--<button class="btn" >ĐẶT MÓN</button> -->
             <?php
-            $img_path='upload/';
+            // $img_path='upload/';
              foreach($sp_new as $sp){
                   extract($sp);
                   $hinh=$img_path.$image;
@@ -200,10 +200,26 @@
                   <a href="'.$link_monan_ct.'"><img src="'.$hinh.'" alt="" class="img3">
                   <h4 class="td2 b">'.$name.'</h4>
                   <p class=" gia b ">'.$price.'</p></a>
-                  <button class="btn" >ĐẶT MÓN</button>
+                 
+                  <form action="index.php?act=addtocart" method="post">
+                  <input type="hidden" name="id" value='.$id.'>
+                  <input type="hidden" name="image" value='.$hinh.'>
+                  <input type="hidden" name="name" value='.$name.'>
+                  <input type="hidden" name="price" value='.$price.'>
+                  <input class= "btn" type="submit" name="addtocart" value="Thêm vào giỏ hàng">
+                  </form>
+
                 </div> ';        
             }
             ?>
+
+               <!-- <form action="index.php?act=addtocart method=post">
+                    <input type="=hidden" name="id" value="'.$id.'">
+                    <input type="=hidden" name="id" value="'.$hinh.'">
+                    <input type="=hidden" name="id" value="'.$name.'">
+                    <input type="=hidden" name="id" value="'.$price.'">
+                    <input type="submit" name="addtocart" value="Thêm vào giỏ hàng">
+            </form> -->
             <a href=""></a>
             <!-- <div class="monga_2">
               <img src="view/public/image/monga_2.jpg" alt="" class="img3">

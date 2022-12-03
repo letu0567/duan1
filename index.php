@@ -2,11 +2,6 @@
     ob_start();
     session_start();
     
-    // if (isset($_SESSION['user'])){
-    //     extract($_SESSION['user']);
-    // }
-    // if (isset($_SESSION['user']) && ($role == 1)) {
-    
     include "./DAO/pdo.php";
     include "./DAO/mon_an.php";
     include "./DAO/thucdon.php";
@@ -16,6 +11,10 @@
     include "./global.php";
     include "./view/header.php";
     
+    if (!isset($_SESSION['mycart'])) $_SESSION['mycart'] = [];
+
+    
+
    $sp_new=loadall_trangchu();
    $gt_new=gt_trangchu();
    $dsthucdon = loadall_thucdon() ;
@@ -73,9 +72,7 @@
             // end liên hệ
 
             // star dat món
-        case 'datmon':
-            include "view/datmon.php";
-            break;
+        
             //end dat món
 
             //star dat ban
@@ -248,6 +245,39 @@
             include "view/tai_khoan/dangky.php";
             break;
             // end đang ký
+            // star adđ to cart
+
+        case 'datmon':
+            include "view/cart/viewcart.php";
+            break;
+
+        case 'addtocart':
+            if (isset($_POST['addtocart']) && ($_POST['addtocart'])) {
+                $id = $_POST['id'];
+                $image = $_POST['image'];
+                $name = $_POST['name'];
+                $price = $_POST['price'];
+                $soluong = 1;
+                $ttien = ($price * $soluong);
+                $maadd = [$id, $image, $name,$price, $soluong,$ttien];
+                array_push($_SESSION['mycart'], $maadd);
+                
+            }
+            include "view/cart/viewcart.php";
+            break;
+        case 'delcart':
+            if (isset($_GET['idcart'])) {
+                // print_r($_GET['idcart']);
+                array_splice($_SESSION['mycart'],$_GET['idcart'],1);
+            }else{
+                $_SESSION['mycart'] = [];
+            }
+            // include "view/tai_khoan/dangky.php";
+            header("location: index.php?act=datmon");
+            break;
+        case 'bill':
+            include "view/cart/bill.php";
+            break;
 
 
         default:

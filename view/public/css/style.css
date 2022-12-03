@@ -259,7 +259,8 @@ body{
     border-radius: 10px;
 }
 .gio_hang{
-    flex-basis: 33%;
+    flex-basis: 100%;
+    text-align: center;
 }
 .search_sp{
     display: flex;
@@ -346,19 +347,20 @@ body{
 /* star gio_hang */
 .gio_hang{
     /* display: none; */
-    height: 280px;
-    text-align: center;
+    /* height: 280px; */
+    /* text-align: center; */
     background-color: #efefef;
     border-radius: 10px;
     margin-left: 15px;
     padding: 30px 0;
 }
 .gio_hang img{
-    margin-left: 23%;
+    margin-left: 42%;
 }
 .text_giohang{
     color: #8190A3;
     margin-top: 20px;
+    text-align: center;
 }
 /* end gio_hang */
 
@@ -721,4 +723,139 @@ table {
     width: 296px;
     height: 296px;
 }
+.form_giohang{
+    margin: 20px 50px;
+}
+.text_cart{
+    width: 150px;
+    font-size: 20px ;
+    font-weight: 500;
+    padding: 5px 33px;
+    background-color: #e99b00;
+    border-radius: 10px;
+    text-align: left;
+    margin: 20px 0;
+    color: #fff;
+}.bill{
+    text-align: left;
+}
+.bill>input{
+    padding: 5px 15px;
+    background-color:#eb9c00;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.bill>input:hover{
+    background-color: #b67900;
+}
+.bill>a>input{
+    padding: 5px 15px;
+    background-color:#eb9c00;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.bill>a>input:hover{
+    background-color: #b67900;
+}
+.container_giohang{
+    display: flex;
+    width: 1280px;
+    margin: 50px auto;
+}
+.box_right_gh{
+    flex-basis: 55%;
+    margin-right: 1%;
+}
+.box_left_gh{
+    flex-basis: 42%;
+    padding: 10px 15px;
+    background-color:#dfdfdf ;
+    border-radius: 10px;
+}
+.box_thongtin_kh{
+    width: 90%;
+    background-color: #dfdfdf;
+    padding: 20px 15px;
+    border-radius: 10px;
+    line-height: 25px;
+    text-align: right; 
+    
+}
+.box_gh_con>input{
+    width: 50%;
+    margin-left: 15%;
+}
+.box_gh_con{
+    margin-bottom: 10px;
+    margin-right: 20%;
+}
+.box_gh_con>label{
+    text-align: left;
+}
+.text_thongtin_kh{
+    text-align: left;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.box_phuongthuc_tt{
+    width: 90%;
+    background-color: #dfdfdf;
+    padding: 20px 15px;
+    border-radius: 10px;
+    line-height: 25px;
+    /* text-align: right;  */
+    margin-top: 20px;
+}
+.text_pttt{
+    text-align: left;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.box_phuongthuc_tt>form>input{
+    margin-left: 10px;
+}
+.box_tt_giohang{
+    width: 90%;
+    background-color: #dfdfdf;
+    padding: 20px 15px;
+    border-radius: 10px;
+    line-height: 25px;
+    /* text-align: right;  */
+    margin-top: 20px;
+}
+.text_monchon{
+    text-align: left;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.sl_p{
+    float: left;
+    margin-right: 10px;
+}
+.name_p{
+    float: left;
+}
+.price_p{
+    margin-top: 30px;
+    margin-left: 90%;
+}
+.gach_duoi2{
+    border-bottom: 1px solid rgb(207, 207, 207);
+    margin: 20px 0;
+}
+.tong_tien{
+    display: flex;
+    justify-content: space-between;
+}
+.thanh_toan{
+    display: flex;
+    justify-content: space-between;
+}
+.box_left_gh>input{
+    padding: 10px 20px;
+    background-color: #b67900;
 
+}

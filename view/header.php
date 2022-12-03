@@ -12,6 +12,7 @@
     <!-- <link rel="stylesheet" href="view/public/css/thucdon.css"> -->
     <!-- <link rel="stylesheet" href="./public/js/js.js"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
 
 </head>
 
@@ -82,8 +83,7 @@
                         </ul>
                         <ul class="flex space-x-2">
                             <li><a href="index.php?act=datmon"
-                                    class="border border-1-white p-3 m-2 border-red-500 bg-red-800 text-white" >Đặt
-                                    món</a></li>
+                                    class="border border-1-white p-3 m-2 border-red-500 bg-red-800 text-white" ><i class="fa-solid fa-cart-shopping"></i></a></li>
                             <li><a href="index.php?act=datban"
                                     class="border border-1-white p-3 m-2 border-green-500 bg-green-800 text-white">Đặt
                                     bàn</a></li>
