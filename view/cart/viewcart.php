@@ -224,7 +224,7 @@
                         </tbody>
                     </table>
                     <div class="bill">
-                        <a href="index.php?act=bill"><input class="nut_dat_hang" type="submit" value="Đặt hàng"></a>
+                        <a href="index.php?act=bill"><input class="nut_dat_hang" type="submit" value="Đặt món"></a>
                         <a href="index.php?act=delcart"><input type="button" value="Xóa giỏ hàng"></a>
                     </div>
                 </div>

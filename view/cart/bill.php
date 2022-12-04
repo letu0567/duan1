@@ -104,7 +104,7 @@
             <h2 class="text_tien_tt">Tiền phải thanh toán</h2>
             <span class="text_tong_tt">$<?= $tong ?></span>
         </div>
-        <input type="submit" value="Đặt hàng" name="okdathang">
+        <input type="submit" value="Đặt món" name="okdathang">
     </div>
     
 </div>

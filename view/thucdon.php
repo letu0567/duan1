@@ -206,7 +206,7 @@
                   <input type="hidden" name="image" value='.$hinh.'>
                   <input type="hidden" name="name" value='.$name.'>
                   <input type="hidden" name="price" value='.$price.'>
-                  <input class= "btn" type="submit" name="addtocart" value="Thêm vào giỏ hàng">
+                  <input class= "btn" type="submit" name="addtocart" value="Đặt món">
                   </form>
 
                 </div> ';        
