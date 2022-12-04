@@ -27,6 +27,11 @@
         alert("<?= $_COOKIE['dangnhap_false']  ?>");
         <?php } ?>
     </script>
+    <script>
+        <?php if (isset($_COOKIE['datmon'])) { ?>
+        alert("<?= $_COOKIE['datmon']  ?>");
+        <?php } ?>
+    </script>
     <div class="mx-auto">
         <header class=" bg-white mx-auto">
             <div class=" mau_header text-white ">

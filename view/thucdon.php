@@ -199,18 +199,26 @@
                   echo '<div class="monga_2">
                   <a href="'.$link_monan_ct.'"><img src="'.$hinh.'" alt="" class="img3">
                   <h4 class="td2 b">'.$name.'</h4>
-                  <p class=" gia b ">'.$price.'</p></a>
+                  <p class=" gia b ">$'.$price.'</p></a>
                  
-                  <form action="index.php?act=addtocart" method="post">
-                  <input type="hidden" name="id" value='.$id.'>
-                  <input type="hidden" name="image" value='.$hinh.'>
-                  <input type="hidden" name="name" value='.$name.'>
-                  <input type="hidden" name="price" value='.$price.'>
-                  <input class= "btn" type="submit" name="addtocart" value="Đặt món">
-                  </form>
-
-                </div> ';        
+                   ';  
+                   if (isset($_SESSION['user'])) {
+                    echo '<form action="index.php?act=addtocart" method="post">
+                   <input type="hidden" name="id" value='.$id.'>
+                   <input type="hidden" name="image" value='.$hinh.'>
+                   <input type="hidden" name="name" value='.$name.'>
+                   <input type="hidden" name="price" value='.$price.'>
+                   <input class= "btn" type="submit" name="addtocart" value="Đặt món">
+                   </form>
+ 
+                 </div>'   ; 
+                   }else{
+                    echo '<input class= "btn" type="button" value="Đăng nhập để đặt món">
+                    </form></div>';
+                   }
+                     
             }
+            
             ?>
 
                <!-- <form action="index.php?act=addtocart method=post">

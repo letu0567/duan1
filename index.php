@@ -249,6 +249,10 @@
             // star adđ to cart
 
         case 'datmon':
+            if (!isset($_SESSION['user'])) {
+                setcookie("datmon","Đăng nhập để đặt món!",time()+2);
+                header('location: index.php');
+            }
             include "view/cart/viewcart.php";
             break;
 
@@ -305,6 +309,9 @@
             include "view/cart/billcomfirm.php";
             break;
         case 'mybill':
+            // if (!isset($_SESSION['user'])) {
+            //     $_SESSION['user']['id'] = 0;
+            // }
             $listbill = loadall_bill($_SESSION['user']['id']);
             include "view/cart/mybill.php";
             break;

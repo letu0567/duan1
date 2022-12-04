@@ -104,7 +104,11 @@
             <h2 class="text_tien_tt">Tiền phải thanh toán</h2>
             <span class="text_tong_tt">$<?= $tong ?></span>
         </div>
+        <?php if (isset($_SESSION['user'])){ ?>
         <input type="submit" value="Đặt món" name="okdathang">
+        <?php }else{ ?>
+            <input type="button" value="Đăng nhập để đặt món">
+            <?php } ?>
     </div>
     
 </div>

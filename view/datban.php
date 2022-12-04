@@ -130,7 +130,7 @@
                             <textarea name="luu_y" id="mota_1" cols="108" rows="10" style="width: 708px; height: 143px;" placeholder="Ví dụ: Cần thêm ghế trẻ em..." name="luu_y" id="luu_y"></textarea>
                         </div>
                         <div class="btn-2 text-center bg-red-500 text-white p-2">
-                            <input type="submit" value="Đăng kí" type="submit" name="submit" >
+                            <input type="submit" value="Đặt bàn" type="submit" name="submit" >
                         </div>
 
                     </form>
