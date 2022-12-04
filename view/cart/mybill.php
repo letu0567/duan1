@@ -24,7 +24,7 @@
                             <td>ZEZE-'.$bill['id'].'</td>
                             <td>'.$bill['ngaydatmon'].'</td>
                             <td>'.$countma.'</td>
-                            <td>'.$bill['total'].'</td>
+                            <td>$'.$bill['total'].'</td>
                             <td>'. $ttdh.'</td>
                         </tr>
                         ';

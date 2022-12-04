@@ -28,6 +28,11 @@ function loadone_bill($id)
     return $mon_an1;
 }
 
+function update_ttdh($id,$bill_status){
+    $sql="UPDATE bill set bill_status='".$bill_status."' where id=".$id;
+    pdo_execute($sql);
+}
+
 
 function loadall_cart($idbill)
 {
@@ -44,10 +49,14 @@ function loadall_cart_count($idbill)
 
 function loadall_bill($iduser)
 {
-    $sql = "SELECT * FROM bill where iduser=" . $iduser;
+    $sql = "SELECT * FROM bill where 1 ";
+    if ($iduser > 0) $sql.= " AND iduser=" . $iduser;
+    $sql.= " order by id desc";      
     $listbill = pdo_query($sql);
     return $listbill;
 }
+
+
 
 function bill_chi_tiet($listbill)
 {
@@ -96,4 +105,9 @@ function get_ttdh($n){
             break;
     }
     return $tt;
+}
+
+function delete_bill($id){
+    $sql="DELETE FROM bill where id=".$id;
+    pdo_execute($sql);
 }

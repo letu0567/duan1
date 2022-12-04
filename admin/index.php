@@ -10,6 +10,7 @@
     include "../DAO/datban.php";
     include "../DAO/binhluan.php";
      include "../DAO/gioithieu.php";
+     include "../DAO/cart.php";
 
     
     if (isset($_SESSION['role']) && ($_SESSION['role']) == 1) {
@@ -124,6 +125,7 @@
                 break;    
                 
             case 'qldm':
+                $listbill = loadall_bill(0);
                 include "dat_mon/list.php";
                 break;
             case 'qldb':
@@ -254,6 +256,33 @@
                 $list_gt=loadall_gioithieu();
                 include "gioi_thieu/list.php";  
                 break;
+            case 'suabill':
+                if(isset($_GET['id']) && ($_GET['id']>0)){
+                    $suatt = loadone_bill($_GET['id']);
+                }
+                    include "dat_mon/edit.php";
+                break;
+            case 'update_ttdh':
+                if(isset($_POST['cap_nhat'])&& ($_POST['cap_nhat'])){
+                    $id = $_POST['bill_id'];
+                    $bill_status=$_POST['bill_status'];
+                    update_ttdh($id,$bill_status);
+                    // $thongbao="Cập nhật thành công";
+                }
+                $sql="SELECT *FROM bill order by id desc";
+                $listbill=loadall_bill(0);
+                include 'dat_mon/list.php';
+                break;
+            // case 'xoabill':
+            //     if(isset($_GET['id'])){
+            //         $id = $_GET['id'];
+            //         delete_bill($id);
+            //     }
+            //     $sql="SELECT *FROM bill order by id desc";
+            //     $listbill=loadall_bill(0);
+            //     include 'dat_mon/list.php';
+            //     break;
+                
 
             default:
                 include "content.php";

@@ -9,56 +9,43 @@
                         <table>
                             <thead>
                                 <tr>
-                                    <th>#</th>
-                                    <th>Name User</th>                             
-                                    <th>Phương thức giao hàng</th>
-                                    <th>Giờ & Ngày đặt</th>
-                                    <th>Trạng thái</th>
-                                    <th>Thanh toán</th>
-                                    <th>Tổng tiền</th>
-                                    <th></th>
+                                    
+                                    <th>Mã đơn hàng</th>
+                                    <th>Khách hàng</th>                             
+                                    <th>Số lượng hàng</th>
+                                    <th>Ngày đặt món</th>
+                                    <th>Giá trị đơn hàng</th>
+                                    <th>Tình trạng đơn hàng</th>
+                                    <th>Thao tác</th>
+                                    
                                 </tr>
                             </thead>
                             <tbody>
-                            <tr>
-                                    <td>01</td>
-                                    <td>Lê Tú</td>
-                                    <td>Giao tận nơi</td>
-                                    <td>15/11/2022 12:34pm</td>
-                                    <td class="status">Đang chờ xử lý</td>
-                                    <td>Thanh toán bằng tiền mặt</td>
-                                    <td>100.000vnd</td>                       
-                                    <td>
-                                        <a href="#">Sửa</a>
-                                        <a href="#">Xóa</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>02</td>
-                                    <td>Hoàng Huy</td>
-                                    <td>Tự đến lấy</td>
-                                    <td>15/11/2022 12:34pm</td>
-                                    <td class="status2">Đã xác nhận</td>
-                                    <td>Thanh toán bằng tiền mặt</td>
-                                    <td>100.000vnd</td>
-                                    <td>
-                                        <a href="#">Sửa</a>
-                                        <a href="#">Xóa</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>03</td>
-                                    <td>VIệt Hà</td>
-                                    <td>Giao tận nơi</td>
-                                    <td>15/11/2022 12:34pm</td>
-                                    <td class="status3">Đã hoàn thành</td>
-                                    <td>Thanh toán bằng tiền mặt</td>
-                                    <td>100.000vnd</td>
-                                    <td>
-                                        <a href="#">Sửa</a>
-                                        <a href="#">Xóa</a>
-                                    </td>
-                                </tr>
+                                <?php foreach ($listbill as $bill) {
+                                    extract($bill);
+                                    $kh = $bill['bill_name']."
+                                    <br> ".$bill['bill_email']."
+                                    <br> ".$bill['bill_address']."
+                                    <br> ".$bill['bill_tel'];
+                                    $countma = loadall_cart_count($bill['id']);
+                                    $ttdh = get_ttdh($bill['bill_status']);
+                                    $suabill = "index.php?act=suabill&id=".$bill['id'];
+
+                                    echo '<tr>
+                                                    <td>ZEZE-'.$bill['id'].'</td>
+                                                    <td>'.$kh.'</td>
+                                                    <td>'.$countma.'</td>
+                                                    <td>'.$bill['ngaydatmon'].'</td>
+                                                    <td>$'.$bill['total'].'</td>
+                                                    <td>'.$ttdh.'</td>                      
+                                                    <td>
+                                                        <a class="btn btn-info" href="'.$suabill.'">Sửa</a>
+                 
+                                                    </td>
+                                            </tr>';
+                                } ?>
+
+                               
                             </tbody>
                         </table>
                     </form>
