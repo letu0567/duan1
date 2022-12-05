@@ -48,6 +48,7 @@ function loadall_cart_count($idbill)
 }
 
 function loadall_bill($iduser)
+    
 {
     $sql = "SELECT * FROM bill where 1 ";
     if ($iduser > 0) $sql.= " AND iduser=" . $iduser;

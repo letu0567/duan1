@@ -4,6 +4,7 @@
         extract($bill);
     } ?>
     <div class="thongtin_dh">
+        <h2 class="text_thongtin_kh">Thông tin đơn hàng</h2>
         <p>Mã đơn hàng : <span>ZEZE-<?= $bill['id']; ?> </span></p>
         <p>Ngày đặt hàng : <span><?= $bill['ngaydatmon']; ?></span></p>
         <p>Tổng đơn hàng : <span>$<?= $bill['total']; ?></span></p>

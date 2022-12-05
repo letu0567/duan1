@@ -36,6 +36,7 @@
                         </div>
                         <div class="form_con">
                         <label class="form_text2"  for="">Vai trò</label><br>
+                        
                         <input class="input_class" name="role" type="text" value="<?= $role ?>">
                         </div>
                         </div>
@@ -47,4 +48,6 @@
                         
                     </form>
                 </div>
+                
             </div>
+            
