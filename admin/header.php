@@ -51,6 +51,7 @@
                     <li><a href="index.php?act=qltk">Quản lý thông kê</a></li>
                     <li><a href="index.php?act=ql_gt">Quản lý giới thiệu</a></li>
                     <li><a href="index.php?act=ql_lienhe">Quản lý liên hệ</a></li>
+                    <li><a href="index.php?act=ql_tintuc">Quản lý tin tức</a></li>
                 </ul>
             </nav>
 

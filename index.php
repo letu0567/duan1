@@ -8,6 +8,8 @@
     include "./DAO/tai_khoan.php";
     include "./DAO/datban.php";
     include "./DAO/gioithieu.php";
+    include "./DAO/lienhe.php";
+    include "./DAO/tintuc.php";
     include "./DAO/cart.php";
     include "./global.php";
     include "./view/header.php";
@@ -18,6 +20,9 @@
     // $listbill = loadone_cart($idbill);
    $sp_new=loadall_trangchu();
    $gt_new=gt_trangchu();
+   $lh_new=lh_trangchu();
+   $tt_new=tt_trangchu();
+   $tt_datban=tt_datban();
    $dsthucdon = loadall_thucdon() ;
     if(isset($_GET["act"])){
         $act = $_GET["act"];
@@ -315,6 +320,18 @@
             $listbill = loadall_bill($_SESSION['user']['id']);
             include "view/cart/mybill.php";
             break;
+            case 'tintuc_ct':
+                
+                if (isset($_GET['idtt']) && ($_GET['idtt']) > 0) {  
+                    $id=$_GET['idtt'];               
+                    $one_tt = loadone_tintuc($id);
+                     include "view/ct_tintuc.php";
+                }else{
+                    include "view/content.php";
+                }
+               
+                break;
+
 
         default:
             include "./view/content.php";

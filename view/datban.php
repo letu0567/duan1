@@ -140,14 +140,29 @@
                 <div class="sukien_uudai">
                     <h2 class="td2 td">Sự kiện & Khuyến mãi</h2>
                     <div class="sukien">
-                        <div class="sukien1">
+                    <?php 
+              $img_path='upload/';
+              foreach( $tt_datban as $tt_db){
+                   extract($tt_db);
+                   $linktt = "index.php?act=tintuc_ct&idtt=".$id;
+                   $hinh=$img_path.$image;
+
+                   echo '
+                   <div class="sukien1">
+                            <img src="'.$hinh.'" alt="" width="354.39px" height="175px" class="anh_uudai">
+                            <h4><a href="'.$linktt.'">'.$title.'</a></h4>
+                        </div>
+                   ';        
+             }
+            ?>
+                        <!-- <div class="sukien1">
                             <img src="view/public/image/uudai2.jpg" alt="" width="354.39px" height="175px" class="anh_uudai">
                             <h4><a href="">[Minigame] Đóng đinh rinh quà đỉnh, số lượng có hạn</a></h4>
                         </div>
                         <div class="sukien1">
                             <img src="view/public/image/uudai1 (1).jpg" alt="" width="354.39px" height="175px" class="anh_uudai">
                             <h4><a href="">[Soft Opening] Zee Zee “xin chào” - Ưu đãi 20% toàn bộ Menu</a></h4>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
 

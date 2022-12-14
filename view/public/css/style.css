@@ -507,7 +507,7 @@ nav ul li{
     padding: 10px 20px;
     margin-left: 30px;
     border-radius: 10px;
-    margin-bottom: -2px;
+    margin-bottom: -7px;
 }
 .ul1{
     padding-left: 0rem;
@@ -526,6 +526,7 @@ nav ul li:hover{
 /* nav ul li:hover{
     background-color: #BF1B1B;
 } */
+
 .content_right{
     flex-basis: 83%;
     background-color: #eaeaea;

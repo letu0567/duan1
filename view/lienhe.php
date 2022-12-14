@@ -13,18 +13,26 @@
     <div class="content_lienhe ">
             <iframe class="ban_do" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7447.109205757392!2d105.72728272416566!3d21.050500243946182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3134545907734ca7%3A0x9da1a3d560f73676!2zVHUgSG_DoG5nLCBQaMawxqFuZyBDYW5oLCBU4burIExpw6ptLCBIw6AgTuG7mWksIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1668233331524!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <div class="thongtin_lienhe mx-auto">
-            <div class="lien_he_con">
+           
+
+           <?php foreach($lh_new as $all_trangchu):?>
+              <?php  extract($all_trangchu); ?>
+               
+                <div class="lien_he_con">
                 <h2>Địa chỉ</h2>
-                <p>54 Lý Thường Kiệt, P.Trần Hưng Đạo, Q.Hoàn Kiếm, Hà Nội</p>
+                <p><?=$address?></p>
             </div>
             <div class="lien_he_con">
                 <h2>Hotline</h2>
-                <p>0366170434</p>
+                <p><?=$tel?></p>
             </div>
             <div class="lien_he_con">
                 <h2>Thời gian hoạt động</h2>
-                <p>Thứ Hai - Chủ Nhật: 10:30 - 22:00</p>
+                <p><?=$time?></p>
             </div>
+           
+           
+           <?php endforeach ?>
         </div>
     </div>
 </body>

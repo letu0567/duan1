@@ -160,5 +160,29 @@ font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
             color: rgb(10,56,28);
         }
 
-          
+        .space-y-5 h2{
+            cursor: pointer;
+            margin-top: 10px;
+        }
   
+        .space-y-5 h2:hover{
+           
+            color: #BF1B1B;
+        }
+        /*ct tin tức  */
+
+        .tt_ct{
+            max-width: 1020px;
+            margin: 0 auto;
+        }
+        .tieude_tt{
+            color: #BF1B1B;
+            font-size: 40px;
+            margin-bottom: 30px;
+            font-weight: bold;
+            font-family: ha;
+        }
+        .title_tt{
+             font-size: 20px;
+             line-height: 1.8;
+        }

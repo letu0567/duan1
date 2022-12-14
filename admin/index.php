@@ -9,7 +9,9 @@
     include "../DAO/tai_khoan.php";
     include "../DAO/datban.php";
     include "../DAO/binhluan.php";
-     include "../DAO/gioithieu.php";
+    include "../DAO/gioithieu.php";
+     include "../DAO/lienhe.php";
+     include "../DAO/tintuc.php";
      include "../DAO/cart.php";
 
     
@@ -283,7 +285,101 @@
             //     include 'dat_mon/list.php';
             //     break;
                 
-
+            case 'ql_lienhe':
+                if(isset($_POST['them_moi']) && ($_POST['them_moi'])){
+                    $address=$_POST['diachi_lh'];
+                    $tel=$_POST['sdt_lh'];
+                    $time=$_POST['time_lh'];
+                    insert_lienhe($address,$tel,$time);
+                    $thongbao="Thêm món thành công";
+                }
+                include "lien_he/add.php";
+                break;
+            case 'list_lienhe':
+                $all_lienhe=loadall_lienhe();
+                include "lien_he/list.php";
+                break;
+                case 'xoa_lh':
+                    if (isset($_GET['id']) && ($_GET['id'] > 0)) {
+                        delete_lienhe($_GET['id']);
+                    }
+                    $all_lienhe=loadall_lienhe();
+                    include "lien_he/list.php";
+                    break; 
+              case 'sualh_one':
+                if(isset($_GET['id'])&&($_GET['id']>0)){
+                    $lienhe_one=loadone_lienhe($_GET['id']); 
+                }
+               
+                include 'lien_he/upadate.php';
+                break;    
+             
+                case 'update_lienhe':
+                    if(isset($_POST['them_moi'])&& ($_POST['them_moi'])){
+                        $address=$_POST['diachi_lh'];
+                        $tel=$_POST['sdt_lh'];
+                        $time=$_POST['time_lh'];
+                        $id=$_POST['ma_lh'];
+                        update_lienhe($id,$address,$tel,$time);
+                       
+                    }
+                   
+                    $all_lienhe=loadall_lienhe();
+                    include 'lien_he/list.php';
+                    break;  
+                 case 'add_tintuc':
+                    if(isset($_POST['them_moitt']) && ($_POST['them_moitt'])){
+                        $filename_tt=$_FILES['hinh_tt']['name'];
+                        $title=$_POST['tieude_tt'];
+                        $description=$_POST['mota_tt'];
+                        $target_dir = "../upload/";
+                        $target_file = $target_dir . basename($_FILES["hinh_tt"]["name"]);
+                        if (move_uploaded_file($_FILES["hinh_tt"]["tmp_name"], $target_file)) {
+                          //  echo "The file ". htmlspecialchars( basename( $_FILES["hinh"]["name"])). " has been uploaded.";
+                          } else {
+                          //  echo "Sorry, there was an error uploading your file.";
+                          }
+                        insert_tintuc($filename_tt,$title,$description);
+                        $thongbao="Thêm món thành công";
+                    }
+                    include "tin_tuc/add.php";
+                    break; 
+                    case 'ql_tintuc':
+                        $list_tt=loadall_tintuc();
+                        include "tin_tuc/list.php";
+                        break; 
+                    case 'xoatt':
+                        if(isset($_GET['id'])&& ($_GET['id'] >0)){
+                            delete_tintuc($_GET['id']);
+                        }
+                        $list_tt=loadall_tintuc();
+                        include "tin_tuc/list.php";
+                        break;  
+                    case 'suatt':
+                        if(isset($_GET['id']) && ($_GET['id']>0)){
+                            $tintucone=loadone_tintuc($_GET['id']);
+                        }
+                           include "tin_tuc/update.php";
+                        break; 
+                    case 'update_tt':
+                        if(isset($_POST['capnhat_tt']) && ($_POST['capnhat_tt'])){
+                            $id=$_POST['id_tt'];
+                            $filename_tt=$_FILES['hinh_tt']['name'];
+                            $title=$_POST['tieude_tt'];
+                            $description=$_POST['mota_tt'];
+                            $target_dir = "../upload/";
+                            $target_file = $target_dir . basename($_FILES["hinh_tt"]["name"]);
+                            if (move_uploaded_file($_FILES["hinh_tt"]["tmp_name"], $target_file)) {
+                              //  echo "The file ". htmlspecialchars( basename( $_FILES["hinh"]["name"])). " has been uploaded.";
+                              } else {
+                              //  echo "Sorry, there was an error uploading your file.";
+                              }
+                            update_tintuc($id,$filename_tt,$title,$description);
+                          
+                        }
+                        $list_tt=loadall_tintuc();
+                        include "tin_tuc/list.php";
+                        break;      
             default:
                 include "content.php";
                 break;
