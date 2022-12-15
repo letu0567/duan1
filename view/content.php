@@ -65,13 +65,13 @@
                   extract($monan);
                   $hinh=$img_path.$image;
                   $link_monan_ct = "index.php?act=monan_ct&idma=".$id;
-                  echo '<div class="">
+                  echo '<a href="'.$link_monan_ct.'"><div class="">
                   <img class = "hinh_trangchu" src="'.$hinh.'" alt="">
                   <div class="pt-5">
                       <h1 class="text-xl font-bold text-center hover:text-red-900">'.$name.'</h1>
                       <p class="text-xl font-bold text-center">$'.$price.'</p>
                   </div>
-              </div>';        
+              </div></a>';        
             }
             ?>
             
