@@ -45,14 +45,20 @@
                   extract($ma);
                   $hinh=$img_path.$image;
                   $link_monan_ct = "index.php?act=monan_ct&idma=".$id;
-                  echo '<div class="monga_2">
+                  echo '<form action="index.php?act=addtocart" method="post">
+                  <div class="monga_2">
                   <a href="'.$link_monan_ct.'">
                   <img src="'.$hinh.'" alt="" class="img3">
                   <h4 class="td2 b">'.$name.'</h4>
                   <p class=" gia b ">'.$price.'</p>
                   </a>
-                  <button class="btn" >ĐẶT MÓN</button>
-                </div> ';        
+                  
+                   <input type="hidden" name="id" value='.$id.'>
+                   <input type="hidden" name="image" value='.$hinh.'>
+                   <input type="hidden" name="name" value='.$name.'>
+                   <input type="hidden" name="price" value='.$price.'>
+                  <input class= "btn" type="submit" name="addtocart" value="Đặt món">
+                </div>  </form> ';        
             }
             ?>
 
